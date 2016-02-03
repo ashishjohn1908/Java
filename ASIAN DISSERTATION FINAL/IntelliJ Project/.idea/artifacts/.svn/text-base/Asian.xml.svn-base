@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Asian">
+    <output-path>$PROJECT_DIR$/out/artifacts/Asian</output-path>
+    <root id="archive" name="Asian.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="IntelliJ Project" />
+    </root>
+  </artifact>
+</component>

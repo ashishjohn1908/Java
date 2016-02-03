@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Compiling the Example Programs (The Java&trade; Tutorials &gt;        
+            RMI)
+</title>
+
+     <meta name="description" content="This RMI Java tutorial describes the Java RMI system. It walks through a complete client/server example" />
+     <meta name="keywords" content="java programming, learn java, java sample code, java rmi, java client server" />
+        
+<style type="text/css">
+    .FigureCaption   { 
+        margin-left: 1in; 
+        margin-right: 1in; 
+        font-family: sans-serif; 
+        font-size: smaller; 
+        text-align: justify;
+    }
+    #TopBar_bl {
+        background: url(../images/java_bar_bl.gif) 0 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_br {
+        background: url(../images/java_bar_br.gif) 100% 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tl {
+        background: url(../images/java_bar_tl.gif) 0 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tr {
+        background: url(../images/java_bar_tr.gif) 100% 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar {
+        background: #35556B url(../images/java_bar.gif);
+        margin: 10px 10px 0 10px;
+        height:60px;
+        min-width:700px;
+        color: white;
+        font-family: sans-serif; 
+        font-weight: bold;
+    }
+    @media print {
+        #BreadCrumbs, #Download {
+            display: none;
+        }
+    }
+    #TopBar_right {
+        line-height: 14px;
+        float: right;
+        padding-top: 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    @media print {
+        #TopBar_right {
+            display: none;
+        }
+    }
+    #TopBar_right a {
+        font-size: 12px;
+        margin: 3px;
+        padding: 0;
+    }
+    #TopBar a:visited, #TopBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    #TopBar a:hover, #TopBar a:active  {
+        background-color: white;
+        color: #35556B;
+    }
+    #BreadCrumbs {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+        float: right;
+    }
+    #BreadCrumbs a {
+        color: blue;
+    }
+    #BreadCrumbs a:visited, #BreadCrumbs a:link {
+        text-decoration: none;
+    }
+    #BreadCrumbs a:hover, #BreadCrumbs a:active {
+        text-decoration: underline;
+    }
+    #PageTitle {
+        margin: 0 5px 0.5em 0;
+        color: #F90000;
+    }    
+    #PageContent{
+        margin: 0 5px 0 20px;
+    }
+    .LeftBar_shown {
+        width: 13em;
+        float: left;
+        margin-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 2em;
+        margin-right: 10px;
+    }
+    @media print {
+        .LeftBar_shown {
+            display: none;
+        }
+    }
+    .LeftBar_hidden {
+        display: none;
+    }
+    #Footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footertext {
+        font-size: 10px;
+        font-family: sans-serif; 
+        margin-top: 1px;
+    }
+    
+    #Footer2 {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .NavBit  {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+    }
+    @media print {
+        .NavBit {
+            display: none;
+        }
+    }
+    #TagNotes {
+        text-align: right;        
+    }
+    
+    @media print {
+        #TagNotes a:visited, #TagNotes a:link {
+            color: #35556B;
+            text-decoration: none;
+        }
+    }
+    #Contents a, .NavBit a, #TagNotes a {
+        color: blue
+    }
+    #TagNotes a:visited, #TagNotes a:link,
+    #Contents a:visited, #Contents a:link,
+    .NavBit a:visited, .NavBit a:link {
+        text-decoration: none;
+    }
+    #TagNotes a:hover, #TagNotes a:active,   
+    #Contents a:hover, #Contents a:active,   
+    .NavBit a:hover, .NavBit a:active {  
+        text-decoration: underline;
+    }
+    #Contents {
+        float: left;
+        font-family: sans-serif; 
+    }
+    @media print {
+        #Contents {
+            display: none;
+        }
+    }
+    @media screen {
+        div.PrintHeaders {
+            display: none;
+        }
+    }
+    .linkLESSON, .nolinkLESSON {
+        margin-left: 0.5em;
+        text-indent: -0.5em
+    }
+    .linkAHEAD, .nolinkAHEAD, .linkQUESTIONS, .nolinkQUESTIONS   {
+        margin-left: 1.5em; 
+        text-indent: -0.5em
+    }
+    .linkBHEAD, .nolinkBHEAD   {
+        margin-left: 2.5em;
+        text-indent: -0.5em
+    }
+    .linkCHEAD, .nolinkCHEAD   {
+        margin-left: 3.5em;
+        text-indent: -0.5em
+    }
+    .nolinkLESSON, .nolinkAHEAD, .nolinkBHEAD, .nolinkCHEAD,
+    .nolinkQUESTIONS {
+        font-weight: bold;
+        color: #F90000;
+    }
+    .MainFlow_indented {
+        margin-right: 10px;
+        margin-left: 15em;
+        margin-bottom: 2em;
+
+    }
+    .MainFlow_wide {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 2em;
+
+    }
+    @media print {
+        .MainFlow_indented, .MainFlow_wide {
+            padding-top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: #F90000;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+
+    #ToggleLeft {
+        display: none;
+    }
+    
+    .note {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .codeblock {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .tocli {
+        list-style-type:none;
+    }
+
+    .betadraft {
+        color: red;
+    }
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+    function leftBar() {
+        var nameq = 'tutorial_showLeftBar='
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookieString = cookies[i];
+            while (cookieString.charAt(0) == ' ') {
+                cookieString = cookieString.substring(1, cookieString.length);
+            }
+            if (cookieString.indexOf(nameq) == 0) {
+                cookieValue =  cookieString.substring(nameq.length,
+                        cookieString.length);
+                return cookieValue == 'yes';
+            }
+        }
+        return true;
+    }
+
+    function showLeft(b) {
+        var contents = document.getElementById("LeftBar");
+        var main = document.getElementById("MainFlow");
+        var toggle = document.getElementById("ToggleLeft");
+        if (b) {
+            contents.className = "LeftBar_shown";
+            main.className = "MainFlow_indented";
+            toggle.innerHTML = "Hide TOC";
+            document.cookie = 'tutorial_showLeftBar=yes; path=/';
+        } else {
+            contents.className = "LeftBar_hidden";
+            main.className = "MainFlow_wide";
+            toggle.innerHTML = "Show the TOC";
+            document.cookie = 'tutorial_showLeftBar=no; path=/';
+        }
+    }
+
+    function toggleLeft() {
+        showLeft(document.getElementById("LeftBar").className ==
+                "LeftBar_hidden");
+        document.getElementById("ToggleLeft").blur();
+    }
+
+    function load() {
+        showLeft(leftBar());
+        document.getElementById("ToggleLeft").style.display="inline";
+    }
+
+    function showCode(displayCodePage, codePath) {
+        var codePathEls = codePath.split("/");
+        var currDocPathEls = location.href.split("/");
+        //alert ("codePathEls = " + codePathEls + "\n" + "currDocPathEls = " + currDocPathEls);
+        currDocPathEls.pop(); // remove file name at the end
+        while (codePathEls.length > 0) {
+            if (codePathEls[0] == "..") {
+                codePathEls.shift();
+                currDocPathEls.pop();
+            } else {
+                break;
+            }
+        }
+        var fullCodePath = currDocPathEls.join("/") + "/" + codePathEls.join("/");
+        //alert ("fullCodePath = " + fullCodePath );
+        if (codePath.indexOf(".java") != -1 || codePath.indexOf(".jnlp") != -1) {
+            window.location.href = displayCodePage + "?code=" + encodeURI(fullCodePath);
+        } else {
+            window.location.href = fullCodePath;
+        }
+    }
+/* ]]> */    
+</script>
+
+
+    </head>
+<body onload="load()">
+    <noscript>
+        A browser with JavaScript enabled is required for this page to operate properly.
+    </noscript>
+
+    <div id="TopBar"> <div id="TopBar_tr"> <div id="TopBar_tl"> <div id="TopBar_br"> <div id="TopBar_bl"> 
+                        <div id="TopBar_right"> 
+                            <a target="_blank"
+				href="http://www.oracle.com/technetwork/java/javase/downloads/java-se-7-tutorial-2012-02-28-1536013.html">Download Ebooks</a><br />
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Download JDK</a>
+                            <br />
+                            <a href="../search.html" target="_blank">Search Java Tutorials</a>
+                            <br />
+                            <a href="javascript:toggleLeft()"
+                                id="ToggleLeft">Hide TOC</a>
+                        </div>
+                    </div> </div> </div> </div> </div>
+    <div class="PrintHeaders">
+        <b>Trail:</b> RMI
+        <br /><b>Section:</b> Compiling and Running the Example
+    </div>
+
+    <div id="LeftBar" class="LeftBar_shown">
+        <div id="Contents">
+            <div class="linkAHEAD"><a href="overview.html">An Overview of RMI Applications</a></div>
+<div class="linkAHEAD"><a href="server.html">Writing an RMI Server</a></div>
+<div class="linkBHEAD"><a href="designing.html">Designing a Remote Interface</a></div>
+<div class="linkBHEAD"><a href="implementing.html">Implementing a Remote Interface</a></div>
+<div class="linkAHEAD"><a href="client.html">Creating a Client Program</a></div>
+<div class="linkAHEAD"><a href="example.html">Compiling and Running the Example</a></div>
+<div class="nolinkBHEAD">Compiling the Example Programs</div>
+<div class="linkBHEAD"><a href="running.html">Running the Example Programs</a></div>
+</div>
+    </div>
+    <div id="MainFlow" class="MainFlow_indented">
+            <span id="BreadCrumbs">
+                <a href="../index.html" target="_top">Home Page</a>
+                &gt;
+                <a href="./index.html" target="_top">RMI</a>
+            </span>
+            <div class="NavBit">
+                <a target="_top" href="example.html">&laquo;&nbsp;Previous</a>&nbsp;&bull;&nbsp;<a target="_top" href="./TOC.html">Trail</a>&nbsp;&bull;&nbsp;<a target="_top" href="running.html">Next&nbsp;&raquo;</a>
+            </div>
+            <div id="PageTitle"><h1>Compiling the Example Programs</h1></div>
+            <div id="PageContent">
+
+<p>In a real-world scenario in which a service such as the compute engine is deployed, a developer would likely create a Java Archive (JAR) file that contains the <code>Compute</code> and <code>Task</code> interfaces for server classes to implement and client programs to use. Next, a developer, perhaps the same developer of the interface JAR file, would write an implementation of the <code>Compute</code> interface and deploy that service on a machine available to clients. Developers of client programs can use the <code>Compute</code> and the <code>Task</code> interfaces, contained in the JAR file, and independently develop a task and client program that uses a <code>Compute</code> service.</p>
+<p>In this section, you learn how to set up the JAR file, server classes, and client classes. You will see that the client&#39;s <code>Pi</code> class will be downloaded to the server at runtime. Also, the <code>Compute</code> and <code>Task</code> interfaces will be downloaded from the server to the registry at runtime.</p>
+<p>This example separates the interfaces, remote object implementation, and client code into three packages:</p>
+<ul>
+<li><code>compute</code> &ndash; 
+<a class="SourceLink" target="_blank" href="examples/compute/Compute.java" onclick="showCode('../displayCode.html', 'examples/compute/Compute.java'); return false;"><code>Compute</code></a> and 
+<a class="SourceLink" target="_blank" href="examples/compute/Task.java" onclick="showCode('../displayCode.html', 'examples/compute/Task.java'); return false;"><code>Task</code></a> interfaces</li>
+<li><code>engine</code> &ndash; 
+<a class="SourceLink" target="_blank" href="examples/engine/ComputeEngine.java" onclick="showCode('../displayCode.html', 'examples/engine/ComputeEngine.java'); return false;"><code>ComputeEngine</code></a> implementation class</li>
+<li><code>client</code> &ndash; 
+<a class="SourceLink" target="_blank" href="examples/client/ComputePi.java" onclick="showCode('../displayCode.html', 'examples/client/ComputePi.java'); return false;"><code>ComputePi</code></a> client code and 
+<a class="SourceLink" target="_blank" href="examples/client/Pi.java" onclick="showCode('../displayCode.html', 'examples/client/Pi.java'); return false;"><code>Pi</code></a> task implementation</li>
+</ul>
+<p>First, you need to build the interface JAR file to provide to server and client developers.</p>
+<h2>Building a JAR File of Interface Classes</h2>
+<p>First, you need to compile the interface source files in the <code>compute</code> package and then build a JAR file that contains their class files. Assume that user <code>waldo</code> has written these interfaces and placed the source files in the directory <code>c:\home\waldo\src\compute</code> on Windows or the directory <code>/home/waldo/src/compute</code> on Solaris OS or Linux. Given these paths, you can use the following commands to compile the interfaces and create the JAR file:</p>
+<p><strong>Microsoft Windows</strong>:</p>
+<div class="codeblock"><pre>
+cd c:\home\waldo\src
+javac compute\Compute.java compute\Task.java
+jar cvf compute.jar compute\*.class
+</pre></div>
+<p><strong>Solaris OS or Linux</strong>:</p>
+<div class="codeblock"><pre>
+cd /home/waldo/src
+javac compute/Compute.java compute/Task.java
+jar cvf compute.jar compute/*.class
+</pre></div>
+<hr /></div>
+<p>The <code>jar</code> command displays the following output due to the <code>-v</code> option:</p>
+<div class="codeblock"><pre>
+added manifest
+adding: compute/Compute.class(in = 307) (out= 201)(deflated 34%)
+adding: compute/Task.class(in = 217) (out= 149)(deflated 31%)
+</pre></div>
+<p>Now, you can distribute the <code>compute.jar</code> file to developers of server and client applications so that they can make use of the interfaces.</p>
+<p>After you build either server-side or client-side classes with the <code>javac</code> compiler, if any of those classes will need to be dynamically downloaded by other Java virtual machines, you must ensure that their class files are placed in a network-accessible location. In this example, for Solaris OS or Linux this location is <code>/home/<i>user</i>/public_html/classes</code> because many web servers allow the accessing of a user&#39;s <code>public_html</code> directory through an HTTP URL constructed as <code>http://host/~<i>user</i>/</code>. If your web server does not support this convention, you could use a different location in the web server&#39;s hierarchy, or you could use a file URL instead. The file URLs take the form <code>file:/home/<i>user</i>/public_html/classes/</code> on Solaris OS or Linux and the form <code>file:/c:/home/<i>user</i>/public_html/classes/</code> on Windows. You may also select another type of URL, as appropriate.</p>
+<p>The network accessibility of the class files enables the RMI runtime to download code when needed. Rather than defining its own protocol for code downloading, RMI uses URL protocols supported by the Java platform (for example, HTTP) to download code. Note that using a full, heavyweight web server to serve these class files is unnecessary. For example, a simple HTTP server that provides the functionality needed to make classes available for downloading in RMI through HTTP can be found at <a href="http://www.oracle.com/webfolder/technetwork/java/core/basic/rmi/class-server.zip"> </a>. <br />
+Also see <a href="http://www.oracle.com/technetwork/java/javase/tech/index-jsp-136424.html">Remote Method Invocation Home</a>.</p>
+<h2>Building the Server Classes</h2>
+<p>The <code>engine</code> package contains only one server-side implementation class, <code>ComputeEngine</code>, the implementation of the remote interface <code>Compute</code>.</p>
+<p>Assume that user <code>ann</code>, the developer of the <code>ComputeEngine</code> class, has placed <code>ComputeEngine.java</code> in the directory <code>c:\home\ann\src\engine</code> on Windows or the directory <code>/home/ann/src/engine</code> on Solaris OS or Linux. She is deploying the class files for clients to download in a subdirectory of her <code>public_html</code> directory, <code>c:\home\ann\public_html\classes</code> on Windows or <code>/home/ann/public_html/classes</code> on Solaris OS or Linux. This location is accessible through some web servers as <code>http://<i>host</i>:<i>port</i>/~ann/classes/</code>.</p>
+<p>The <code>ComputeEngine</code> class depends on the <code>Compute</code> and <code>Task</code> interfaces, which are contained in the <code>compute.jar</code> JAR file. Therefore, you need the <code>compute.jar</code> file in your class path when you build the server classes. Assume that the <code>compute.jar</code> file is located in the directory <code>c:\home\ann\public_html\classes</code> on Windows or the directory <code>/home/ann/public_html/classes</code> on Solaris OS or Linux. Given these paths, you can use the following commands to build the server classes:</p>
+<p><strong>Microsoft Windows</strong>:</p>
+<div class="codeblock"><pre>
+cd c:\home\ann\src
+javac -cp c:\home\ann\public_html\classes\compute.jar
+    engine\ComputeEngine.java
+</pre></div>
+<p><strong>Solaris OS or Linux</strong>:</p>
+<div class="codeblock"><pre>
+cd /home/ann/src
+javac -cp /home/ann/public_html/classes/compute.jar
+    engine/ComputeEngine.java
+</pre></div>
+<p>The stub class for <code>ComputeEngine</code> implements the <code>Compute</code> interface, which refers to the <code>Task</code> interface. So, the class definitions for those two interfaces need to be network-accessible for the stub to be received by other Java virtual machines such as the registry&#39;s Java virtual machine. The client Java virtual machine will already have these interfaces in its class path, so it does not actually need to download their definitions. The <code>compute.jar</code> file under the <code>public_html</code> directory can serve this purpose.</p>
+<p>Now, the compute engine is ready to deploy. You could do that now, or you could wait until after you have built the client.</p>
+<h2>Building the Client Classes</h2>
+<p>The <code>client</code> package contains two classes, <code>ComputePi</code>, the main client program, and <code>Pi</code>, the client&#39;s implementation of the <code>Task</code> interface.</p>
+<p>Assume that user <code>jones</code>, the developer of the client classes, has placed <code>ComputePi.java</code> and <code>Pi.java</code> in the directory <code>c:\home\jones\src\client</code> on Windows or the directory <code>/home/jones/src/client</code> on Solaris OS or Linux. He is deploying the class files for the compute engine to download in a subdirectory of his <code>public_html</code> directory, <code>c:\home\jones\public_html\classes</code> on Windows or <code>/home/jones/public_html/classes</code> on Solaris OS or Linux. This location is accessible through some web servers as <code>http://<i>host</i>:<i>port</i>/~jones/classes/</code>.</p>
+<p>The client classes depend on the <code>Compute</code> and <code>Task</code> interfaces, which are contained in the <code>compute.jar</code> JAR file. Therefore, you need the <code>compute.jar</code> file in your class path when you build the client classes. Assume that the <code>compute.jar</code> file is located in the directory <code>c:\home\jones\public_html\classes</code> on Windows or the directory <code>/home/jones/public_html/classes</code> on Solaris OS or Linux. Given these paths, you can use the following commands to build the client classes:</p>
+<p><strong>Microsoft Windows</strong>:</p>
+<div class="codeblock"><pre>
+cd c:\home\jones\src
+javac -cp c:\home\jones\public_html\classes\compute.jar
+    client\ComputePi.java client\Pi.java
+mkdir c:\home\jones\public_html\classes\client
+cp client\Pi.class
+    c:\home\jones\public_html\classes\client
+</pre></div>
+<p><strong>Solaris OS or Linux</strong>:</p>
+<div class="codeblock"><pre>
+cd /home/jones/src
+javac -cp /home/jones/public_html/classes/compute.jar
+    client/ComputePi.java client/Pi.java
+mkdir /home/jones/public_html/classes/client
+cp client/Pi.class
+    /home/jones/public_html/classes/client
+</pre></div>
+<p>Only the <code>Pi</code> class needs to be placed in the directory <code>public_html\classes\client</code> because only the <code>Pi</code> class needs to be available for downloading to the compute engine&#39;s Java virtual machine. Now, you can run the server and then the client.</p>
+
+
+        </div>
+        <div class="NavBit">
+            <a target="_top" href="example.html">&laquo; Previous</a>
+            &bull;
+            <a target="_top" href="./TOC.html">Trail</a>
+            &bull;
+            <a target="_top" href="running.html">Next &raquo;</a>
+        </div>
+    </div>
+    <div id="Footer2">
+<hr />
+<div id="TagNotes">
+    <p class="footertext">Problems with the examples? Try <a target="_blank"
+        href="../information/run-examples.html">Compiling and Running
+        the Examples: FAQs</a>.
+    <br />
+    Complaints? Compliments? Suggestions? <a target="_blank"
+        href="http://docs.oracle.com/javase/feedback.html">Give
+    us your feedback</a>.
+    </p>
+</div> 
+
+<div id="Footer">
+<p class="footertext"><a name="license_info">Your use of this</a> page and all the material on pages under &quot;The Java Tutorials&quot; banner 
+ is subject to these <a href="../information/cpyr.html">legal notices</a>.
+</p>
+<table border="0" cellspacing="0" cellpadding="5" summary="">
+    <tr>
+         <td width="20%">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td headers="h1" align="center"><img id="duke" src="../images/DukeWave.gif" width="55" height="55" alt="duke image" /></td>
+              <td headers="h2" align="left" valign="middle"><img id="oracle" src="../images/logo_oracle_footer.gif" width="100" height="29" alt="Oracle logo" /></td>
+           </tr>
+          </table>
+          </td>
+
+          <td width="55%" valign="middle" align="center">
+		<p class="footertext"><a href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> | <a href="http://www.oracle.com/technology/index.html">Oracle Technology Network</a> | <a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></p> 
+	 </td>
+          <td width="25%" valign="middle" align="right">
+      		<p class="footertext">Copyright &copy; 1995, 2014 Oracle and/or its affiliates. All rights reserved.</p>
+	 </td>
+     </tr>     
+</table>
+</div>
+    </div>
+    <div class="PrintHeaders">
+        <b>Previous page:</b> Compiling and Running the Example
+        <br /><b>Next page:</b> Running the Example Programs
+    </div>
+</body>
+</html> 

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE orion-application PUBLIC "-//Evermind//DTD
+ J2EE Application runtime 1.2//EN"
+        "http://xmlns.oracle.com/ias/dtds/orion-application.dtd">
+
+<orion-application deployment-version="1.4.5">
+    <ejb-module remote="false" path="server.jar"/>
+    <persistence path="persistence"/>
+    <principals path="principals.xml"/>
+    <log>
+        <file path="application.log"/>
+    </log>
+    <namespace-access>
+        <read-access>
+            <namespace-resource root="">
+                <security-role-mapping name="&lt;jndi-user-role&gt;">
+                    <group name="users"/>
+                </security-role-mapping>
+            </namespace-resource>
+        </read-access>
+        <write-access>
+            <namespace-resource root="">
+                <security-role-mapping name="&lt;jndi-user-role&gt;">
+                    <group name="users"/>
+                </security-role-mapping>
+            </namespace-resource>
+        </write-access>
+    </namespace-access>
+</orion-application>

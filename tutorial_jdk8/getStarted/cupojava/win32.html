@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>"Hello World!" for Microsoft Windows (The Java&trade; Tutorials &gt;        
+            Getting Started &gt; The "Hello World!" Application)
+</title>
+
+     <meta name="description" content="This beginner Java tutorial describes getting started with Java and setting up your Netbeans IDE" />
+     <meta name="keywords" content="java programming, learn java, java sample code, getting started with java, development environment setup" />
+        
+<style type="text/css">
+    .FigureCaption   { 
+        margin-left: 1in; 
+        margin-right: 1in; 
+        font-family: sans-serif; 
+        font-size: smaller; 
+        text-align: justify;
+    }
+    #TopBar_bl {
+        background: url(../../images/java_bar_bl.gif) 0 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_br {
+        background: url(../../images/java_bar_br.gif) 100% 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tl {
+        background: url(../../images/java_bar_tl.gif) 0 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tr {
+        background: url(../../images/java_bar_tr.gif) 100% 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar {
+        background: #35556B url(../../images/java_bar.gif);
+        margin: 10px 10px 0 10px;
+        height:60px;
+        min-width:700px;
+        color: white;
+        font-family: sans-serif; 
+        font-weight: bold;
+    }
+    @media print {
+        #BreadCrumbs, #Download {
+            display: none;
+        }
+    }
+    #TopBar_right {
+        line-height: 14px;
+        float: right;
+        padding-top: 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    @media print {
+        #TopBar_right {
+            display: none;
+        }
+    }
+    #TopBar_right a {
+        font-size: 12px;
+        margin: 3px;
+        padding: 0;
+    }
+    #TopBar a:visited, #TopBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    #TopBar a:hover, #TopBar a:active  {
+        background-color: white;
+        color: #35556B;
+    }
+    #BreadCrumbs {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+        float: right;
+    }
+    #BreadCrumbs a {
+        color: blue;
+    }
+    #BreadCrumbs a:visited, #BreadCrumbs a:link {
+        text-decoration: none;
+    }
+    #BreadCrumbs a:hover, #BreadCrumbs a:active {
+        text-decoration: underline;
+    }
+    #PageTitle {
+        margin: 0 5px 0.5em 0;
+        color: #F90000;
+    }    
+    #PageContent{
+        margin: 0 5px 0 20px;
+    }
+    .LeftBar_shown {
+        width: 13em;
+        float: left;
+        margin-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 2em;
+        margin-right: 10px;
+    }
+    @media print {
+        .LeftBar_shown {
+            display: none;
+        }
+    }
+    .LeftBar_hidden {
+        display: none;
+    }
+    #Footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footertext {
+        font-size: 10px;
+        font-family: sans-serif; 
+        margin-top: 1px;
+    }
+    
+    #Footer2 {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .NavBit  {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+    }
+    @media print {
+        .NavBit {
+            display: none;
+        }
+    }
+    #TagNotes {
+        text-align: right;        
+    }
+    
+    @media print {
+        #TagNotes a:visited, #TagNotes a:link {
+            color: #35556B;
+            text-decoration: none;
+        }
+    }
+    #Contents a, .NavBit a, #TagNotes a {
+        color: blue
+    }
+    #TagNotes a:visited, #TagNotes a:link,
+    #Contents a:visited, #Contents a:link,
+    .NavBit a:visited, .NavBit a:link {
+        text-decoration: none;
+    }
+    #TagNotes a:hover, #TagNotes a:active,   
+    #Contents a:hover, #Contents a:active,   
+    .NavBit a:hover, .NavBit a:active {  
+        text-decoration: underline;
+    }
+    #Contents {
+        float: left;
+        font-family: sans-serif; 
+    }
+    @media print {
+        #Contents {
+            display: none;
+        }
+    }
+    @media screen {
+        div.PrintHeaders {
+            display: none;
+        }
+    }
+    .linkLESSON, .nolinkLESSON {
+        margin-left: 0.5em;
+        text-indent: -0.5em
+    }
+    .linkAHEAD, .nolinkAHEAD, .linkQUESTIONS, .nolinkQUESTIONS   {
+        margin-left: 1.5em; 
+        text-indent: -0.5em
+    }
+    .linkBHEAD, .nolinkBHEAD   {
+        margin-left: 2.5em;
+        text-indent: -0.5em
+    }
+    .linkCHEAD, .nolinkCHEAD   {
+        margin-left: 3.5em;
+        text-indent: -0.5em
+    }
+    .nolinkLESSON, .nolinkAHEAD, .nolinkBHEAD, .nolinkCHEAD,
+    .nolinkQUESTIONS {
+        font-weight: bold;
+        color: #F90000;
+    }
+    .MainFlow_indented {
+        margin-right: 10px;
+        margin-left: 15em;
+        margin-bottom: 2em;
+
+    }
+    .MainFlow_wide {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 2em;
+
+    }
+    @media print {
+        .MainFlow_indented, .MainFlow_wide {
+            padding-top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: #F90000;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+
+    #ToggleLeft {
+        display: none;
+    }
+    
+    .note {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .codeblock {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .tocli {
+        list-style-type:none;
+    }
+
+    .betadraft {
+        color: red;
+    }
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+    function leftBar() {
+        var nameq = 'tutorial_showLeftBar='
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookieString = cookies[i];
+            while (cookieString.charAt(0) == ' ') {
+                cookieString = cookieString.substring(1, cookieString.length);
+            }
+            if (cookieString.indexOf(nameq) == 0) {
+                cookieValue =  cookieString.substring(nameq.length,
+                        cookieString.length);
+                return cookieValue == 'yes';
+            }
+        }
+        return true;
+    }
+
+    function showLeft(b) {
+        var contents = document.getElementById("LeftBar");
+        var main = document.getElementById("MainFlow");
+        var toggle = document.getElementById("ToggleLeft");
+        if (b) {
+            contents.className = "LeftBar_shown";
+            main.className = "MainFlow_indented";
+            toggle.innerHTML = "Hide TOC";
+            document.cookie = 'tutorial_showLeftBar=yes; path=/';
+        } else {
+            contents.className = "LeftBar_hidden";
+            main.className = "MainFlow_wide";
+            toggle.innerHTML = "Show the TOC";
+            document.cookie = 'tutorial_showLeftBar=no; path=/';
+        }
+    }
+
+    function toggleLeft() {
+        showLeft(document.getElementById("LeftBar").className ==
+                "LeftBar_hidden");
+        document.getElementById("ToggleLeft").blur();
+    }
+
+    function load() {
+        showLeft(leftBar());
+        document.getElementById("ToggleLeft").style.display="inline";
+    }
+
+    function showCode(displayCodePage, codePath) {
+        var codePathEls = codePath.split("/");
+        var currDocPathEls = location.href.split("/");
+        //alert ("codePathEls = " + codePathEls + "\n" + "currDocPathEls = " + currDocPathEls);
+        currDocPathEls.pop(); // remove file name at the end
+        while (codePathEls.length > 0) {
+            if (codePathEls[0] == "..") {
+                codePathEls.shift();
+                currDocPathEls.pop();
+            } else {
+                break;
+            }
+        }
+        var fullCodePath = currDocPathEls.join("/") + "/" + codePathEls.join("/");
+        //alert ("fullCodePath = " + fullCodePath );
+        if (codePath.indexOf(".java") != -1 || codePath.indexOf(".jnlp") != -1) {
+            window.location.href = displayCodePage + "?code=" + encodeURI(fullCodePath);
+        } else {
+            window.location.href = fullCodePath;
+        }
+    }
+/* ]]> */    
+</script>
+
+
+    </head>
+<body onload="load()">
+    <noscript>
+        A browser with JavaScript enabled is required for this page to operate properly.
+    </noscript>
+
+    <div id="TopBar"> <div id="TopBar_tr"> <div id="TopBar_tl"> <div id="TopBar_br"> <div id="TopBar_bl"> 
+                        <div id="TopBar_right"> 
+                            <a target="_blank"
+				href="http://www.oracle.com/technetwork/java/javase/downloads/java-se-7-tutorial-2012-02-28-1536013.html">Download Ebooks</a><br />
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Download JDK</a>
+                            <br />
+                            <a href="../../search.html" target="_blank">Search Java Tutorials</a>
+                            <br />
+                            <a href="javascript:toggleLeft()"
+                                id="ToggleLeft">Hide TOC</a>
+                        </div>
+                    </div> </div> </div> </div> </div>
+    <div class="PrintHeaders">
+        <b>Trail:</b> Getting Started
+        <br /><b>Lesson:</b> The "Hello World!" Application
+    </div>
+
+    <div id="LeftBar" class="LeftBar_shown">
+        <div id="Contents">
+            <div class="linkLESSON"><a href="index.html">The "Hello World!" Application</a></div>
+<div class="linkAHEAD"><a href="netbeans.html">"Hello World!" for the NetBeans IDE</a></div>
+<div class="nolinkAHEAD">"Hello World!" for Microsoft Windows</div>
+<div class="linkAHEAD"><a href="unix.html">"Hello World!" for Solaris OS and Linux</a></div>
+</div>
+    </div>
+    <div id="MainFlow" class="MainFlow_indented">
+            <span id="BreadCrumbs">
+                <a href="../../index.html" target="_top">Home Page</a>
+                &gt;
+                <a href="../index.html" target="_top">Getting Started</a>
+                &gt;
+                <a href="index.html" target="_top">The "Hello World!" Application</a>
+            </span>
+            <div class="NavBit">
+                <a target="_top" href="netbeans.html">&laquo;&nbsp;Previous</a>&nbsp;&bull;&nbsp;<a target="_top" href="../TOC.html">Trail</a>&nbsp;&bull;&nbsp;<a target="_top" href="unix.html">Next&nbsp;&raquo;</a>
+            </div>
+            <div id="PageTitle"><h1>"Hello World!" for Microsoft Windows</h1></div>
+            <div id="PageContent">
+
+<p><a name="win32-top" id="win32-top"></a></p>
+<p>It&#39;s time to write your first application! The following instructions are for users of Windows XP Professional, Windows XP Home, Windows Server 2003, Windows 2000 Professional, and Windows Vista. Instructions for other platforms are in 
+<a class="TutorialLink" target="_top" href="unix.html">"Hello World!" for Solaris OS and Linux</a> and 
+<a class="TutorialLink" target="_top" href="netbeans.html">"Hello World!" for the NetBeans IDE</a>.</p>
+<p>If you encounter problems with the instructions on this page, consult the 
+<a class="TutorialLink" target="_top" href="../problems/index.html">Common Problems (and Their Solutions)</a>. 
+<ul>
+  <li><a href="#win32-1">A Checklist</a></li>
+  <li><a href="#win32-2">Creating Your First Application</a>
+    <ul>
+    <li><a href="#win32-2a">Create a Source File</a></li>
+    <li><a href="#win32-2b">Compile the Source File into a <code>.class</code> File</a></li>
+    <li><a href="#win32-2c">Run the Program</a></li>
+    </ul>
+</li>
+</ul>
+          <hr />
+</p>
+<h2><a name="win32-1" id="win32-1"></a> A Checklist&nbsp; 
+<img src="../../figures/getStarted/check.gif" width="56" height="68" alt="a checkmark" /></h2>
+<p>To write your first program, you&#39;ll need:</p>
+<ol>
+<li>
+<p style="font-weight: bold">The Java SE Development Kit 7 (JDK 7)</p>
+<p>You can 
+<a class="OutsideLink" target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">download the Windows version now</a>. (Make sure you download the <b>JDK</b>, <i>not</i> the JRE.) Consult the 
+<a class="OutsideLink" target="_blank" href="http://docs.oracle.com/javase/7/docs/webnotes/install/">installation instructions</a>.</p>
+</li>
+<li>
+<p style="font-weight: bold">A text editor</p>
+<p>In this example, we&#39;ll use Notepad, a simple editor included with the Windows platforms. You can easily adapt these instructions if you use a different text editor.</p>
+</li>
+</ol>
+<p>These two items are all you&#39;ll need to write your first application.</p>
+<p>
+          <hr />
+</p>
+<h2><a name="win32-2" id="win32-2"></a> Creating Your First Application</h2>
+<p>
+</p>
+<p>Your first application, <code>HelloWorldApp</code>, will simply display the greeting &quot;Hello world!&quot;. To create this program, you will:&nbsp;</p>
+<ul>
+<li>
+<p style="font-weight: bold">Create a source file</p>
+<p>A source file contains code, written in the Java programming language, that you and other programmers can understand. You can use any text editor to create and edit source files.</p>
+</li>
+<li>
+<p style="font-weight: bold">Compile the source file into a .class file</p>
+<p>The Java programming language <i>compiler</i> (<code>javac</code>) takes your source file and translates its text into instructions that the Java virtual machine can understand. The instructions contained within this file are known as <i>bytecodes</i>.</p>
+</li>
+<li>
+<p style="font-weight: bold">Run the program</p>
+<p>The Java application <i>launcher tool</i> (<code>java</code>) uses the Java virtual machine to run your application.</p>
+</li>
+</ul>
+<h3><a name="win32-2a" id="win32-2a"></a> Create a Source File</h3>
+<p>To create a source file, you have two options:</p>
+<ul>
+<li>
+<p>You can save the file <code>
+<a class="SourceLink" target="_blank" href="../application/examples/HelloWorldApp.java" onclick="showCode('../../displayCode.html', '../application/examples/HelloWorldApp.java'); return false;"><code>HelloWorldApp.java</code></a></code> on your computer and avoid a lot of typing. Then, you can go straight to <a href="#win32-2b">Compile the Source File into a <code>.class</code> File</a>.</p>
+</li>
+<li>
+<p>Or, you can use the following (longer) instructions.</p>
+</li>
+</ul>
+<p>First, start your editor. You can launch the Notepad editor from the <b> Start</b> menu by selecting <b> Programs &gt; Accessories &gt; Notepad</b>. In a new document, type in the following code:</p>
+<div class="codeblock"><pre>
+/**
+&nbsp;* The HelloWorldApp class implements an application that
+&nbsp;* simply prints "Hello World!" to standard output.
+&nbsp;*/
+class HelloWorldApp {
+&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello World!"); // Display the string.
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre></div>
+<p><b>Be Careful When You Type</b>
+<img src="../../figures/getStarted/typeA.gif" width="51" height="36" alt="uppercase letter A" />&nbsp;&nbsp;
+<img src="../../figures/getStarted/typea2.gif" width="51" height="36" alt="lowercase letter A" /></p>
+<div class="note"><hr /><strong>Note:</strong>&nbsp;Type all code, commands, and file names exactly as shown. Both the compiler (<code>javac</code>) and launcher (<code>java</code>) are <em>case-sensitive</em>, so you must capitalize consistently.<br /><br />
+<code>HelloWorldApp</code> is <em>not</em> the same as <code>helloworldapp</code>.
+<hr /></div>
+<p>Save the code in a file with the name <code>HelloWorldApp.java</code>. To do this in Notepad, first choose the <b> File &gt; Save As</b> menu item. Then, in the <b> Save As</b> dialog box:</p>
+<ol>
+<li>Using the <b> Save in</b> combo box, specify the folder (directory) where you&#39;ll save your file. In this example, the directory is <code>java</code> on the <code>C</code> drive.</li>
+<li>In the <b> File name</b> text field, type <code>&quot;HelloWorldApp.java&quot;</code>, including the quotation marks.</li>
+<li>From the <b> Save as type</b> combo box, choose <b> Text Documents (*.txt)</b>.</li>
+<li>In the <b> Encoding</b> combo box, leave the encoding as ANSI.</li>
+</ol>
+<p>When you&#39;re finished, the dialog box should look like 
+<span id="figure:saveas.gif">this</span>.</p>
+<center><img src="../../figures/getStarted/saveas.gif" width="562" height="447" align="bottom" alt="TEXT The Save As dialog, as described in the text." /></p><p class="FigureCaption">The Save As dialog just before you click <b> Save</b>.</p></center><p>Now click <b> Save</b>, and exit Notepad.</p>
+<h3><a name="win32-2b" id="win32-2b"></a>Compile the Source File into a .class File</h3>
+<p>Bring up a shell, or &quot;command,&quot; window. You can do this from the <b> Start</b> menu by choosing <b> Command Prompt</b> (Windows XP), or by choosing <b> Run...</b> and then entering <code>cmd</code>. The shell window should look similar to 
+<span id="figure:dos.gif">the following figure</span>.</p>
+<center><img src="../../figures/getStarted/dos.gif" width="667" height="330" align="bottom" alt="a window where you can enter DOS commands" /></p><p class="FigureCaption">A shell window.</p></center><p>The prompt shows your <i>current directory</i>. When you bring up the prompt, your current directory is usually your home directory for Windows XP (as shown in the preceding figure.</p>
+<p>To compile your source file, change your current directory to the directory where your file is located. For example, if your source directory is <code>java</code> on the <code>C</code> drive, type the following command at the prompt and press <b> Enter</b>:</p>
+<div class="codeblock"><pre>
+cd C:\java
+</pre></div>
+<p>Now the prompt should change to <code>C:\java&gt;</code>.</p>
+<div class="note"><hr /><strong>Note:</strong>&nbsp;To change to a directory on a different drive, you must type an extra command: the name of the drive. For example, to change to the <code>java</code> directory on the <code>D</code> drive, you must enter <code>D:</code>, as shown in 
+<span id="figure:extrastep.gif">the following figure</span>.
+<center><img src="../../figures/getStarted/extrastep.gif" width="667" height="330" align="bottom" alt="Changing directory on an alternate drive" /></p><p class="FigureCaption">Changing directory on an alternate drive.</p></center><hr /></div>
+<p>If you enter <code>dir</code> at the prompt, you should see your source file, as 
+<span id="figure:cd.gif">the following figure</span> shows.</p>
+<center><img src="../../figures/getStarted/cd.gif" width="667" height="330" align="bottom" alt="Directory listing showing the .java source file." /></p><p class="FigureCaption">Directory listing showing the <code>.java</code> source file.</p></center><p>Now you are ready to compile. At the prompt, type the following command and press <b> Enter</b>.</p>
+<div class="codeblock"><pre>
+javac HelloWorldApp.java
+</pre></div>
+<p>The compiler has generated a bytecode file, <code>HelloWorldApp.class</code>. At the prompt, type <code>dir</code> to see the new file that was generated, as shown in 
+<span id="figure:dosclass.gif">the following figure</span>.</p>
+<center><img src="../../figures/getStarted/dosclass.gif" width="667" height="330" align="bottom" alt="Directory listing, showing the generated .class file" /></p><p class="FigureCaption">Directory listing, showing the generated <code>.class</code> file</p></center><p>Now that you have a <code>.class</code> file, you can run your program.</p>
+<p>If you encounter problems with the instructions in this step, consult the 
+<a class="TutorialLink" target="_top" href="../problems/index.html">Common Problems (and Their Solutions)</a>.</p>
+<h3><a name="win32-2c" id="win32-2c"></a> Run the Program</h3>
+<p>In the same directory, enter the following command at the prompt:</p>
+<div class="codeblock"><pre>
+java HelloWorldApp
+</pre></div>
+<p>
+<span id="figure:dosresult.gif">The next figure</span> shows what you should now see:</p>
+<center><img src="../../figures/getStarted/dosresult.gif" width="667" height="102" align="bottom" alt="The program prints Hello World! to the screen." /></p><p class="FigureCaption">The program prints "Hello World!" to the screen.</p></center><p>Congratulations! Your program works!</p>
+<p>If you encounter problems with the instructions in this step, consult the 
+<a class="TutorialLink" target="_top" href="../problems/index.html">Common Problems (and Their Solutions)</a>.</p>
+
+        </div>
+        <div class="NavBit">
+            <a target="_top" href="netbeans.html">&laquo; Previous</a>
+            &bull;
+            <a target="_top" href="../TOC.html">Trail</a>
+            &bull;
+            <a target="_top" href="unix.html">Next &raquo;</a>
+        </div>
+    </div>
+    <div id="Footer2">
+<hr />
+<div id="TagNotes">
+    <p class="footertext">Problems with the examples? Try <a target="_blank"
+        href="../../information/run-examples.html">Compiling and Running
+        the Examples: FAQs</a>.
+    <br />
+    Complaints? Compliments? Suggestions? <a target="_blank"
+        href="http://docs.oracle.com/javase/feedback.html">Give
+    us your feedback</a>.
+    </p>
+</div> 
+
+<div id="Footer">
+<p class="footertext"><a name="license_info">Your use of this</a> page and all the material on pages under &quot;The Java Tutorials&quot; banner 
+ is subject to these <a href="../../information/cpyr.html">legal notices</a>.
+</p>
+<table border="0" cellspacing="0" cellpadding="5" summary="">
+    <tr>
+         <td width="20%">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td headers="h1" align="center"><img id="duke" src="../../images/DukeWave.gif" width="55" height="55" alt="duke image" /></td>
+              <td headers="h2" align="left" valign="middle"><img id="oracle" src="../../images/logo_oracle_footer.gif" width="100" height="29" alt="Oracle logo" /></td>
+           </tr>
+          </table>
+          </td>
+
+          <td width="55%" valign="middle" align="center">
+		<p class="footertext"><a href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> | <a href="http://www.oracle.com/technology/index.html">Oracle Technology Network</a> | <a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></p> 
+	 </td>
+          <td width="25%" valign="middle" align="right">
+      		<p class="footertext">Copyright &copy; 1995, 2014 Oracle and/or its affiliates. All rights reserved.</p>
+	 </td>
+     </tr>     
+</table>
+</div>
+    </div>
+    <div class="PrintHeaders">
+        <b>Previous page:</b> "Hello World!" for the NetBeans IDE
+        <br /><b>Next page:</b> "Hello World!" for Solaris OS and Linux
+    </div>
+</body>
+</html> 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <DataSource DataSourceSourceName="LOCAL">
+    <option name="DRIVER_CLASS" value="oracle.jdbc.OracleDriver" />
+    <option name="DATABASE_URL" value="jdbc:oracle:thin:@10.0.0.13:1521:ORCL" />
+    <option name="DRIVER_PATH" />
+    <option name="DATBASE_USERNAME" value="plamen" />
+    <option name="ENCODED_DATABASE_PASSWORD" value="dfdadfc6dfcbdfc7dfcfdfc4" />
+    <option name="DEFAULT_SCHEMA_NAME" />
+    <option name="TABLE_PATTERN" value="" />
+    <option name="UUID" value="f8976bdd-bffa-49e0-8e79-ed8d2b627030" />
+    <option name="NAME" value="DataSource" />
+    <option name="DATABASE_PRODUCT_NAME" />
+    <option name="DATABASE_PRODUCT_VERSION" />
+    <libraries>
+      <library>
+        <url>jar://E:/JAVA/NEW/JDBC/ojdbc6.jar!/</url>
+      </library>
+      <library>
+        <url>jar://E:/JAVA/NEW/JDBC/orai18n.jar!/</url>
+      </library>
+    </libraries>
+  </DataSource>
+</component>
+

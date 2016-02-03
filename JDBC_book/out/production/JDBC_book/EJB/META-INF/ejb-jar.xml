@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems Inc.//DTD
+ Enterprise JavaBeans 1.1//EN" "ejb-jar.dtd">
+<ejb-jar>
+    <enterprise-beans>
+        <session>
+            <description>no description</description>
+            <ejb-name>ProductBean</ejb-name>
+            <home>server.ProductHome</home>
+            <remote>server.ProductRemote</remote>
+            <ejb-class>server.ProductBean</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+            <resource-ref>
+                <res-ref-name>jdbc/DB1</res-ref-name>
+                <res-type>javax.sql.DataSource</res-type>
+                <res-auth>Application</res-auth>
+            </resource-ref>
+        </session>
+    </enterprise-beans>
+    <assembly-descriptor>
+        <security-role>
+            <description>no description</description>
+            <role-name>users</role-name>
+        </security-role>
+        <method-permission>
+            <description>no description</description>
+            <role-name>users</role-name>
+            <method>
+                <ejb-name>ProductBean</ejb-name>
+                <method-name>*</method-name>
+            </method>
+        </method-permission>
+        <container-transaction>
+            <description>no description</description>
+            <method>
+                <ejb-name>ProductBean</ejb-name>
+                <method-name>*</method-name>
+            </method>
+            <trans-attribute>Required</trans-attribute>
+        </container-transaction>
+    </assembly-descriptor>
+</ejb-jar>

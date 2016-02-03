@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/doublyLinked" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/firstLastList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/interIterator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkList2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkQueue" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkStack" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/listInsertionSort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sortedList" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+

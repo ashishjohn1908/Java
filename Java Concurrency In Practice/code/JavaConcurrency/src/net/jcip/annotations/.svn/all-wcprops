@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sunrep/!svn/ver/170/JavaConcurrency/src/net/jcip/annotations
+END
+ThreadSafe.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sunrep/!svn/ver/170/JavaConcurrency/src/net/jcip/annotations/ThreadSafe.class
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sunrep/!svn/ver/170/JavaConcurrency/src/net/jcip/annotations/package.html
+END
+NotThreadSafe.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sunrep/!svn/ver/170/JavaConcurrency/src/net/jcip/annotations/NotThreadSafe.class
+END
+GuardedBy.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sunrep/!svn/ver/170/JavaConcurrency/src/net/jcip/annotations/GuardedBy.java
+END
+GuardedBy.class
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sunrep/!svn/ver/170/JavaConcurrency/src/net/jcip/annotations/GuardedBy.class
+END
+NotThreadSafe.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sunrep/!svn/ver/170/JavaConcurrency/src/net/jcip/annotations/NotThreadSafe.java
+END
+ThreadSafe.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sunrep/!svn/ver/170/JavaConcurrency/src/net/jcip/annotations/ThreadSafe.java
+END
+Immutable.class
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sunrep/!svn/ver/170/JavaConcurrency/src/net/jcip/annotations/Immutable.class
+END
+Immutable.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sunrep/!svn/ver/170/JavaConcurrency/src/net/jcip/annotations/Immutable.java
+END

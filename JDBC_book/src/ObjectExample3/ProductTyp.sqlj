@@ -1,0 +1,122 @@
+import java.sql.SQLException;
+import oracle.jdbc.OracleConnection;
+import oracle.jdbc.OracleTypes;
+import java.sql.SQLData;
+import java.sql.SQLInput;
+import java.sql.SQLOutput;
+import oracle.sql.STRUCT;
+import oracle.jpub.runtime.MutableStruct;
+import sqlj.runtime.ref.DefaultContext;
+import sqlj.runtime.ConnectionContext;
+import java.sql.Connection;
+
+public class ProductTyp implements SQLData
+{
+  public static final String _SQL_NAME = "OBJECT_USER.PRODUCT_TYP";
+  public static final int _SQL_TYPECODE = OracleTypes.STRUCT;
+
+  /* connection management */
+  protected DefaultContext __tx = null;
+  protected Connection __onn = null;
+  public void setConnectionContext(DefaultContext ctx) throws SQLException
+  { release(); __tx = ctx; }
+  public DefaultContext getConnectionContext() throws SQLException
+  { if (__tx==null)
+    { __tx = (__onn==null) ? DefaultContext.getDefaultContext() : new DefaultContext(__onn); }
+    return __tx;
+  };
+  public Connection getConnection() throws SQLException
+  { return (__onn==null) ? ((__tx==null) ? null : __tx.getConnection()) : __onn; }
+  public void release() throws SQLException
+  { if (__tx!=null && __onn!=null) __tx.close(ConnectionContext.KEEP_CONNECTION);
+    __onn = null; __tx = null;
+  }
+
+  private java.math.BigDecimal m_id;
+  private String m_name;
+  private String m_description;
+  private java.math.BigDecimal m_price;
+  private java.math.BigDecimal m_daysValid;
+
+  /* constructors */
+  public ProductTyp()
+  { __tx = DefaultContext.getDefaultContext(); }
+  public ProductTyp(DefaultContext c) throws SQLException
+  { __tx = c; }
+  public ProductTyp(Connection c) throws SQLException
+  { __onn = c;  }
+
+  public void readSQL(SQLInput stream, String type)
+  throws SQLException
+  {
+      setId(stream.readBigDecimal());
+      setName(stream.readString());
+      setDescription(stream.readString());
+      setPrice(stream.readBigDecimal());
+      setDaysValid(stream.readBigDecimal());
+  }
+
+  public void writeSQL(SQLOutput stream)
+  throws SQLException
+  {
+      stream.writeBigDecimal(getId());
+      stream.writeString(getName());
+      stream.writeString(getDescription());
+      stream.writeBigDecimal(getPrice());
+      stream.writeBigDecimal(getDaysValid());
+  }
+
+  public String getSQLTypeName() throws SQLException
+  {
+    return _SQL_NAME;
+  }
+
+  /* accessor methods */
+  public java.math.BigDecimal getId()
+  { return m_id; }
+
+  public void setId(java.math.BigDecimal id)
+  { m_id = id; }
+
+
+  public String getName()
+  { return m_name; }
+
+  public void setName(String name)
+  { m_name = name; }
+
+
+  public String getDescription()
+  { return m_description; }
+
+  public void setDescription(String description)
+  { m_description = description; }
+
+
+  public java.math.BigDecimal getPrice()
+  { return m_price; }
+
+  public void setPrice(java.math.BigDecimal price)
+  { m_price = price; }
+
+
+  public java.math.BigDecimal getDaysValid()
+  { return m_daysValid; }
+
+  public void setDaysValid(java.math.BigDecimal daysValid)
+  { m_daysValid = daysValid; }
+
+
+  public java.sql.Timestamp getSellByDate ()
+  throws SQLException
+  {
+    ProductTyp __jPt_temp = this;
+    java.sql.Timestamp __jPt_result;
+    #sql [getConnectionContext()] {
+      BEGIN
+      :OUT __jPt_result := :__jPt_temp.GET_SELL_BY_DATE();
+      END;
+    };
+    return __jPt_result;
+  }
+}

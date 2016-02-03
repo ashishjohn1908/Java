@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/src/ch10/SuperSubCatch.java" />
+      <file url="file://$PROJECT_DIR$/src/ch3/ScopeErr.java" />
+      <file url="file://$PROJECT_DIR$/src/ch5/BreakErr.java" />
+      <file url="file://$PROJECT_DIR$/src/ch7/VarArgs4.java" />
+      <file url="file://$PROJECT_DIR$/src/ch10/ThrowsDemo.java" />
+    </excludeFromCompile>
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="?*.properties" />
+      <entry name="?*.xml" />
+      <entry name="?*.gif" />
+      <entry name="?*.png" />
+      <entry name="?*.jpeg" />
+      <entry name="?*.jpg" />
+      <entry name="?*.html" />
+      <entry name="?*.dtd" />
+      <entry name="?*.tld" />
+      <entry name="?*.ftl" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
+

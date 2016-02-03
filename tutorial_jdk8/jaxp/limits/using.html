@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Using the Limits (The Java&trade; Tutorials &gt;        
+            Java API for XML Processing (JAXP) &gt; Processing Limits)
+</title>
+
+     <meta name="description" content="This JAXP Java tutorial describes Java API for XML Processing (jaxp), XSLT, SAX, and related XML topics" />
+     <meta name="keywords" content="java programming, learn java, java sample code, jaxp, xml, xslt, sax" />
+        
+<style type="text/css">
+    .FigureCaption   { 
+        margin-left: 1in; 
+        margin-right: 1in; 
+        font-family: sans-serif; 
+        font-size: smaller; 
+        text-align: justify;
+    }
+    #TopBar_bl {
+        background: url(../../images/java_bar_bl.gif) 0 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_br {
+        background: url(../../images/java_bar_br.gif) 100% 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tl {
+        background: url(../../images/java_bar_tl.gif) 0 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tr {
+        background: url(../../images/java_bar_tr.gif) 100% 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar {
+        background: #35556B url(../../images/java_bar.gif);
+        margin: 10px 10px 0 10px;
+        height:60px;
+        min-width:700px;
+        color: white;
+        font-family: sans-serif; 
+        font-weight: bold;
+    }
+    @media print {
+        #BreadCrumbs, #Download {
+            display: none;
+        }
+    }
+    #TopBar_right {
+        line-height: 14px;
+        float: right;
+        padding-top: 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    @media print {
+        #TopBar_right {
+            display: none;
+        }
+    }
+    #TopBar_right a {
+        font-size: 12px;
+        margin: 3px;
+        padding: 0;
+    }
+    #TopBar a:visited, #TopBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    #TopBar a:hover, #TopBar a:active  {
+        background-color: white;
+        color: #35556B;
+    }
+    #BreadCrumbs {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+        float: right;
+    }
+    #BreadCrumbs a {
+        color: blue;
+    }
+    #BreadCrumbs a:visited, #BreadCrumbs a:link {
+        text-decoration: none;
+    }
+    #BreadCrumbs a:hover, #BreadCrumbs a:active {
+        text-decoration: underline;
+    }
+    #PageTitle {
+        margin: 0 5px 0.5em 0;
+        color: #F90000;
+    }    
+    #PageContent{
+        margin: 0 5px 0 20px;
+    }
+    .LeftBar_shown {
+        width: 13em;
+        float: left;
+        margin-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 2em;
+        margin-right: 10px;
+    }
+    @media print {
+        .LeftBar_shown {
+            display: none;
+        }
+    }
+    .LeftBar_hidden {
+        display: none;
+    }
+    #Footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footertext {
+        font-size: 10px;
+        font-family: sans-serif; 
+        margin-top: 1px;
+    }
+    
+    #Footer2 {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .NavBit  {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+    }
+    @media print {
+        .NavBit {
+            display: none;
+        }
+    }
+    #TagNotes {
+        text-align: right;        
+    }
+    
+    @media print {
+        #TagNotes a:visited, #TagNotes a:link {
+            color: #35556B;
+            text-decoration: none;
+        }
+    }
+    #Contents a, .NavBit a, #TagNotes a {
+        color: blue
+    }
+    #TagNotes a:visited, #TagNotes a:link,
+    #Contents a:visited, #Contents a:link,
+    .NavBit a:visited, .NavBit a:link {
+        text-decoration: none;
+    }
+    #TagNotes a:hover, #TagNotes a:active,   
+    #Contents a:hover, #Contents a:active,   
+    .NavBit a:hover, .NavBit a:active {  
+        text-decoration: underline;
+    }
+    #Contents {
+        float: left;
+        font-family: sans-serif; 
+    }
+    @media print {
+        #Contents {
+            display: none;
+        }
+    }
+    @media screen {
+        div.PrintHeaders {
+            display: none;
+        }
+    }
+    .linkLESSON, .nolinkLESSON {
+        margin-left: 0.5em;
+        text-indent: -0.5em
+    }
+    .linkAHEAD, .nolinkAHEAD, .linkQUESTIONS, .nolinkQUESTIONS   {
+        margin-left: 1.5em; 
+        text-indent: -0.5em
+    }
+    .linkBHEAD, .nolinkBHEAD   {
+        margin-left: 2.5em;
+        text-indent: -0.5em
+    }
+    .linkCHEAD, .nolinkCHEAD   {
+        margin-left: 3.5em;
+        text-indent: -0.5em
+    }
+    .nolinkLESSON, .nolinkAHEAD, .nolinkBHEAD, .nolinkCHEAD,
+    .nolinkQUESTIONS {
+        font-weight: bold;
+        color: #F90000;
+    }
+    .MainFlow_indented {
+        margin-right: 10px;
+        margin-left: 15em;
+        margin-bottom: 2em;
+
+    }
+    .MainFlow_wide {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 2em;
+
+    }
+    @media print {
+        .MainFlow_indented, .MainFlow_wide {
+            padding-top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: #F90000;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+
+    #ToggleLeft {
+        display: none;
+    }
+    
+    .note {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .codeblock {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .tocli {
+        list-style-type:none;
+    }
+
+    .betadraft {
+        color: red;
+    }
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+    function leftBar() {
+        var nameq = 'tutorial_showLeftBar='
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookieString = cookies[i];
+            while (cookieString.charAt(0) == ' ') {
+                cookieString = cookieString.substring(1, cookieString.length);
+            }
+            if (cookieString.indexOf(nameq) == 0) {
+                cookieValue =  cookieString.substring(nameq.length,
+                        cookieString.length);
+                return cookieValue == 'yes';
+            }
+        }
+        return true;
+    }
+
+    function showLeft(b) {
+        var contents = document.getElementById("LeftBar");
+        var main = document.getElementById("MainFlow");
+        var toggle = document.getElementById("ToggleLeft");
+        if (b) {
+            contents.className = "LeftBar_shown";
+            main.className = "MainFlow_indented";
+            toggle.innerHTML = "Hide TOC";
+            document.cookie = 'tutorial_showLeftBar=yes; path=/';
+        } else {
+            contents.className = "LeftBar_hidden";
+            main.className = "MainFlow_wide";
+            toggle.innerHTML = "Show the TOC";
+            document.cookie = 'tutorial_showLeftBar=no; path=/';
+        }
+    }
+
+    function toggleLeft() {
+        showLeft(document.getElementById("LeftBar").className ==
+                "LeftBar_hidden");
+        document.getElementById("ToggleLeft").blur();
+    }
+
+    function load() {
+        showLeft(leftBar());
+        document.getElementById("ToggleLeft").style.display="inline";
+    }
+
+    function showCode(displayCodePage, codePath) {
+        var codePathEls = codePath.split("/");
+        var currDocPathEls = location.href.split("/");
+        //alert ("codePathEls = " + codePathEls + "\n" + "currDocPathEls = " + currDocPathEls);
+        currDocPathEls.pop(); // remove file name at the end
+        while (codePathEls.length > 0) {
+            if (codePathEls[0] == "..") {
+                codePathEls.shift();
+                currDocPathEls.pop();
+            } else {
+                break;
+            }
+        }
+        var fullCodePath = currDocPathEls.join("/") + "/" + codePathEls.join("/");
+        //alert ("fullCodePath = " + fullCodePath );
+        if (codePath.indexOf(".java") != -1 || codePath.indexOf(".jnlp") != -1) {
+            window.location.href = displayCodePage + "?code=" + encodeURI(fullCodePath);
+        } else {
+            window.location.href = fullCodePath;
+        }
+    }
+/* ]]> */    
+</script>
+
+
+    </head>
+<body onload="load()">
+    <noscript>
+        A browser with JavaScript enabled is required for this page to operate properly.
+    </noscript>
+
+    <div id="TopBar"> <div id="TopBar_tr"> <div id="TopBar_tl"> <div id="TopBar_br"> <div id="TopBar_bl"> 
+                        <div id="TopBar_right"> 
+                            <a target="_blank"
+				href="http://www.oracle.com/technetwork/java/javase/downloads/java-se-7-tutorial-2012-02-28-1536013.html">Download Ebooks</a><br />
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Download JDK</a>
+                            <br />
+                            <a href="../../search.html" target="_blank">Search Java Tutorials</a>
+                            <br />
+                            <a href="javascript:toggleLeft()"
+                                id="ToggleLeft">Hide TOC</a>
+                        </div>
+                    </div> </div> </div> </div> </div>
+    <div class="PrintHeaders">
+        <b>Trail:</b> Java API for XML Processing (JAXP)
+        <br /><b>Lesson:</b> Processing Limits
+    </div>
+
+    <div id="LeftBar" class="LeftBar_shown">
+        <div id="Contents">
+            <div class="linkLESSON"><a href="index.html">Processing Limits</a></div>
+<div class="linkAHEAD"><a href="limits.html">New Limits</a></div>
+<div class="linkAHEAD"><a href="scope.html">Scope and Order</a></div>
+<div class="nolinkAHEAD">Using the Limits</div>
+<div class="linkAHEAD"><a href="error.html">Error Handling</a></div>
+<div class="linkAHEAD"><a href="stax.html">StAX</a></div>
+<div class="linkAHEAD"><a href="sample.html">Samples</a></div>
+</div>
+    </div>
+    <div id="MainFlow" class="MainFlow_indented">
+            <span id="BreadCrumbs">
+                <a href="../../index.html" target="_top">Home Page</a>
+                &gt;
+                <a href="../index.html" target="_top">Java API for XML Processing (JAXP)</a>
+                &gt;
+                <a href="index.html" target="_top">Processing Limits</a>
+            </span>
+            <div class="NavBit">
+                <a target="_top" href="scope.html">&laquo;&nbsp;Previous</a>&nbsp;&bull;&nbsp;<a target="_top" href="../TOC.html">Trail</a>&nbsp;&bull;&nbsp;<a target="_top" href="error.html">Next&nbsp;&raquo;</a>
+            </div>
+            <div id="PageTitle"><h1>Using the Limits</h1></div>
+            <div id="PageContent">
+
+<h2>Evaluating Threats</h2>
+<p>
+Exploits to the limitations of the JAXP implementation can happen only when applications process untrusted XML, XSD, or XSL files. Internal systems and applications generally do not need to worry about such threats. Even applications that have external exposure may not be subject to these threats so long as they do not take untrusted XML, XSD, or XSL files as input.</p>
+
+<h2>Memory Setting and Limits</h2>
+<p>
+The limits are closely related to the default memory size settings in a Java Virtual Machine (JVM). That is, they are designed so that excessive DTD constructs are caught by the limits when the JVM is started with the default memory setting, and especially the memory size, for the client VM. They can be increased when running with an increased memory setting or on a server VM, if needed.</p>
+<p>
+In general, the default limits have been set to relatively large numbers that are enough for most applications. It is recommended that users evaluate the usages and set the limits to the smallest possible value so that, in the event of encountering malformed inputs, the problem can be caught earlier without wasting too many resources.</p>
+
+<h2>Estimating the Limits Using the getEntityCountInfo Property</h2>
+<p>
+To help users analyze what are proper limits, a special property called <tt>http://www.oracle.com/xml/jaxp/properties/getEntityCountInfo</tt> is available. The following code snippet shows an example of using the property:</p>
+<div class="codeblock"><pre>
+parser.setProperty("http://www.oracle.com/xml/jaxp/properties/getEntityCountInfo", "yes");
+</pre></div>
+<p>
+See
+<a class="TutorialLink" target="_top" href="sample.html">Samples</a> for more information on downloading the example code.</p>
+<p>
+When the program is run with the DTD in W3C MathML 3.0, it prints out the following table:</p>
+
+<table border="1" summary="a table showing the values when the parser property getEntityCountInfo is set to yes">
+
+<tr>
+<th id="h1">Property</th>
+<th id="h2">Limit</th>
+<th id="h3">Total Size</th>
+<th id="h4">Size</th>
+<th id="h5">Entity Name</th>
+</tr>
+
+<tr>
+<td headers="h1"><tt>ENTITY_EXPANSION_LIMIT</tt></td>
+<td headers="h2">64000</td>
+<td headers="h3">1417</td>
+<td headers="h4">0</td>
+<td headers="h5"><tt>null</tt></td>
+</tr>
+
+<tr>
+<td headers="h1"><tt>MAX_OCCUR_NODE_LIMIT</tt></td>
+<td headers="h2">5000</td>
+<td headers="h3">0</td>
+<td headers="h4">0</td> 
+<td headers="h5"><tt>null</tt></td>
+</tr>
+
+<tr>
+<td headers="h1"><tt>ELEMENT_ATTRIBUTE_LIMIT</tt></td>
+<td headers="h2">10000</td>
+<td headers="h3">0</td>
+<td headers="h4">0</td>
+<td headers="h5"><tt>null</tt></td>
+</tr>
+
+<tr>
+<td headers="h1"><tt>TOTAL_ENTITY_SIZE_LIMIT</tt></td>
+<td headers="h2">50000000</td>
+<td headers="h3">55425</td>
+<td headers="h4">0</td>
+<td headers="h5"><tt>null</tt></td>
+</tr>
+
+<tr>
+<td headers="h1"><tt>GENEAL_ENTITY_SIZE_LIMIT</tt></td>
+<td headers="h2">0</td>
+<td headers="h3">0</td>
+<td headers="h4">0</td>
+<td headers="h5"><tt>null</tt></td>
+</tr>
+
+<tr>
+<td headers="h1"><tt>PARAMETER_ENTITY_SIZE_LIMIT</tt></td>
+<td headers="h2">1000000</td>
+<td headers="h3">0</td>
+<td headers="h4">7303</td>
+<td headers="h5">%MultiScriptExpression</td>
+</tr>
+</table>
+
+<p>
+In this example, the total number of entity references, or the entity expansion, is 1417; the default limit is 64000. The total size of all entities is 55425; the default limit is 50000000. The biggest parameter entity is <tt>%MultiScriptExpression</tt> with a length of 7303 after all references are resolved; the default limit is 1000000.</p>
+<p>
+If this is the largest file that the application is expected to process, it is recommended that the limits be set to smaller numbers. For example, 2000 for <tt>ENTITY_EXPANSION_LIMIT</tt>, 100000 for <tt>TOTAL_ENTITY_SIZE_LIMIT</tt>, and 20000 for <tt>PARAMETER_ENTITY_SIZE_LIMIT</tt>.</p>
+
+<h2>Setting Limits</h2>
+<p>
+Limits can be set in the same way as other JAXP properties. They can be set through factory methods, or through the parser:</p>
+<div class="codeblock"><pre>
+DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+dbf.setAttribute(name, value);
+ 
+SAXParserFactory spf = SAXParserFactory.newInstance();
+SAXParser parser = spf.newSAXParser();
+parser.setProperty(name, value);
+ 
+XMLInputFactory xif = XMLInputFactory.newInstance();
+xif.setProperty(name, value);
+ 
+SchemaFactory schemaFactory = SchemaFactory.newInstance(schemaLanguage);
+schemaFactory.setProperty(name, value);
+ 
+TransformerFactory factory = TransformerFactory.newInstance();
+factory.setAttribute(name, value);
+</pre></div>
+
+<p>
+The following example shows how to set limits using <tt>DocumentBuilderFactory</tt>:</p>
+<div class="codeblock"><pre>
+dbf.setAttribute(JDK_ENTITY_EXPANSION_LIMIT, "2000");
+dbf.setAttribute(TOTAL_ENTITY_SIZE_LIMIT, "100000");
+dbf.setAttribute(PARAMETER_ENTITY_SIZE_LIMIT, "20000");
+</pre></div>
+
+<h2>Using System Properties</h2>
+<p>
+System properties may be useful if changing code is not feasible.</p>
+<p>
+To set limits for an entire invocation of the JDK or JRE, set the system properties on the command line. To set the limits for only a portion of the application, the system properties may be set before the section and cleared afterwards. The following code shows how system properties may be used:</p>
+<div class="codeblock"><pre>
+public static final String SP_GENEAL_ENTITY_SIZE_LIMIT = "jdk.xml.maxGeneralEntitySizeLimit";
+
+//set limits using system property
+System.setProperty(SP_GENEAL_ENTITY_SIZE_LIMIT, "2000");
+
+//this setting will affect all processing after it's set
+...
+
+//after it is done, clear the property
+System.clearProperty(SP_GENEAL_ENTITY_SIZE_LIMIT);
+</pre></div>
+<p>
+See
+<a class="TutorialLink" target="_top" href="sample.html">Samples</a> for more information on downloading the example code.</p>
+    
+<h2>Using the jaxp.properties File</h2>
+<p>
+The <tt>jaxp.properties</tt> file is a plain configuration file. It is located at <tt>${<em>java.home</em>}/lib/jaxp.properties</tt> where <tt><em>java.home</em></tt> is the JRE install directory, e.g., <em>[path to installation directory]</em>/jdk7/jre.</p>
+<p>
+A limit can be set by adding the following line to the <tt>jaxp.properties</tt> file:</p>
+<div class="codeblock"><pre>
+jdk.xml.maxGeneralEntitySizeLimit=2000
+</pre></div>
+<p>
+Note that the property name is the same as that of the system property and has the prefix <tt>jdk.xml</tt>.</p>
+<p>
+When the property is set via the file, all invocations of the JDK and JRE will observe the limit.</p>
+
+
+        </div>
+        <div class="NavBit">
+            <a target="_top" href="scope.html">&laquo; Previous</a>
+            &bull;
+            <a target="_top" href="../TOC.html">Trail</a>
+            &bull;
+            <a target="_top" href="error.html">Next &raquo;</a>
+        </div>
+    </div>
+    <div id="Footer2">
+<hr />
+<div id="TagNotes">
+    <p class="footertext">Problems with the examples? Try <a target="_blank"
+        href="../../information/run-examples.html">Compiling and Running
+        the Examples: FAQs</a>.
+    <br />
+    Complaints? Compliments? Suggestions? <a target="_blank"
+        href="http://docs.oracle.com/javase/feedback.html">Give
+    us your feedback</a>.
+    </p>
+</div> 
+
+<div id="Footer">
+<p class="footertext"><a name="license_info">Your use of this</a> page and all the material on pages under &quot;The Java Tutorials&quot; banner 
+ is subject to these <a href="../../information/cpyr.html">legal notices</a>.
+</p>
+<table border="0" cellspacing="0" cellpadding="5" summary="">
+    <tr>
+         <td width="20%">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td headers="h101" align="center"><img id="duke" src="../../images/DukeWave.gif" width="55" height="55" alt="duke image" /></td>
+              <td headers="h102" align="left" valign="middle"><img id="oracle" src="../../images/logo_oracle_footer.gif" width="100" height="29" alt="Oracle logo" /></td>
+           </tr>
+          </table>
+          </td>
+
+          <td width="55%" valign="middle" align="center">
+		<p class="footertext"><a href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> | <a href="http://www.oracle.com/technology/index.html">Oracle Technology Network</a> | <a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></p> 
+	 </td>
+          <td width="25%" valign="middle" align="right">
+      		<p class="footertext">Copyright &copy; 1995, 2014 Oracle and/or its affiliates. All rights reserved.</p>
+	 </td>
+     </tr>     
+</table>
+</div>
+    </div>
+    <div class="PrintHeaders">
+        <b>Previous page:</b> Scope and Order
+        <br /><b>Next page:</b> Error Handling
+    </div>
+</body>
+</html> 

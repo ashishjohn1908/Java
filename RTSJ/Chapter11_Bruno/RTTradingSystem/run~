@@ -1,0 +1,10 @@
+AS_HOME=/opt/SUNWappserver
+JAVA_RTS_HOME=/opt/SUNWrtjv
+
+JAVA_ARGS="-Xmx64m -XX:ImmortalSize=10m -Dcom.sun.management.jmxremote.port=9999 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
+
+CP=./dist/RTTradingSystem.jar:.:${AS_HOME}/lib/appserv-admin.jar:${AS_HOME}/lib/appserv-rt.jar:${AS_HOME}/lib/javaee.jar:${AS_HOME}/lib/install/applications/jmsra/imqjmsra.jar:${AS_HOME}/imq/lib/imq.jar:${AS_HOME}/imq/lib/jms.jar
+
+${JAVA_RTS_HOME}/bin/java ${JAVA_ARGS} -classpath ${CP} com.sun.oss.trader.Main
+
+

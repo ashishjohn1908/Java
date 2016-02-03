@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="dependencies3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/chapter6/Ch6Log4j/dependencies/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/chapter6/Ch6Log4j/dependencies/slf4j-log4j12-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/chapter6/Ch6Log4j/dependencies/slf4j-api-1.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

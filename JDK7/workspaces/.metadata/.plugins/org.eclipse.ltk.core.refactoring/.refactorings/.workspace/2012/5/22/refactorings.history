@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Book JDK 7/src/ch13/BRRead.txt&apos;" deleteContents="false" description="Delete resource &apos;Book JDK 7/src/ch13/BRRead.txt&apos;" element1="/Book JDK 7/src/ch13/BRRead.txt" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1338416260840"/>
+</session>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<project name="asianoptions" basedir="." default="all">
+
+	<property name="name" value="asianoptions" />
+
+
+	<property name="src.dir" value="src"/>
+    <property name="classes.dir" value="exploded/WEB-INF/classes"/>
+    <property name="build.dir" value="exploded"/>
+	<property name="dist.dir" value="dist"/>
+    <property name="jsp.dir" value="jsp"/>
+    <property name="image.dir" value="image"/>
+
+
+
+ <!--
+
+	<target name="build" description="Compile main source tree java files into class files, generate jar files">
+
+		<javac destdir="${classes.dir}" source="1.5" target="1.5" debug="true"
+				deprecation="false" optimize="false" failonerror="true">
+			<src path="${src.dir}"/>
+			<classpath refid="classpath"/>
+		</javac>
+	</target>
+-->
+
+
+	<target name="warfile" description="Build the web application archive">
+
+		<mkdir dir="${dist.dir}"/>
+
+		<war warfile="${dist.dir}/${name}.war" webxml="${build.dir}/WEB-INF/web.xml">
+            <fileset dir="${build.dir}"/>
+            <fileset dir="${jsp.dir}"/>
+            <fileset dir="${image.dir}"/>
+            <fileset dir="${classes.dir}"/>
+
+        </war>
+
+	</target>
+
+    <target name="dist" depends="warfile">
+		<!--
+			Delegate to warfile target by depending on it. dist is just to offer
+			a generic target name across all Spring sample apps that may be used
+			for autobuilds testing.
+		-->
+	</target>
+
+
+    <target name="all" depends="warfile" description="Clean,build,docs,warfile"/>
+
+</project>
+

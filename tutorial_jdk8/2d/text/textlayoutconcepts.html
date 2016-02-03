@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Text Layout Concepts (The Java&trade; Tutorials &gt;        
+            2D Graphics &gt; Working with Text APIs)
+</title>
+
+     <meta name="description" content="This 2d Java tutorial describes 2d graphics, geometry, text APIs, images, printing, advanced 2d topics" />
+     <meta name="keywords" content="java programming, learn java, java sample code, java 2d" />
+        
+<style type="text/css">
+    .FigureCaption   { 
+        margin-left: 1in; 
+        margin-right: 1in; 
+        font-family: sans-serif; 
+        font-size: smaller; 
+        text-align: justify;
+    }
+    #TopBar_bl {
+        background: url(../../images/java_bar_bl.gif) 0 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_br {
+        background: url(../../images/java_bar_br.gif) 100% 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tl {
+        background: url(../../images/java_bar_tl.gif) 0 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tr {
+        background: url(../../images/java_bar_tr.gif) 100% 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar {
+        background: #35556B url(../../images/java_bar.gif);
+        margin: 10px 10px 0 10px;
+        height:60px;
+        min-width:700px;
+        color: white;
+        font-family: sans-serif; 
+        font-weight: bold;
+    }
+    @media print {
+        #BreadCrumbs, #Download {
+            display: none;
+        }
+    }
+    #TopBar_right {
+        line-height: 14px;
+        float: right;
+        padding-top: 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    @media print {
+        #TopBar_right {
+            display: none;
+        }
+    }
+    #TopBar_right a {
+        font-size: 12px;
+        margin: 3px;
+        padding: 0;
+    }
+    #TopBar a:visited, #TopBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    #TopBar a:hover, #TopBar a:active  {
+        background-color: white;
+        color: #35556B;
+    }
+    #BreadCrumbs {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+        float: right;
+    }
+    #BreadCrumbs a {
+        color: blue;
+    }
+    #BreadCrumbs a:visited, #BreadCrumbs a:link {
+        text-decoration: none;
+    }
+    #BreadCrumbs a:hover, #BreadCrumbs a:active {
+        text-decoration: underline;
+    }
+    #PageTitle {
+        margin: 0 5px 0.5em 0;
+        color: #F90000;
+    }    
+    #PageContent{
+        margin: 0 5px 0 20px;
+    }
+    .LeftBar_shown {
+        width: 13em;
+        float: left;
+        margin-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 2em;
+        margin-right: 10px;
+    }
+    @media print {
+        .LeftBar_shown {
+            display: none;
+        }
+    }
+    .LeftBar_hidden {
+        display: none;
+    }
+    #Footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footertext {
+        font-size: 10px;
+        font-family: sans-serif; 
+        margin-top: 1px;
+    }
+    
+    #Footer2 {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .NavBit  {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+    }
+    @media print {
+        .NavBit {
+            display: none;
+        }
+    }
+    #TagNotes {
+        text-align: right;        
+    }
+    
+    @media print {
+        #TagNotes a:visited, #TagNotes a:link {
+            color: #35556B;
+            text-decoration: none;
+        }
+    }
+    #Contents a, .NavBit a, #TagNotes a {
+        color: blue
+    }
+    #TagNotes a:visited, #TagNotes a:link,
+    #Contents a:visited, #Contents a:link,
+    .NavBit a:visited, .NavBit a:link {
+        text-decoration: none;
+    }
+    #TagNotes a:hover, #TagNotes a:active,   
+    #Contents a:hover, #Contents a:active,   
+    .NavBit a:hover, .NavBit a:active {  
+        text-decoration: underline;
+    }
+    #Contents {
+        float: left;
+        font-family: sans-serif; 
+    }
+    @media print {
+        #Contents {
+            display: none;
+        }
+    }
+    @media screen {
+        div.PrintHeaders {
+            display: none;
+        }
+    }
+    .linkLESSON, .nolinkLESSON {
+        margin-left: 0.5em;
+        text-indent: -0.5em
+    }
+    .linkAHEAD, .nolinkAHEAD, .linkQUESTIONS, .nolinkQUESTIONS   {
+        margin-left: 1.5em; 
+        text-indent: -0.5em
+    }
+    .linkBHEAD, .nolinkBHEAD   {
+        margin-left: 2.5em;
+        text-indent: -0.5em
+    }
+    .linkCHEAD, .nolinkCHEAD   {
+        margin-left: 3.5em;
+        text-indent: -0.5em
+    }
+    .nolinkLESSON, .nolinkAHEAD, .nolinkBHEAD, .nolinkCHEAD,
+    .nolinkQUESTIONS {
+        font-weight: bold;
+        color: #F90000;
+    }
+    .MainFlow_indented {
+        margin-right: 10px;
+        margin-left: 15em;
+        margin-bottom: 2em;
+
+    }
+    .MainFlow_wide {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 2em;
+
+    }
+    @media print {
+        .MainFlow_indented, .MainFlow_wide {
+            padding-top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: #F90000;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+
+    #ToggleLeft {
+        display: none;
+    }
+    
+    .note {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .codeblock {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .tocli {
+        list-style-type:none;
+    }
+
+    .betadraft {
+        color: red;
+    }
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+    function leftBar() {
+        var nameq = 'tutorial_showLeftBar='
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookieString = cookies[i];
+            while (cookieString.charAt(0) == ' ') {
+                cookieString = cookieString.substring(1, cookieString.length);
+            }
+            if (cookieString.indexOf(nameq) == 0) {
+                cookieValue =  cookieString.substring(nameq.length,
+                        cookieString.length);
+                return cookieValue == 'yes';
+            }
+        }
+        return true;
+    }
+
+    function showLeft(b) {
+        var contents = document.getElementById("LeftBar");
+        var main = document.getElementById("MainFlow");
+        var toggle = document.getElementById("ToggleLeft");
+        if (b) {
+            contents.className = "LeftBar_shown";
+            main.className = "MainFlow_indented";
+            toggle.innerHTML = "Hide TOC";
+            document.cookie = 'tutorial_showLeftBar=yes; path=/';
+        } else {
+            contents.className = "LeftBar_hidden";
+            main.className = "MainFlow_wide";
+            toggle.innerHTML = "Show the TOC";
+            document.cookie = 'tutorial_showLeftBar=no; path=/';
+        }
+    }
+
+    function toggleLeft() {
+        showLeft(document.getElementById("LeftBar").className ==
+                "LeftBar_hidden");
+        document.getElementById("ToggleLeft").blur();
+    }
+
+    function load() {
+        showLeft(leftBar());
+        document.getElementById("ToggleLeft").style.display="inline";
+    }
+
+    function showCode(displayCodePage, codePath) {
+        var codePathEls = codePath.split("/");
+        var currDocPathEls = location.href.split("/");
+        //alert ("codePathEls = " + codePathEls + "\n" + "currDocPathEls = " + currDocPathEls);
+        currDocPathEls.pop(); // remove file name at the end
+        while (codePathEls.length > 0) {
+            if (codePathEls[0] == "..") {
+                codePathEls.shift();
+                currDocPathEls.pop();
+            } else {
+                break;
+            }
+        }
+        var fullCodePath = currDocPathEls.join("/") + "/" + codePathEls.join("/");
+        //alert ("fullCodePath = " + fullCodePath );
+        if (codePath.indexOf(".java") != -1 || codePath.indexOf(".jnlp") != -1) {
+            window.location.href = displayCodePage + "?code=" + encodeURI(fullCodePath);
+        } else {
+            window.location.href = fullCodePath;
+        }
+    }
+/* ]]> */    
+</script>
+
+
+    </head>
+<body onload="load()">
+    <noscript>
+        A browser with JavaScript enabled is required for this page to operate properly.
+    </noscript>
+
+    <div id="TopBar"> <div id="TopBar_tr"> <div id="TopBar_tl"> <div id="TopBar_br"> <div id="TopBar_bl"> 
+                        <div id="TopBar_right"> 
+                            <a target="_blank"
+				href="http://www.oracle.com/technetwork/java/javase/downloads/java-se-7-tutorial-2012-02-28-1536013.html">Download Ebooks</a><br />
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Download JDK</a>
+                            <br />
+                            <a href="../../search.html" target="_blank">Search Java Tutorials</a>
+                            <br />
+                            <a href="javascript:toggleLeft()"
+                                id="ToggleLeft">Hide TOC</a>
+                        </div>
+                    </div> </div> </div> </div> </div>
+    <div class="PrintHeaders">
+        <b>Trail:</b> 2D Graphics
+        <br /><b>Lesson:</b> Working with Text APIs
+    </div>
+
+    <div id="LeftBar" class="LeftBar_shown">
+        <div id="Contents">
+            <div class="linkLESSON"><a href="index.html">Working with Text APIs</a></div>
+<div class="linkAHEAD"><a href="fontconcepts.html">Font Concepts</a></div>
+<div class="nolinkAHEAD">Text Layout Concepts</div>
+<div class="linkAHEAD"><a href="fonts.html">Physical and Logical Fonts</a></div>
+<div class="linkAHEAD"><a href="measuringtext.html">Measuring Text</a></div>
+<div class="linkAHEAD"><a href="advanced.html">Advanced Text Display</a></div>
+<div class="linkBHEAD"><a href="renderinghints.html">Displaying Antialiased Text by Using Rendering Hints</a></div>
+<div class="linkBHEAD"><a href="textattributes.html">Using Text Attributes to Style Text</a></div>
+<div class="linkBHEAD"><a href="drawmulstring.html">Drawing Multiple Lines of Text</a></div>
+<div class="linkBHEAD"><a href="textlayoutbidirectionaltext.html">Working with Bidirectional Text</a></div>
+</div>
+    </div>
+    <div id="MainFlow" class="MainFlow_indented">
+            <span id="BreadCrumbs">
+                <a href="../../index.html" target="_top">Home Page</a>
+                &gt;
+                <a href="../index.html" target="_top">2D Graphics</a>
+                &gt;
+                <a href="index.html" target="_top">Working with Text APIs</a>
+            </span>
+            <div class="NavBit">
+                <a target="_top" href="fontconcepts.html">&laquo;&nbsp;Previous</a>&nbsp;&bull;&nbsp;<a target="_top" href="../TOC.html">Trail</a>&nbsp;&bull;&nbsp;<a target="_top" href="fonts.html">Next&nbsp;&raquo;</a>
+            </div>
+            <div id="PageTitle"><h1>Text Layout Concepts</h1></div>
+            <div id="PageContent">
+
+<p>Before a piece of text can be displayed, it must be properly shaped and positioned using the appropriate glyphs and ligatures. This process is referred to as <em>text layout</em>. The text layout process involves the following:</p>
+
+<ul>
+  <li>Shaping text using the appropriate glyphs and ligatures</li>
+  <li>Properly ordering the text</li>
+  <li>Measuring and positioning the text</li>
+</ul>
+
+<p>The information used to lay out text is also necessary for performing
+text operations such as caret positioning, hit detection, and
+highlighting. See
+<a class="TutorialLink" target="_top" href="../text/textlayoutbidirectionaltext.html">Working with Bidirectional Text</a> for more information about these text operations.</p>
+
+<p>To develop software that can be deployed in international markets, text must be laid out in different languages in a way that conforms to the rules of the appropriate writing system.</p>
+
+<p>This section covers the following topics:</p>
+
+<ul>
+  <li><a href="#shaping_text">Shaping Text</a></li>
+  <li><a href="#ordering_text">Ordering Text</a></li>
+  <li><a href="#measuring_and_positioning_text">Measuring and Positioning Text</a></li>
+</ul>
+
+<h2><a name="shaping_text">Shaping Text</a></h2>
+
+<p>A <em>glyph</em> is the visual representation of one or more characters. The shape, size, and position of a glyph is
+dependent on its context. Many different glyphs can be used to represent a single character or combination of characters, depending on the font and style.</p>
+
+<p>For example, in handwritten cursive text, a particular character can take on different shapes depending on how it is connected to adjacent
+characters.
+</p>
+
+<p>In some writing systems, particularly Arabic, the context of a glyph must always be taken into account. Unlike in English, cursive forms are mandatory in Arabic; it is unacceptable to present text without using cursive forms.</p>
+
+<p>
+Depending on the context, these cursive forms can differ radically in shape. For example, the Arabic letter <em>heh</em> has the four cursive forms shown in the following figure:</p>
+
+<center><img src="../../figures/2d/text/j2d-fonts3.gif" width="359" height="106" align="bottom" alt="Illustration of unconnected, connect on right, connect on both sides and connect on left cursive forms in Arabic" /></center>
+<p>Although these four forms are quite different from one another, such
+cursive shape-changing is not fundamentally different from cursive
+writing in English.
+</p>
+
+<p>
+In some contexts, two glyphs can change shape even more radically and
+merge to form a single glyph. This type of merged glyph is called a <em>ligature</em>. For example, most English fonts contain the ligature <em>fi</em> shown in the following figure:
+</p>
+
+<center><img src="../../figures/2d/text/j2d-fonts7.gif" width="359" height="89" align="bottom" alt="Ligature for fi" /></center>
+<p>The merged glyph takes into account the overhang on the letter <em>f</em> and combines the characters in a natural-looking way, instead of simply letting the letters collide.</p>
+
+<p>Ligatures are also used in Arabic and the use of some ligatures is
+mandatory; it is unacceptable to present certain character combinations
+without using the appropriate ligature. When ligatures are formed from
+Arabic characters, the shapes change even more radically than they do in
+ English. For example, the following figure illustrates how two Arabic characters are combined into a single ligature when they appear together.
+</p>
+
+<center><img src="../../figures/2d/text/j2d-fonts8.gif" width="359" height="100" align="bottom" alt="How two Arabic characters are combined into a single ligature when they appear together" /></center>
+
+
+<!-- ********************************************** -->
+
+<h2><a name="ordering_text">Ordering Text</a></h2>
+
+<p>In the Java programming language, text is encoded using Unicode character encoding. Text that uses Unicode character encoding is stored in memory in <em>logical order</em>. Logical order is the order in which characters and words are read and written. The logical order is not necessarily the same as the <em>visual order</em>, the order in which the corresponding glyphs are displayed.</p>
+
+<p>The visual order for glyphs in a particular writing system (script) is called the <em>script order</em>. For example, the script order for Roman text is left-to-right and the script order for Arabic and Hebrew is right-to-left.</p>
+
+<p>Some writing systems have rules in addition to script order for arranging glyphs and words on lines of text. For example, Arabic and Hebrew numbers run left to right, even though the letters run right to left. This means that Arabic and Hebrew, even with no embedded English text, are truly bidirectional. See
+<a class="TutorialLink" target="_top" href="textlayoutbidirectionaltext.html">Working with Bidirectional Text</a> for more information.</p>
+
+
+<!-- ********************************************************************************************** -->
+
+<h2><a name="measuring_and_positioning_text">Measuring and Positioning Text</a></h2>
+
+<p>
+Unless you are working with a monospaced font, different characters in a
+font have different widths. This means that all positioning and
+measuring of text has to take into account exactly which characters are
+used, not just how many. For example, to right-align a column of numbers
+displayed in a proportional font, you can't simply use extra spaces to
+position the text. To properly align the column, you need to know the
+exact width of each number so that you can adjust accordingly.
+</p>
+
+<p>
+Text is often displayed using multiple fonts and styles, such as bold or
+ italic. In this case, even the same character can have different shapes
+ and widths, depending on how it is styled. To properly position,
+measure, and render text, you need to keep track of each individual
+character <em>and</em> the style applied to that character. Fortunately, the
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/awt/font/TextLayout.html"><code>TextLayout</code></a> class does this for you.
+</p>
+
+<p>
+To properly display text in languages such as Hebrew and Arabic, each
+individual character needs to be measured and positioned within the
+context of neighboring characters. Because the shapes and positions of
+the characters can change depending on the context, measuring and
+positioning such text without taking the context into account produces
+unacceptable results.
+</p>
+
+<p>In addition, Java SE provides you with the
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/awt/FontMetrics.html"><code>FontMetrics</code></a> class, which enables you to obtain measurements of text rendered by a
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/awt/Font.html"><code>Font</code></a> object such as the height of a line of text in the font. You can use this
+information to precisely position text in Java graphical applications. See
+<a class="TutorialLink" target="_top" href="measuringtext.html">Measuring Text</a> for more information.</p>
+
+
+        </div>
+        <div class="NavBit">
+            <a target="_top" href="fontconcepts.html">&laquo; Previous</a>
+            &bull;
+            <a target="_top" href="../TOC.html">Trail</a>
+            &bull;
+            <a target="_top" href="fonts.html">Next &raquo;</a>
+        </div>
+    </div>
+    <div id="Footer2">
+<hr />
+<div id="TagNotes">
+    <p class="footertext">Problems with the examples? Try <a target="_blank"
+        href="../../information/run-examples.html">Compiling and Running
+        the Examples: FAQs</a>.
+    <br />
+    Complaints? Compliments? Suggestions? <a target="_blank"
+        href="http://docs.oracle.com/javase/feedback.html">Give
+    us your feedback</a>.
+    </p>
+</div> 
+
+<div id="Footer">
+<p class="footertext"><a name="license_info">Your use of this</a> page and all the material on pages under &quot;The Java Tutorials&quot; banner 
+ is subject to these <a href="../../information/cpyr.html">legal notices</a>.
+</p>
+<table border="0" cellspacing="0" cellpadding="5" summary="">
+    <tr>
+         <td width="20%">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td headers="h1" align="center"><img id="duke" src="../../images/DukeWave.gif" width="55" height="55" alt="duke image" /></td>
+              <td headers="h2" align="left" valign="middle"><img id="oracle" src="../../images/logo_oracle_footer.gif" width="100" height="29" alt="Oracle logo" /></td>
+           </tr>
+          </table>
+          </td>
+
+          <td width="55%" valign="middle" align="center">
+		<p class="footertext"><a href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> | <a href="http://www.oracle.com/technology/index.html">Oracle Technology Network</a> | <a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></p> 
+	 </td>
+          <td width="25%" valign="middle" align="right">
+      		<p class="footertext">Copyright &copy; 1995, 2014 Oracle and/or its affiliates. All rights reserved.</p>
+	 </td>
+     </tr>     
+</table>
+</div>
+    </div>
+    <div class="PrintHeaders">
+        <b>Previous page:</b> Font Concepts
+        <br /><b>Next page:</b> Physical and Logical Fonts
+    </div>
+</body>
+</html> 

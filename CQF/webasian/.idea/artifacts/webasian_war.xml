@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webasian:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/webasian_war</output-path>
+    <root id="archive" name="webasian_war.war">
+      <element id="artifact" artifact-name="webasian:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Programmer Level I Exam (The Java&trade; Tutorials &gt;        
+            Bonus &gt; Preparation for Java Programmer Language Certification)
+</title>
+
+     <meta name="description" content="This Java tutorial describes generics, full screen mode API, and Java certification related resources" />
+     <meta name="keywords" content="java programming, learn java, java sample code, java generics, full screen mode API, certification" />
+        
+<style type="text/css">
+    .FigureCaption   { 
+        margin-left: 1in; 
+        margin-right: 1in; 
+        font-family: sans-serif; 
+        font-size: smaller; 
+        text-align: justify;
+    }
+    #TopBar_bl {
+        background: url(../../images/java_bar_bl.gif) 0 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_br {
+        background: url(../../images/java_bar_br.gif) 100% 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tl {
+        background: url(../../images/java_bar_tl.gif) 0 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tr {
+        background: url(../../images/java_bar_tr.gif) 100% 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar {
+        background: #35556B url(../../images/java_bar.gif);
+        margin: 10px 10px 0 10px;
+        height:60px;
+        min-width:700px;
+        color: white;
+        font-family: sans-serif; 
+        font-weight: bold;
+    }
+    @media print {
+        #BreadCrumbs, #Download {
+            display: none;
+        }
+    }
+    #TopBar_right {
+        line-height: 14px;
+        float: right;
+        padding-top: 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    @media print {
+        #TopBar_right {
+            display: none;
+        }
+    }
+    #TopBar_right a {
+        font-size: 12px;
+        margin: 3px;
+        padding: 0;
+    }
+    #TopBar a:visited, #TopBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    #TopBar a:hover, #TopBar a:active  {
+        background-color: white;
+        color: #35556B;
+    }
+    #BreadCrumbs {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+        float: right;
+    }
+    #BreadCrumbs a {
+        color: blue;
+    }
+    #BreadCrumbs a:visited, #BreadCrumbs a:link {
+        text-decoration: none;
+    }
+    #BreadCrumbs a:hover, #BreadCrumbs a:active {
+        text-decoration: underline;
+    }
+    #PageTitle {
+        margin: 0 5px 0.5em 0;
+        color: #F90000;
+    }    
+    #PageContent{
+        margin: 0 5px 0 20px;
+    }
+    .LeftBar_shown {
+        width: 13em;
+        float: left;
+        margin-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 2em;
+        margin-right: 10px;
+    }
+    @media print {
+        .LeftBar_shown {
+            display: none;
+        }
+    }
+    .LeftBar_hidden {
+        display: none;
+    }
+    #Footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footertext {
+        font-size: 10px;
+        font-family: sans-serif; 
+        margin-top: 1px;
+    }
+    
+    #Footer2 {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .NavBit  {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+    }
+    @media print {
+        .NavBit {
+            display: none;
+        }
+    }
+    #TagNotes {
+        text-align: right;        
+    }
+    
+    @media print {
+        #TagNotes a:visited, #TagNotes a:link {
+            color: #35556B;
+            text-decoration: none;
+        }
+    }
+    #Contents a, .NavBit a, #TagNotes a {
+        color: blue
+    }
+    #TagNotes a:visited, #TagNotes a:link,
+    #Contents a:visited, #Contents a:link,
+    .NavBit a:visited, .NavBit a:link {
+        text-decoration: none;
+    }
+    #TagNotes a:hover, #TagNotes a:active,   
+    #Contents a:hover, #Contents a:active,   
+    .NavBit a:hover, .NavBit a:active {  
+        text-decoration: underline;
+    }
+    #Contents {
+        float: left;
+        font-family: sans-serif; 
+    }
+    @media print {
+        #Contents {
+            display: none;
+        }
+    }
+    @media screen {
+        div.PrintHeaders {
+            display: none;
+        }
+    }
+    .linkLESSON, .nolinkLESSON {
+        margin-left: 0.5em;
+        text-indent: -0.5em
+    }
+    .linkAHEAD, .nolinkAHEAD, .linkQUESTIONS, .nolinkQUESTIONS   {
+        margin-left: 1.5em; 
+        text-indent: -0.5em
+    }
+    .linkBHEAD, .nolinkBHEAD   {
+        margin-left: 2.5em;
+        text-indent: -0.5em
+    }
+    .linkCHEAD, .nolinkCHEAD   {
+        margin-left: 3.5em;
+        text-indent: -0.5em
+    }
+    .nolinkLESSON, .nolinkAHEAD, .nolinkBHEAD, .nolinkCHEAD,
+    .nolinkQUESTIONS {
+        font-weight: bold;
+        color: #F90000;
+    }
+    .MainFlow_indented {
+        margin-right: 10px;
+        margin-left: 15em;
+        margin-bottom: 2em;
+
+    }
+    .MainFlow_wide {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 2em;
+
+    }
+    @media print {
+        .MainFlow_indented, .MainFlow_wide {
+            padding-top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: #F90000;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+
+    #ToggleLeft {
+        display: none;
+    }
+    
+    .note {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .codeblock {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .tocli {
+        list-style-type:none;
+    }
+
+    .betadraft {
+        color: red;
+    }
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+    function leftBar() {
+        var nameq = 'tutorial_showLeftBar='
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookieString = cookies[i];
+            while (cookieString.charAt(0) == ' ') {
+                cookieString = cookieString.substring(1, cookieString.length);
+            }
+            if (cookieString.indexOf(nameq) == 0) {
+                cookieValue =  cookieString.substring(nameq.length,
+                        cookieString.length);
+                return cookieValue == 'yes';
+            }
+        }
+        return true;
+    }
+
+    function showLeft(b) {
+        var contents = document.getElementById("LeftBar");
+        var main = document.getElementById("MainFlow");
+        var toggle = document.getElementById("ToggleLeft");
+        if (b) {
+            contents.className = "LeftBar_shown";
+            main.className = "MainFlow_indented";
+            toggle.innerHTML = "Hide TOC";
+            document.cookie = 'tutorial_showLeftBar=yes; path=/';
+        } else {
+            contents.className = "LeftBar_hidden";
+            main.className = "MainFlow_wide";
+            toggle.innerHTML = "Show the TOC";
+            document.cookie = 'tutorial_showLeftBar=no; path=/';
+        }
+    }
+
+    function toggleLeft() {
+        showLeft(document.getElementById("LeftBar").className ==
+                "LeftBar_hidden");
+        document.getElementById("ToggleLeft").blur();
+    }
+
+    function load() {
+        showLeft(leftBar());
+        document.getElementById("ToggleLeft").style.display="inline";
+    }
+
+    function showCode(displayCodePage, codePath) {
+        var codePathEls = codePath.split("/");
+        var currDocPathEls = location.href.split("/");
+        //alert ("codePathEls = " + codePathEls + "\n" + "currDocPathEls = " + currDocPathEls);
+        currDocPathEls.pop(); // remove file name at the end
+        while (codePathEls.length > 0) {
+            if (codePathEls[0] == "..") {
+                codePathEls.shift();
+                currDocPathEls.pop();
+            } else {
+                break;
+            }
+        }
+        var fullCodePath = currDocPathEls.join("/") + "/" + codePathEls.join("/");
+        //alert ("fullCodePath = " + fullCodePath );
+        if (codePath.indexOf(".java") != -1 || codePath.indexOf(".jnlp") != -1) {
+            window.location.href = displayCodePage + "?code=" + encodeURI(fullCodePath);
+        } else {
+            window.location.href = fullCodePath;
+        }
+    }
+/* ]]> */    
+</script>
+
+
+    </head>
+<body onload="load()">
+    <noscript>
+        A browser with JavaScript enabled is required for this page to operate properly.
+    </noscript>
+
+    <div id="TopBar"> <div id="TopBar_tr"> <div id="TopBar_tl"> <div id="TopBar_br"> <div id="TopBar_bl"> 
+                        <div id="TopBar_right"> 
+                            <a target="_blank"
+				href="http://www.oracle.com/technetwork/java/javase/downloads/java-se-7-tutorial-2012-02-28-1536013.html">Download Ebooks</a><br />
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Download JDK</a>
+                            <br />
+                            <a href="../../search.html" target="_blank">Search Java Tutorials</a>
+                            <br />
+                            <a href="javascript:toggleLeft()"
+                                id="ToggleLeft">Hide TOC</a>
+                        </div>
+                    </div> </div> </div> </div> </div>
+    <div class="PrintHeaders">
+        <b>Trail:</b> Bonus
+        <br /><b>Lesson:</b> Preparation for Java Programmer Language Certification
+    </div>
+
+    <div id="LeftBar" class="LeftBar_shown">
+        <div id="Contents">
+            <div class="linkLESSON"><a href="index.html">Preparation for Java Programmer Language Certification</a></div>
+<div class="nolinkAHEAD">Programmer Level I Exam</div>
+<div class="linkAHEAD"><a href="javase-7-programmer2.html">Programmer Level II Exam</a></div>
+<div class="linkAHEAD"><a href="javase-7-upgrade.html">Java SE 7 Upgrade Exam</a></div>
+</div>
+    </div>
+    <div id="MainFlow" class="MainFlow_indented">
+            <span id="BreadCrumbs">
+                <a href="../../index.html" target="_top">Home Page</a>
+                &gt;
+                <a href="../index.html" target="_top">Bonus</a>
+                &gt;
+                <a href="index.html" target="_top">Preparation for Java Programmer Language Certification</a>
+            </span>
+            <div class="NavBit">
+                <a target="_top" href="index.html">&laquo;&nbsp;Previous</a>&nbsp;&bull;&nbsp;<a target="_top" href="../TOC.html">Trail</a>&nbsp;&bull;&nbsp;<a target="_top" href="javase-7-programmer2.html">Next&nbsp;&raquo;</a>
+            </div>
+            <div id="PageTitle"><h1>Programmer Level I Exam</h1></div>
+            <div id="PageContent">
+
+<!--Mapping Certification Objectives to Java Tutorials chapters-->
+
+<p>This page maps sections in the Java Tutorials to topics covered in the Java SE 7 Programmer I exam.  This exam is associated with the "Oracle Certified Associate, Java SE 7 Programmer" certificate.  The topics covered in this exam are:</p>
+<ol>
+<li><a href="#basics">Java Basics</a></li>
+<li><a href="#dataTypes">Working with Java Data Types</a></li>
+<li><a href="#operators">Using Operators and Decision Constructs</a></li>
+<li><a href="#arrays">Creating and Using Arrays</a></li>
+<li><a href="#loopConstructs">Using Loop Constructs</a></li>
+<li><a href="#encapsulation">Working with Methods and Encapsulation</a></li>
+<li><a href="#inheritance">Working with Inheritance</a></li>
+<li><a href="#exceptions">Handling Exceptions</a></li>
+</ol>
+
+<h2><a name="basics" id="basics">Section 1: Java Basics</a></h2>
+<p><b>Item 1:</b> Define the scope of variables.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/variables.html">Variables</a></li>
+</ul>
+<!--*************************************************************************-->
+<p><b>Item 2:</b> Define the structure of a Java class.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../getStarted/application/index.html">A Closer Look at the "Hello World!" Application</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/classes.html">Classes</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 3:</b> Create executable Java applications with a main method.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../getStarted/cupojava/netbeans.html">"Hello World!" for the NetBeans IDE</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../getStarted/cupojava/win32.html">"Hello World!" for Microsoft Windows</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../getStarted/cupojava/unix.html">"Hello World!" for Solaris OS and Linux</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../getStarted/application/index.html">A Closer Look at the "Hello World!" Application</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 4:</b> Import other Java packages to make them accessible in your code.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/package/packages.html">Creating and Using Packages</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/package/usepkgs.html">Using Package Members</a></li>
+</ul>
+<!--*************************************************************************-->
+<!--*************************************************************************-->
+<h2><a name="dataTypes" id="dataTypes">Section 2: Working with Java Data Types</a></h2>
+<p><b>Item 1:</b> Declare and initialize variables.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/variables.html">Variables</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/initial.html">Initializing Fields</a></li>
+</ul>
+<!--*************************************************************************-->
+<p><b>Item 2:</b> Differentiate between object reference variables and primitive variables.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/datatypes.html">Primitive Data Types</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/data/numberclasses.html">The Numbers Classes</a></li>
+</ul>
+<!--*************************************************************************-->
+<p><b>Item 3:</b> Read or write to object fields.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/subclasses.html">Inheritance</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/variables.html">Declaring Member Variables</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/objectcreation.html">Creating Objects</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/usingobject.html">Using Objects</a></li>
+</ul>
+<!--*************************************************************************-->
+<p><b>Item 4:</b> Explain an object's lifecycle.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/objects.html">Objects</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/objectcreation.html">Creating Objects</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/usingobject.html">Using Objects</a></li>
+</ul>
+<!--*************************************************************************-->
+<p><b>Item 5:</b> Call methods on objects.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/usingobject.html">Using Objects</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 6:</b> Manipulate data using the <tt>StringBuilder</tt> class and its methods.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/data/buffers.html">The StringBuilder Class</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/data/stringsummary.html">Summary of Characters and Strings</a></li>
+</ul>
+<!--***********************************************************************-->
+<p><b>Item 7:</b> Create and manipulate strings.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/data/strings.html">Strings</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/data/converting.html">Converting Between Numbers and Strings</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/data/comparestrings.html">Comparing Strings and Portions of Strings</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/data/manipstrings.html">Manipulating Characters in a String</a></li>
+</ul>
+<!--***********************************************************************-->
+<!--***********************************************************************-->
+<h2><a name="operators" id="operators">Section 3: Using Operators and Decision Constructs</a></h2>
+<p><b>Item 1:</b> Use Java operators.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/operators.html">Operators</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/op1.html">Assignment, Arithmetic, and Unary Operators</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/op2.html">Equality, Relational, and Conditional Operators </a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/op3.html">Bitwise and Bit Shift Operators</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 2:</b> Use parentheses to override operator precedence.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/expressions.html">Expressions, Statements, and Blocks</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 3:</b> Test equality between strings and other objects using <tt>==</tt> and <tt>equals()</tt>.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/objectclass.html">Object as a Superclass</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 4:</b> Create and use <tt>if</tt>-<tt>else</tt> constructs.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/if.html">The if-then and if-then-else Statements</a></li>
+</ul>
+<!--***********************************************************************-->
+<p><b>Item 5:</b> Use a <tt>switch</tt> statement.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/switch.html">The switch Statement</a></li>
+</ul>
+<!--************************************************************************-->
+<!--************************************************************************-->
+<h2><a name="arrays" id="arrays">Section 4: Creating and Using Arrays</a></h2>
+<p><b>Item 1:</b> Declare, instantiate, initialize and use a one-dimensional array.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/arrays.html">Arrays</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 2:</b> Declare, instantiate, initialize and use a multi-dimensional array.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/arrays.html">Arrays</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 3:</b> Declare and use an <tt>ArrayList</tt>.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../collections/interfaces/list.html">The List Interface</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../collections/implementations/list.html">List Implementations</a></li>
+</ul>
+<!--************************************************************************-->
+<!--************************************************************************-->
+<h2><a name="loopConstructs" id="loopConstructs">Section 5: Using Loop Constructs</a></h2>
+<p><b>Item 1:</b> Create and use <tt>while</tt> loops.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/while.html">The while and do-while Statements</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 2:</b> Create and use <tt>for</tt> loops including the enhanced for loop.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/for.html">The for Statement</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 3:</b> Create and use <tt>do</tt>-<tt>while</tt> loops.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/while.html">The while and do-while Statements</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 4:</b> Compare loop constructs.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/flowsummary.html">Summary of Control Flow Statements</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 5:</b> Use <tt>break</tt> and <tt>continue</tt>.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/branch.html">Branching Statements</a></li>
+</ul>
+<!--*************************************************************************-->
+<!--*************************************************************************-->
+<h2><a name="encapsulation" id="encapsulation">Section 6: Working with Methods and Encapsulation</a></h2>
+<p><b>Item 1:</b> Create methods with arguments and return values.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/returnvalue.html">Returning a Value from a Method</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 2:</b> Apply the <tt>static</tt> keyword to methods and fields.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/nutsandbolts/variables.html">Variables</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/classvars.html">Understanding Class Members</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 3:</b> Create an overloaded method.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/methods.html">Defining Methods</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 4:</b> Differentiate between default and user-defined constructors.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/constructors.html">Providing Constructors for Your Classes</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 5:</b> Apply access modifiers.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/accesscontrol.html">Controlling Access to Members of a Class</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 6:</b> Apply encapsulation principles to a class.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/subclasses.html">Inheritance</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/innerclasses.html">Inner Class Example</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/nested.html">Nested Classes</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 7:</b> Determine the effect upon object references and primitive values when they are passed into methods that change the values.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/arguments.html">Passing Information to a Method or a Constructor</a></li>
+</ul>
+<!--************************************************************************-->
+<!--************************************************************************-->
+<h2><a name="inheritance" id="inheritance">Section 7: Working with Inheritance</a></h2>
+<p><b>Item 1:</b> Implement inheritance.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/subclasses.html">Inheritance</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/override.html">Overriding and Hiding Methods</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 2:</b> Develop code that demonstrates the use of polymorphism.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/polymorphism.html">Polymorphism</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 3:</b> Differentiate between the type of a reference and the type of an object.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/objectcreation.html">Creating Objects</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/usingobject.html">Using Objects</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 4:</b> Determine when casting is necessary.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/subclasses.html">Inheritance</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 5:</b> Use <tt>super</tt> and <tt>this</tt> to access objects and constructors.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/super.html">Using the Keyword super</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/javaOO/thiskey.html">Using the this Keyword</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 6:</b> Use abstract classes and interfaces.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/abstract.html">Abstract Methods and Classes</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/interfaceDef.html">Defining an Interface</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../java/IandI/usinginterface.html">Implementing an Interface</a></li>
+</ul>
+<!--************************************************************************-->
+<!--************************************************************************-->
+<h2><a name="exceptions" id="exceptions">Section 8: Handling Exceptions</a></h2>
+<p><b>Item 1:</b> Differentiate among checked exceptions, <tt>RuntimeException</tt>, and <tt>Error</tt>.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../essential/exceptions/catchOrDeclare.html">The Catch or Specify Requirement</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 2:</b> Create a <tt>try-catch</tt> block and determine how exceptions alter normal program flow.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../essential/exceptions/handling.html">Catching and Handling Exceptions</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../essential/exceptions/try.html">The try Block</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../essential/exceptions/catch.html">The catch Blocks</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 3:</b> Describe what exceptions are used for in Java.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../essential/exceptions/definition.html">What Is an Exception?</a></li>
+<li>
+<a class="TutorialLink" target="_top" href="../../essential/exceptions/advantages.html">Advantages of Exceptions</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 4:</b> Invoke a method that throws an exception.</p>
+<ul>
+<li>
+<a class="TutorialLink" target="_top" href="../../essential/io/fileOps.html#exception">Catching Exceptions</a></li>
+</ul>
+<!--************************************************************************-->
+<p><b>Item 5:</b> Recognize common exception classes and categories.</p>
+
+        </div>
+        <div class="NavBit">
+            <a target="_top" href="index.html">&laquo; Previous</a>
+            &bull;
+            <a target="_top" href="../TOC.html">Trail</a>
+            &bull;
+            <a target="_top" href="javase-7-programmer2.html">Next &raquo;</a>
+        </div>
+    </div>
+    <div id="Footer2">
+<hr />
+<div id="TagNotes">
+    <p class="footertext">Problems with the examples? Try <a target="_blank"
+        href="../../information/run-examples.html">Compiling and Running
+        the Examples: FAQs</a>.
+    <br />
+    Complaints? Compliments? Suggestions? <a target="_blank"
+        href="http://docs.oracle.com/javase/feedback.html">Give
+    us your feedback</a>.
+    </p>
+</div> 
+
+<div id="Footer">
+<p class="footertext"><a name="license_info">Your use of this</a> page and all the material on pages under &quot;The Java Tutorials&quot; banner 
+ is subject to these <a href="../../information/cpyr.html">legal notices</a>.
+</p>
+<table border="0" cellspacing="0" cellpadding="5" summary="">
+    <tr>
+         <td width="20%">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td headers="h1" align="center"><img id="duke" src="../../images/DukeWave.gif" width="55" height="55" alt="duke image" /></td>
+              <td headers="h2" align="left" valign="middle"><img id="oracle" src="../../images/logo_oracle_footer.gif" width="100" height="29" alt="Oracle logo" /></td>
+           </tr>
+          </table>
+          </td>
+
+          <td width="55%" valign="middle" align="center">
+		<p class="footertext"><a href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> | <a href="http://www.oracle.com/technology/index.html">Oracle Technology Network</a> | <a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></p> 
+	 </td>
+          <td width="25%" valign="middle" align="right">
+      		<p class="footertext">Copyright &copy; 1995, 2014 Oracle and/or its affiliates. All rights reserved.</p>
+	 </td>
+     </tr>     
+</table>
+</div>
+    </div>
+    <div class="PrintHeaders">
+        <b>Previous page:</b> Preparation for Java Programmer Language Certification
+        <br /><b>Next page:</b> Programmer Level II Exam
+    </div>
+</body>
+</html> 

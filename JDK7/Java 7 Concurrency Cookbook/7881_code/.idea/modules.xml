@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Appendix/app_recipe01/app_recipe01.iml" filepath="$PROJECT_DIR$/Appendix/app_recipe01/app_recipe01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appendix/app_recipe02/app_recipe02.iml" filepath="$PROJECT_DIR$/Appendix/app_recipe02/app_recipe02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appendix/app_recipe03/app_recipe03.iml" filepath="$PROJECT_DIR$/Appendix/app_recipe03/app_recipe03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appendix/app_recipe04/app_recipe04.iml" filepath="$PROJECT_DIR$/Appendix/app_recipe04/app_recipe04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appendix/app_recipe05/app_recipe05.iml" filepath="$PROJECT_DIR$/Appendix/app_recipe05/app_recipe05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appendix/app_recipe07/app_recipe07.iml" filepath="$PROJECT_DIR$/Appendix/app_recipe07/app_recipe07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appendix/app_recipe08/app_recipe08.iml" filepath="$PROJECT_DIR$/Appendix/app_recipe08/app_recipe08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appendix/app_recipe09/app_recipe09.iml" filepath="$PROJECT_DIR$/Appendix/app_recipe09/app_recipe09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe01/ch1_recipe01.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe01/ch1_recipe01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe02/ch1_recipe02.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe02/ch1_recipe02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe03/ch1_recipe03.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe03/ch1_recipe03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe04/ch1_recipe04.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe04/ch1_recipe04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe05/ch1_recipe05.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe05/ch1_recipe05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe06/ch1_recipe06.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe06/ch1_recipe06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe07/ch1_recipe07.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe07/ch1_recipe07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe08/ch1_recipe08.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe08/ch1_recipe08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe09/ch1_recipe09.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe09/ch1_recipe09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe10/ch1_recipe10.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe10/ch1_recipe10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe11/ch1_recipe11.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe11/ch1_recipe11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 1/ch1_recipe12/ch1_recipe12.iml" filepath="$PROJECT_DIR$/Chapter 1/ch1_recipe12/ch1_recipe12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 2/ch2_recipe1_problem/ch2_recipe1_problem.iml" filepath="$PROJECT_DIR$/Chapter 2/ch2_recipe1_problem/ch2_recipe1_problem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 2/ch2_recipe1_solution/ch2_recipe1_solution.iml" filepath="$PROJECT_DIR$/Chapter 2/ch2_recipe1_solution/ch2_recipe1_solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 2/ch2_recipe2/ch2_recipe2.iml" filepath="$PROJECT_DIR$/Chapter 2/ch2_recipe2/ch2_recipe2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 2/ch2_recipe3/ch2_recipe3.iml" filepath="$PROJECT_DIR$/Chapter 2/ch2_recipe3/ch2_recipe3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 2/ch2_recipe4/ch2_recipe4.iml" filepath="$PROJECT_DIR$/Chapter 2/ch2_recipe4/ch2_recipe4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 2/ch2_recipe5/ch2_recipe5.iml" filepath="$PROJECT_DIR$/Chapter 2/ch2_recipe5/ch2_recipe5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 2/ch2_recipe6/ch2_recipe6.iml" filepath="$PROJECT_DIR$/Chapter 2/ch2_recipe6/ch2_recipe6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 2/ch2_recipe7/ch2_recipe7.iml" filepath="$PROJECT_DIR$/Chapter 2/ch2_recipe7/ch2_recipe7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 3/ch3_recipe1/ch3_recipe1.iml" filepath="$PROJECT_DIR$/Chapter 3/ch3_recipe1/ch3_recipe1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 3/ch3_recipe2/ch3_recipe2.iml" filepath="$PROJECT_DIR$/Chapter 3/ch3_recipe2/ch3_recipe2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 3/ch3_recipe3/ch3_recipe3.iml" filepath="$PROJECT_DIR$/Chapter 3/ch3_recipe3/ch3_recipe3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 3/ch3_recipe4/ch3_recipe4.iml" filepath="$PROJECT_DIR$/Chapter 3/ch3_recipe4/ch3_recipe4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 3/ch3_recipe5/ch3_recipe5.iml" filepath="$PROJECT_DIR$/Chapter 3/ch3_recipe5/ch3_recipe5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 3/ch3_recipe6/ch3_recipe6.iml" filepath="$PROJECT_DIR$/Chapter 3/ch3_recipe6/ch3_recipe6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 3/ch3_recipe7/ch3_recipe7.iml" filepath="$PROJECT_DIR$/Chapter 3/ch3_recipe7/ch3_recipe7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe01/ch4_recipe01.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe01/ch4_recipe01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe02/ch4_recipe02.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe02/ch4_recipe02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe03/ch4_recipe03.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe03/ch4_recipe03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe04/ch4_recipe04.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe04/ch4_recipe04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe05/ch4_recipe05.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe05/ch4_recipe05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe06/ch4_recipe06.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe06/ch4_recipe06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe07/ch4_recipe07.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe07/ch4_recipe07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe08/ch4_recipe08.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe08/ch4_recipe08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe09/ch4_recipe09.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe09/ch4_recipe09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe10/ch4_recipe10.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe10/ch4_recipe10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 4/ch4_recipe11/ch4_recipe11.iml" filepath="$PROJECT_DIR$/Chapter 4/ch4_recipe11/ch4_recipe11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 5/ch5_recipe01/ch5_recipe01.iml" filepath="$PROJECT_DIR$/Chapter 5/ch5_recipe01/ch5_recipe01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 5/ch5_recipe02/ch5_recipe02.iml" filepath="$PROJECT_DIR$/Chapter 5/ch5_recipe02/ch5_recipe02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 5/ch5_recipe03/ch5_recipe03.iml" filepath="$PROJECT_DIR$/Chapter 5/ch5_recipe03/ch5_recipe03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 5/ch5_recipe04/ch5_recipe04.iml" filepath="$PROJECT_DIR$/Chapter 5/ch5_recipe04/ch5_recipe04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 5/ch5_recipe05/ch5_recipe05.iml" filepath="$PROJECT_DIR$/Chapter 5/ch5_recipe05/ch5_recipe05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 6/ch6_recipe01/ch6_recipe01.iml" filepath="$PROJECT_DIR$/Chapter 6/ch6_recipe01/ch6_recipe01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 6/ch6_recipe02/ch6_recipe02.iml" filepath="$PROJECT_DIR$/Chapter 6/ch6_recipe02/ch6_recipe02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 6/ch6_recipe03/ch6_recipe03.iml" filepath="$PROJECT_DIR$/Chapter 6/ch6_recipe03/ch6_recipe03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 6/ch6_recipe04/ch6_recipe04.iml" filepath="$PROJECT_DIR$/Chapter 6/ch6_recipe04/ch6_recipe04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 6/ch6_recipe05/ch6_recipe05.iml" filepath="$PROJECT_DIR$/Chapter 6/ch6_recipe05/ch6_recipe05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 6/ch6_recipe06/ch6_recipe06.iml" filepath="$PROJECT_DIR$/Chapter 6/ch6_recipe06/ch6_recipe06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 6/ch6_recipe07/ch6_recipe07.iml" filepath="$PROJECT_DIR$/Chapter 6/ch6_recipe07/ch6_recipe07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 6/ch6_recipe08/ch6_recipe08.iml" filepath="$PROJECT_DIR$/Chapter 6/ch6_recipe08/ch6_recipe08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 7/ch7_recipe01/ch7_recipe01.iml" filepath="$PROJECT_DIR$/Chapter 7/ch7_recipe01/ch7_recipe01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 7/ch7_recipe02/ch7_recipe02.iml" filepath="$PROJECT_DIR$/Chapter 7/ch7_recipe02/ch7_recipe02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 7/ch7_recipe03/ch7_recipe03.iml" filepath="$PROJECT_DIR$/Chapter 7/ch7_recipe03/ch7_recipe03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 7/ch7_recipe04/ch7_recipe04.iml" filepath="$PROJECT_DIR$/Chapter 7/ch7_recipe04/ch7_recipe04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 7/ch7_recipe05/ch7_recipe05.iml" filepath="$PROJECT_DIR$/Chapter 7/ch7_recipe05/ch7_recipe05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 7/ch7_recipe06/ch7_recipe06.iml" filepath="$PROJECT_DIR$/Chapter 7/ch7_recipe06/ch7_recipe06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 7/ch7_recipe07/ch7_recipe07.iml" filepath="$PROJECT_DIR$/Chapter 7/ch7_recipe07/ch7_recipe07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 7/ch7_recipe08/ch7_recipe08.iml" filepath="$PROJECT_DIR$/Chapter 7/ch7_recipe08/ch7_recipe08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 7/ch7_recipe09/ch7_recipe09.iml" filepath="$PROJECT_DIR$/Chapter 7/ch7_recipe09/ch7_recipe09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 7/ch7_recipe10/ch7_recipe10.iml" filepath="$PROJECT_DIR$/Chapter 7/ch7_recipe10/ch7_recipe10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 8/ch8_recipe01/ch8_recipe01.iml" filepath="$PROJECT_DIR$/Chapter 8/ch8_recipe01/ch8_recipe01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 8/ch8_recipe02/ch8_recipe02.iml" filepath="$PROJECT_DIR$/Chapter 8/ch8_recipe02/ch8_recipe02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 8/ch8_recipe03/ch8_recipe03.iml" filepath="$PROJECT_DIR$/Chapter 8/ch8_recipe03/ch8_recipe03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 8/ch8_recipe04/ch8_recipe04.iml" filepath="$PROJECT_DIR$/Chapter 8/ch8_recipe04/ch8_recipe04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 8/ch8_recipe05/ch8_recipe05.iml" filepath="$PROJECT_DIR$/Chapter 8/ch8_recipe05/ch8_recipe05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 8/ch8_recipe06/ch8_recipe06.iml" filepath="$PROJECT_DIR$/Chapter 8/ch8_recipe06/ch8_recipe06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 8/ch8_recipe08/ch8_recipe08.iml" filepath="$PROJECT_DIR$/Chapter 8/ch8_recipe08/ch8_recipe08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 8/ch8_recipe09/ch8_recipe09.iml" filepath="$PROJECT_DIR$/Chapter 8/ch8_recipe09/ch8_recipe09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 9/ch9_recipe01/ch9_recipe01.iml" filepath="$PROJECT_DIR$/Chapter 9/ch9_recipe01/ch9_recipe01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 9/ch9_recipe02/ch9_recipe02.iml" filepath="$PROJECT_DIR$/Chapter 9/ch9_recipe02/ch9_recipe02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 9/ch9_recipe03/ch9_recipe03.iml" filepath="$PROJECT_DIR$/Chapter 9/ch9_recipe03/ch9_recipe03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 9/ch9_recipe04/ch9_recipe04.iml" filepath="$PROJECT_DIR$/Chapter 9/ch9_recipe04/ch9_recipe04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 9/ch9_recipe05/ch9_recipe05.iml" filepath="$PROJECT_DIR$/Chapter 9/ch9_recipe05/ch9_recipe05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 9/ch9_recipe06/ch9_recipe06.iml" filepath="$PROJECT_DIR$/Chapter 9/ch9_recipe06/ch9_recipe06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter 2/chx_recipe1/chx_recipe1.iml" filepath="$PROJECT_DIR$/Chapter 2/chx_recipe1/chx_recipe1.iml" />
+    </modules>
+  </component>
+</project>

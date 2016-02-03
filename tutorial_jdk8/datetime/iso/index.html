@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Lesson: Standard Calendar (The Java&trade; Tutorials &gt; Date Time)</title>
+     <meta name="description" content="This date-time Java tutorial describes how to use the java.time APIs introduced in JDK 8 to write date and time code. The core package uses the standard calendar as defined in the ISO calendar system." />
+     <meta name="keywords" content="java programming, learn java, java sample code, datetime, date time, JSR 310, date-time, date, time, java.time, jdk8, ISO" />
+        
+<style type="text/css">
+    .FigureCaption   { 
+        margin-left: 1in; 
+        margin-right: 1in; 
+        font-family: sans-serif; 
+        font-size: smaller; 
+        text-align: justify;
+    }
+    #TopBar_bl {
+        background: url(../../images/java_bar_bl.gif) 0 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_br {
+        background: url(../../images/java_bar_br.gif) 100% 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tl {
+        background: url(../../images/java_bar_tl.gif) 0 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tr {
+        background: url(../../images/java_bar_tr.gif) 100% 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar {
+        background: #35556B url(../../images/java_bar.gif);
+        margin: 10px 10px 0 10px;
+        height:60px;
+        min-width:700px;
+        color: white;
+        font-family: sans-serif; 
+        font-weight: bold;
+    }
+    @media print {
+        #BreadCrumbs, #Download {
+            display: none;
+        }
+    }
+    #TopBar_right {
+        line-height: 14px;
+        float: right;
+        padding-top: 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    @media print {
+        #TopBar_right {
+            display: none;
+        }
+    }
+    #TopBar_right a {
+        font-size: 12px;
+        margin: 3px;
+        padding: 0;
+    }
+    #TopBar a:visited, #TopBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    #TopBar a:hover, #TopBar a:active  {
+        background-color: white;
+        color: #35556B;
+    }
+    #BreadCrumbs {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+        float: right;
+    }
+    #BreadCrumbs a {
+        color: blue;
+    }
+    #BreadCrumbs a:visited, #BreadCrumbs a:link {
+        text-decoration: none;
+    }
+    #BreadCrumbs a:hover, #BreadCrumbs a:active {
+        text-decoration: underline;
+    }
+    #PageTitle {
+        margin: 0 5px 0.5em 0;
+        color: #F90000;
+    }    
+    #PageContent{
+        margin: 0 5px 0 20px;
+    }
+    .LeftBar_shown {
+        width: 13em;
+        float: left;
+        margin-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 2em;
+        margin-right: 10px;
+    }
+    @media print {
+        .LeftBar_shown {
+            display: none;
+        }
+    }
+    .LeftBar_hidden {
+        display: none;
+    }
+    #Footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footertext {
+        font-size: 10px;
+        font-family: sans-serif; 
+        margin-top: 1px;
+    }
+    
+    #Footer2 {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .NavBit  {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+    }
+    @media print {
+        .NavBit {
+            display: none;
+        }
+    }
+    #TagNotes {
+        text-align: right;        
+    }
+    
+    @media print {
+        #TagNotes a:visited, #TagNotes a:link {
+            color: #35556B;
+            text-decoration: none;
+        }
+    }
+    #Contents a, .NavBit a, #TagNotes a {
+        color: blue
+    }
+    #TagNotes a:visited, #TagNotes a:link,
+    #Contents a:visited, #Contents a:link,
+    .NavBit a:visited, .NavBit a:link {
+        text-decoration: none;
+    }
+    #TagNotes a:hover, #TagNotes a:active,   
+    #Contents a:hover, #Contents a:active,   
+    .NavBit a:hover, .NavBit a:active {  
+        text-decoration: underline;
+    }
+    #Contents {
+        float: left;
+        font-family: sans-serif; 
+    }
+    @media print {
+        #Contents {
+            display: none;
+        }
+    }
+    @media screen {
+        div.PrintHeaders {
+            display: none;
+        }
+    }
+    .linkLESSON, .nolinkLESSON {
+        margin-left: 0.5em;
+        text-indent: -0.5em
+    }
+    .linkAHEAD, .nolinkAHEAD, .linkQUESTIONS, .nolinkQUESTIONS   {
+        margin-left: 1.5em; 
+        text-indent: -0.5em
+    }
+    .linkBHEAD, .nolinkBHEAD   {
+        margin-left: 2.5em;
+        text-indent: -0.5em
+    }
+    .linkCHEAD, .nolinkCHEAD   {
+        margin-left: 3.5em;
+        text-indent: -0.5em
+    }
+    .nolinkLESSON, .nolinkAHEAD, .nolinkBHEAD, .nolinkCHEAD,
+    .nolinkQUESTIONS {
+        font-weight: bold;
+        color: #F90000;
+    }
+    .MainFlow_indented {
+        margin-right: 10px;
+        margin-left: 15em;
+        margin-bottom: 2em;
+
+    }
+    .MainFlow_wide {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 2em;
+
+    }
+    @media print {
+        .MainFlow_indented, .MainFlow_wide {
+            padding-top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: #F90000;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+
+    #ToggleLeft {
+        display: none;
+    }
+    
+    .note {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .codeblock {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .tocli {
+        list-style-type:none;
+    }
+
+    .betadraft {
+        color: red;
+    }
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+    function leftBar() {
+        var nameq = 'tutorial_showLeftBar='
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookieString = cookies[i];
+            while (cookieString.charAt(0) == ' ') {
+                cookieString = cookieString.substring(1, cookieString.length);
+            }
+            if (cookieString.indexOf(nameq) == 0) {
+                cookieValue =  cookieString.substring(nameq.length,
+                        cookieString.length);
+                return cookieValue == 'yes';
+            }
+        }
+        return true;
+    }
+
+    function showLeft(b) {
+        var contents = document.getElementById("LeftBar");
+        var main = document.getElementById("MainFlow");
+        var toggle = document.getElementById("ToggleLeft");
+        if (b) {
+            contents.className = "LeftBar_shown";
+            main.className = "MainFlow_indented";
+            toggle.innerHTML = "Hide TOC";
+            document.cookie = 'tutorial_showLeftBar=yes; path=/';
+        } else {
+            contents.className = "LeftBar_hidden";
+            main.className = "MainFlow_wide";
+            toggle.innerHTML = "Show the TOC";
+            document.cookie = 'tutorial_showLeftBar=no; path=/';
+        }
+    }
+
+    function toggleLeft() {
+        showLeft(document.getElementById("LeftBar").className ==
+                "LeftBar_hidden");
+        document.getElementById("ToggleLeft").blur();
+    }
+
+    function load() {
+        showLeft(leftBar());
+        document.getElementById("ToggleLeft").style.display="inline";
+    }
+
+    function showCode(displayCodePage, codePath) {
+        var codePathEls = codePath.split("/");
+        var currDocPathEls = location.href.split("/");
+        //alert ("codePathEls = " + codePathEls + "\n" + "currDocPathEls = " + currDocPathEls);
+        currDocPathEls.pop(); // remove file name at the end
+        while (codePathEls.length > 0) {
+            if (codePathEls[0] == "..") {
+                codePathEls.shift();
+                currDocPathEls.pop();
+            } else {
+                break;
+            }
+        }
+        var fullCodePath = currDocPathEls.join("/") + "/" + codePathEls.join("/");
+        //alert ("fullCodePath = " + fullCodePath );
+        if (codePath.indexOf(".java") != -1 || codePath.indexOf(".jnlp") != -1) {
+            window.location.href = displayCodePage + "?code=" + encodeURI(fullCodePath);
+        } else {
+            window.location.href = fullCodePath;
+        }
+    }
+/* ]]> */    
+</script>
+
+
+    </head>
+<body onload="load()">
+    <noscript>
+        A browser with JavaScript enabled is required for this page to operate properly.
+    </noscript>
+
+    <div id="TopBar"> <div id="TopBar_tr"> <div id="TopBar_tl"> <div id="TopBar_br"> <div id="TopBar_bl"> 
+                    <div id="TopBar_right"> 
+                            <a target="_blank"
+				href="http://www.oracle.com/technetwork/java/javase/downloads/java-se-7-tutorial-2012-02-28-1536013.html">Download Ebooks</a><br />
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Download JDK</a>
+                            <br />
+                            <a href="../../search.html" target="_blank">Search Java
+                                Tutorials</a>
+                        <br />
+                        <a href="javascript:toggleLeft()"
+                            id="ToggleLeft">Hide TOC</a>
+                    </div> 
+                </div> </div> </div> </div> </div>
+
+    <div id="LeftBar">
+        <div id="Contents">
+            <div class="nolinkLESSON">Standard Calendar</div>
+<div class="linkAHEAD"><a href="overview.html">Overview</a></div>
+<div class="linkAHEAD"><a href="enum.html">DayOfWeek and Month Enums</a></div>
+<div class="linkAHEAD"><a href="date.html">Date Classes</a></div>
+<div class="linkAHEAD"><a href="datetime.html">Date and Time Classes</a></div>
+<div class="linkAHEAD"><a href="timezones.html">Time Zone and Offset Classes</a></div>
+<div class="linkAHEAD"><a href="instant.html">Instant Class</a></div>
+<div class="linkAHEAD"><a href="format.html">Parsing and Formatting</a></div>
+<div class="linkAHEAD"><a href="temporal.html">The Temporal Package</a></div>
+<div class="linkBHEAD"><a href="adjusters.html">Temporal Adjuster</a></div>
+<div class="linkBHEAD"><a href="queries.html">Temporal Query</a></div>
+<div class="linkAHEAD"><a href="period.html">Period and Duration</a></div>
+<div class="linkAHEAD"><a href="clock.html">Clock</a></div>
+<div class="linkAHEAD"><a href="nonIso.html">Non-ISO Date Conversion</a></div>
+<div class="linkAHEAD"><a href="legacy.html">Legacy Date-Time Code</a></div>
+<div class="linkAHEAD"><a href="summary.html">Summary</a></div>
+<div class="linkQUESTIONS"><a href="QandE/questions.html">Questions and Exercises</a></div>
+</div>
+    </div>
+    <div id="MainFlow" class="MainFlow_indented">
+        <div class="PrintHeaders">
+            <b>Trail:</b> Date Time
+        </div>
+        <div id="BreadCrumbs">
+            <a href="../../index.html" target="_top">Home Page</a>
+        &gt;
+            <a href="../index.html" target="_top">Date Time</a>
+        </div>
+        <div class="NavBit">
+                <a target="_top" href="../overview/index.html">&laquo;&nbsp;Previous</a>&nbsp;&bull;&nbsp;<a target="_top" href="../TOC.html">Trail</a>&nbsp;&bull;&nbsp;<a target="_top" href="overview.html">Next&nbsp;&raquo;</a>
+        </div>
+        <div id="PageTitle"><h1>Lesson: Standard Calendar</h1></div>
+        <div id="PageContent">
+
+
+<p>
+The core of the Date-Time API is the
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html">java.time</a> package. The classes defined in <tt>java.time</tt> base their calendar system on the ISO calendar, which is the world standard for representing date and time. The ISO calendar follows the proleptic Gregorian rules. The Gregorian calendar was introduced in 1582; in the <em>proleptic</em> Gregorian calendar, dates are extended backwards from that time to create a consistent, unified timeline and to simplify date calculations.</p>
+
+<p>
+This lesson covers the following topics:</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="overview.html">Overview</a></h2>
+<p>
+This section compares the concepts of human time and machine time provides a table of the primary temporal-based classes in the <tt>java.time</tt> package.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="enum.html">DayOfWeek and Month Enums</a></h2>
+<p>
+This section discusses the enum that defines the days of the week (<tt>DayOfWeek</tt>) and the enum that defines months (<tt>Month</tt>).</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="date.html">Date Classes</a></h2>
+<p>
+This section shows the temporal-based classes that deal only with dates, without time or time zones. The four classes are <tt>LocalDate</tt>, <tt>YearMonth</tt>, <tt>MonthDay</tt> and <tt>Year</tt>.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="datetime.html">Date and Time Classes</a></h2>
+<p>
+This section presents the <tt>LocalTime</tt> and <tt>LocalDateTime</tt> classes, which deal with time, and date and time, respectively, but without time zones.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="timezones.html">Time Zone and Offset Classes</a></h2>
+<p>
+This section discusses the temporal-based classes that store time zone (or time zone offset) information, <tt>ZonedDateTime</tt>, <tt>OffsetDateTime</tt>, and <tt>OffsetTime</tt>. The supporting classes, <tt>ZoneId</tt>, <tt>ZoneRules</tt>, and <tt>ZoneOffset</tt>, are also discussed.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="instant.html">Instant Class</a></h2>
+<p>
+This section discusses the <tt>Instant</tt> class, which represents an instantaneous moment on the timeline.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="format.html">Parsing and Formatting</a></h2>
+<p>
+This section provides an overview of how to use the predefined formatters to format and parse date and time values.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="temporal.html">The Temporal Package</a></h2>
+<p>
+This section presents an overview of the <tt>java.time.temporal</tt> package, which supports the temporal classes, fields (<tt>TemporalField</tt> and <tt>ChronoField</tt>) and units (<tt>TemporalUnit</tt> and <tt>ChronoUnit</tt>). This section also explains how to use a temporal adjuster to retrieve an adjusted time value, such as "the first Tuesday after April 11", and how to perform a temporal query.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="period.html">Period and Duration</a></h2>
+<p>
+This section explains how to calculate an amount of time, using both the <tt>Period</tt> and <tt>Duration</tt> classes, as well as the <tt>ChronoUnit.between</tt> method.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="clock.html">Clock</a></h2>
+<p>
+This section provides a brief overview of the <tt>Clock</tt> class. You can use this class to provide an alternative clock to the system clock.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="nonIso.html">Non-ISO Date Conversion</a></h2>
+<p>
+This section explains how to convert from a date in the ISO calendar system to a date in a non-ISO calendar system, such as a <tt>JapaneseDate</tt> or a <tt>ThaiBuddhistDate</tt>.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="legacy.html">Legacy Date-Time Code</a></h2>
+<p>
+This section offers some tips on how to convert older <tt>java.util.Date</tt> and <tt>java.util.Calendar</tt> code to the Date-Time API.</p>
+
+<h2>
+<a class="TutorialLink" target="_top" href="summary.html">Summary</a></h2>
+<p>
+This section provides a summary of the Standard Calendar lesson.</p>
+
+
+        </div>
+    <div class="NavBit">
+        <a href="../overview/index.html">&laquo; Previous</a>
+        &bull;
+        <a href="../TOC.html">Trail</a>
+        &bull;
+        <a href="overview.html">Next &raquo;</a>
+    </div>
+    </div>
+    <div id="Footer2">
+<hr />
+<div id="TagNotes">
+    <p class="footertext">Problems with the examples? Try <a target="_blank"
+        href="../../information/run-examples.html">Compiling and Running
+        the Examples: FAQs</a>.
+    <br />
+    Complaints? Compliments? Suggestions? <a target="_blank"
+        href="http://docs.oracle.com/javase/feedback.html">Give
+    us your feedback</a>.
+    </p>
+</div> 
+
+<div id="Footer">
+<p class="footertext"><a name="license_info">Your use of this</a> page and all the material on pages under &quot;The Java Tutorials&quot; banner 
+ is subject to these <a href="../../information/cpyr.html">legal notices</a>.
+</p>
+<table border="0" cellspacing="0" cellpadding="5" summary="">
+    <tr>
+         <td width="20%">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td headers="h1" align="center"><img id="duke" src="../../images/DukeWave.gif" width="55" height="55" alt="duke image" /></td>
+              <td headers="h2" align="left" valign="middle"><img id="oracle" src="../../images/logo_oracle_footer.gif" width="100" height="29" alt="Oracle logo" /></td>
+           </tr>
+          </table>
+          </td>
+
+          <td width="55%" valign="middle" align="center">
+		<p class="footertext"><a href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> | <a href="http://www.oracle.com/technology/index.html">Oracle Technology Network</a> | <a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></p> 
+	 </td>
+          <td width="25%" valign="middle" align="right">
+      		<p class="footertext">Copyright &copy; 1995, 2014 Oracle and/or its affiliates. All rights reserved.</p>
+	 </td>
+     </tr>     
+</table>
+</div>
+    </div>
+    <div class="PrintHeaders">
+        <b>Previous page:</b> Previous Lesson
+        <br /><b>Next page:</b> Overview
+    </div>
+</body>
+</html> 

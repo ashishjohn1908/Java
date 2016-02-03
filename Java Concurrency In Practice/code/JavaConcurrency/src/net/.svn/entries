@@ -1,0 +1,31 @@
+10
+
+dir
+183
+http://192.168.137.4/svn/sunrep/JavaConcurrency/src/net
+http://192.168.137.4/svn/sunrep
+
+
+
+2010-12-09T19:12:21.681047Z
+180
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2191df9a-5630-cf56-a167-a80759e40f25
+
+jcip
+dir
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="4.5" transformSequenceNumber="1">
+  <directoryPresets config="C:/PDF/Java/ASIAN DISSERTATION FINAL/IntelliJ Project/src/images" />
+  <application name="Assian Options Calculator" distributionSourceDir="C:/PDF/Java/ASIAN DISSERTATION FINAL/Asian Application">
+    <languages>
+      <principalLanguage id="en" customLocalizationFile="" />
+    </languages>
+  </application>
+  <executable name="Asian Option Application" type="2" iconSet="true" iconFile="C:/PDF/Java/ASIAN DISSERTATION FINAL/IntelliJ Project/src/images/AsianCalculator.ico" executableDir="" redirectStderr="true" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false" amd64="true">
+    <messageSet />
+    <versionInfo include="false" fileVersion="" fileDescription="" legalCopyright="" internalName="" productName="" companyName="" productVersion="" />
+  </executable>
+  <splashScreen show="true" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="C:/PDF/Java/ASIAN DISSERTATION FINAL/IntelliJ Project/src/images/AsianCalculator.bmp" java6SplashScreen="true">
+    <text>
+      <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+      <versionLine x="20" y="40" text="version %VERSION%" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+    </text>
+  </splashScreen>
+  <java mainClass="AsianOptionFrame" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true" minVersion="1.6" maxVersion="1.7" allowBetaVM="true" jdkOnly="true">
+    <searchSequence>
+      <registry />
+      <envVar name="JAVA_HOME" />
+      <envVar name="JDK_HOME" />
+    </searchSequence>
+    <classPath>
+      <archive location="../IntelliJ Project/out/artifacts/AsianOption/AsianOption.jar" failOnError="false" />
+    </classPath>
+    <nativeLibraryDirectories />
+  </java>
+  <includedFiles />
+  <unextractableFiles />
+</exe4j>
+

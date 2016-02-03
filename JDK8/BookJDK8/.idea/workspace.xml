@@ -1,0 +1,1894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff73a6f8-51b4-4bb4-9da0-446a17500404" name="Default" comment="refactored">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AboutIcon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Analog.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/Analog.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ConeFlowers.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Digital.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/Digital.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HourGlass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/HourGlass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lilies.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StopWatch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/StopWatch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SunFlower.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clearBP.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resume.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serial" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/setBP.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/ACDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch23/ACDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/AbstractAreas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/AbstractDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/Access.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/AccessTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/AccountBalance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch24/AdapterDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/AddClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/AddCookieServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/AddServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/AddServerImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/AddServerIntf.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/AlgorithmsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/Angles.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch24/AnonymousInnerClassDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/AnotherClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/AppWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/AppletFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch23/AppletSkel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/Area.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/Array.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/ArrayDequeDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/ArrayListDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/ArrayListToArray.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/ArraysDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/AskMe.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/AskMe.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/AssertDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/AssertDemo1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/AtomicDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/AutoArray.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/AutoBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/AutoBox2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/AutoBox3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/AutoBox4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/AutoBox5.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/Average.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/AvgFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/AvgNums.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/BRRead.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/BRReadLines.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/BarDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch23/Bases.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/BasicMath.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/BitLogic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/BitSetDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/BlockLambdaDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/BlockLambdaDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch2/BlockTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/Blur.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BookJDK8.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/BoolLogic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/BoolTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/BorderLayoutDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/BoundedWildcard.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/BoundsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch6/Box.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/Box.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch6/BoxDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch6/BoxDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch6/BoxDemo3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch6/BoxDemo4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch6/BoxDemo5.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch6/BoxDemo6.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch6/BoxDemo7.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/Break.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/BreakErr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/BreakLoop.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/BreakLoop2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/BreakLoop3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/BreakLoop4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/BridgeDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/BufferedInputStreamDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/BufferedReaderDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/ButtonDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/ButtonImageDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/ButtonList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/ByteArrayInputStreamDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/ByteArrayInputStreamReset.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/ByteArrayOutputStreamDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/ByteShift.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/ByteUShift.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/CBGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/CDLDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/CalendarDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/CallByValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/CallableDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/Callback.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/CallingCons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/CardLayoutDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/CenterText.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/ChainExcDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/ChangeCase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/CharArrayReaderDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/CharArrayWriterDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/CharDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/CharDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/CheckboxDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/CheckboxDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/ChoiceDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/Client.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/ColorDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/ColorGetServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/ColorPostServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch37/Colors.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch37/ColorsBeanInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/ComboBoxDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/Comma.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/CommandLine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/CompDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/CompDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/ConCat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/ConsoleDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/ConstructorRefDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/ConstructorRefDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/ConstructorRefDemo3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/Continue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/ContinueLabel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/Contrast.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/Conversion.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/Convolver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/CopyFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/CopyFile1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/CurDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/CurrentThreadDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/DataIODemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/DateDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/DateFormatDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/DateServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/DateTimeDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/DateTimeDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/DateTimeDemo3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/DateTimeDemo4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/Deadlock.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/DefaultMethodDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/Demo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/DemoBoxWeight.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/DemoJoin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/DemoShipment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/DemoSuper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/Derived.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/DialogDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/DirList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/DirList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/DirList1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/DirListOnly.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/DirTreeList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch34/DirectDrawDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/Dispatch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/DoWhile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/DoubleBuffer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/DoubleDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/DynInit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/EffectsAndTransformsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/Elapsed.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/EnumDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/EnumDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/EnumDemo3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/EnumDemo4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/EqualsNotEqualTo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch31/EventDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch2/Example.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch2/Example2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/Exc0.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/Exc1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/Exc2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/ExceptionDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/ExecDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/ExecDemoFini.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/ExgrDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/ExplicitChannelRead.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/ExplicitChannelRead1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/ExplicitChannelRead2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/ExplicitChannelWrite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/ExplicitChannelWrite1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/ExtendThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/FJExperiment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/FieldWidthDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/FileDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/FileDialogDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/FileInputStreamDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/FileOutputStreamDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/FileOutputStreamDemo1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/FileReaderDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/FileWriterDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/FinallyDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/FindAreas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/FindInLineDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/FindPrime.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/FlowLayoutDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/FontInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/ForEach.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/ForEach2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/ForEach3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/ForEachDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch2/ForTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/ForTick.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/ForTick1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/ForVar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/ForkJoinDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/FormatDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/FormatDemo1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/FormatDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/FormatDemo3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/FormatDemo4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/FormatDemo5.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/FormatDemo6.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/Gen21.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/GenArrays.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/GenConsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/GenDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/GenIFDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/GenMethDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/GenericFunctionalInterfaceDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/GenericMethodRefDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/GetCookiesServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/GraphicsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/Grayscale.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/GregorianCalendarDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/GridBagDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/GridLayoutDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/HTDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/HTDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/HandleError.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/HashMapDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/HashSetDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/HelloServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/HexByte.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/HierDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/HierDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/HierDemo3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/HistoGrab.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch22/HttpURLDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/Hypot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/Hypot1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/IFExtend.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/IFTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/IFTest2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/IFTest3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/IfElse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/ImageDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/ImageFilterDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/IncDec.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch22/InetAddressTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/InfNaN.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch24/InnerClassDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/InnerClassDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/InnerClassDemo1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/InnerClassDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/InsetsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/InstanceMethWithObjectRefDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/InstanceOf.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch37/IntrospectorDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/Invert.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/IsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/IteratorDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JButtonDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JCheckBoxDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JComboBoxDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JLabelDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JListDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JRadioButtonDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JScrollPaneDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JTabbedPaneDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JTableDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JTextFieldDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JToggleButtonDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch32/JTreeDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch34/JavaFXEventDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch34/JavaFXLabelDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch34/JavaFXSkel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch24/KeyEvents.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/LRBDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/LabelDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/LabelImageDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/LambdaDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/LambdaDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/LambdaDemo3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/LambdaExceptionDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/LambdasAsArgumentsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/LeftJustify.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/Length.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/LifeTime.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/Light.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/LinkedListDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/ListDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/ListViewDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/LoadedImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/LockDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/MailList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/MakeString.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/MappedChannelRead.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/MappedChannelRead1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/MappedChannelWrite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/MappedChannelWrite2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/Marker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/Matrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/MemoryDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/MemoryImageGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/Menu.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/MenuDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch33/MenuDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch36/MenuDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch33/MenuDemo1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch36/MenuDemoFinal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/Meta.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/Meta1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/Meta2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/Meta3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/MethNestTry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/MethodRefDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/MethodRefDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/MissingBreak.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/Modulus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch24/MouseEvents.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch24/MousePressedDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/MultByTwo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/MultiCatch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/MultiLine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/MultiThreadDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/MultipleCatches.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/MyClass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/MyClass1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/MyIFImp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch31/MySwingApplet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/NIOCopy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/NIOStreamWrite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/NativeDemo.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/NativeDemo.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/NativeDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/NestTry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/Nested.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/NestedIFDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/NoBody.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/NoChange.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/NonGenDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/ObserverDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/OnlyExt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/OpBitEquals.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/OpEquals.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/OptionalDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/OverloadCons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/OverloadCons2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/OverloadDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/OverloadDemo1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/Override.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/Override1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/OverrideDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/PBDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/PC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/PCFixed.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch31/PaintDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch23/ParamBanner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch23/ParamDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/ParseDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/PassArray.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/PassOb.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/PassObjRef.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/PathDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/PhaserDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/PhaserDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/Phonebook.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/PkgTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/PlugInFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/PostParametersServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/PrecisionDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/PrintWriterDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/PrintfDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/ProdCon.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/Promote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/PropDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/PropDemoDef.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/Protection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/PushbackInputStreamDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/PushbackReaderDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/RTTI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/RadioButtonDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/RadioButtonDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/RandDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/RawDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/RecurTaskDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/Recursion.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/Recursion2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/RefDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/ReflectionDemo1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/ReflectionDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/RegExpr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/RegExpr2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/RegExpr3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/RegExpr4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/RegExpr5.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/RegExpr6.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/RegExpr7.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/RegExpr8.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/RegExpr9.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/RepeatAnno.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/ResizeMe.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/RetOb.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/Return.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/ReverseDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/SBDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/STDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/SamePackage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch23/Sample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/Sample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/SampleFonts.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/SampleRB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/SampleRB_de.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/SampleSwitch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/ScanMixed.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/Scope.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/ScopeErr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/ScrollPaneDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/Search.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/SemDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/SequenceInputStreamDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch20/SerializationDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/SetDelimiters.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/Sharpen.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/ShowFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch21/ShowFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/ShowFile1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/ShowFile2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/ShowFonts.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/ShowUserDir.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch28/SimpExec.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/SimpGen.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/SimpleApple1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/SimpleApplet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch23/SimpleBanner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/SimpleDateFormatDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/SimpleImageLoad.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/SimpleInheritance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch24/SimpleKey.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/Single.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/SortString.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/SpliteratorDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/apendix/SquareNum.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch6/Stack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/Stack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/StackDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/StaticByName.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/Stats.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch23/StatusWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch29/StreamDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch29/StreamDemo10.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch29/StreamDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch29/StreamDemo3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch29/StreamDemo4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch29/StreamDemo5.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch29/StreamDemo6.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch29/StreamDemo7.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch29/StreamDemo8.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch29/StreamDemo9.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/StringBufferDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/StringConversions.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/StringDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/StringDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/StringDemo3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/StringJoinDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/StringReplace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/StringSwitch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/SubStringCons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/SuperSubCatch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/SuspendResume.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch31/SwingDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/Switch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/Synch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/Synch1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/TTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch4/Ternary.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/TestBalance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/TestClone.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/TestClone1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/TestIface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch9/TestIface2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch6/TestStack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/TestStack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/TestStack2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/TextAreaDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch26/TextFieldDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/TextFieldDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/TextLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch11/ThreadDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch17/ThreadGroupDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/ThreeDMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/ThrowDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch10/ThrowsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/TileImage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/TimeDateFormat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch30/TimeFormatDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/TinyEdit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/ToggleButtonDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch27/TrackedImageLoad.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/TreeMapDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/TreeMapDemo2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/TreeMapDemo2A.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/TreeSetDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch35/TreeViewDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/TwoDAgain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch3/TwoDArray.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch19/TwoObservers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/TypeAnnoDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch22/UCDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch22/URLDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/UnboxingError.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/UseFunctionInterfaceDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/UseMethodRef.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/UseStatic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch8/UseSuper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/UseTrim.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/VarArgs.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/VarArgs2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/VarArgs3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch7/VarArgs4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch15/VarCapture.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch18/VectorDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch5/While.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch22/Whois.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch14/WildcardDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/WindowEvents.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch12/Wrap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch13/WriteDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch22/WriteServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch25/XOR.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/appendDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/colorindex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/colorpindex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/cookieindex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/deleteDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/equalsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/getCharsDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch38/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/indexOfDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/insertDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/replace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/replaceDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/setCharAtDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch16/toStringDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
+    <list id="3cfde0fd-5b7a-4f42-93e1-f7ecff1c6f73" name="Rejected commit: Default" comment="refactored">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch2/IfSample.java" />
+    </list>
+    <ignored path="BookJDK8.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="BookJDK8" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="StreamDemo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ch29/StreamDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.60493827">
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="plamen" />
+        <option value="orajava" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
+    <option name="FORCE_PUSH_ALLOWED" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ch29/StreamDemo3.java" />
+        <option value="$PROJECT_DIR$/src/ch11/ThreadDemo.java" />
+        <option value="$PROJECT_DIR$/src/ch10/ChainExcDemo.java" />
+        <option value="$PROJECT_DIR$/src/ch2/IfSample.java" />
+        <option value="$PROJECT_DIR$/src/ch38/AddCookieServlet.java" />
+        <option value="$PROJECT_DIR$/src/ch38/HelloServlet.java" />
+        <option value="$PROJECT_DIR$/src/ch38/DateServlet.java" />
+        <option value="$PROJECT_DIR$/src/ch38/GetCookiesServlet.java" />
+        <option value="$PROJECT_DIR$/src/ch38/ColorPostServlet.java" />
+        <option value="$PROJECT_DIR$/src/ch29/StreamDemo.java" />
+      </list>
+    </option>
+  </component>
+  <component name="Jenkins.Settings">
+    <option name="username" value="orajava" />
+    <option name="lastSelectedView" value="All" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="width" value="1924" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch38" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch29" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch28" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookJDK8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch28" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhaserDemo2.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PDF\Java\JDK8\BookJDK8\src\ch32" />
+      <recent name="C:\PDF\Java\JDK8\BookJDK8\src" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="ch4" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ch9" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PDF\Java\JDK8\BookJDK8" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StreamDemo">
+    <configuration default="false" name="StreamDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch29.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch29.StreamDemo3" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="BookJDK8" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch11.ThreadDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="BookJDK8" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="IfSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch2.IfSample" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="BookJDK8" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="StreamDemo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch29.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch29.StreamDemo4" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="BookJDK8" />
+      <envs />
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="true" />
+      </RunnerSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="StreamDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ch29.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ch29.StreamDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="BookJDK8" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.StreamDemo3" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ThreadDemo" />
+      <item index="2" class="java.lang.String" itemvalue="Application.IfSample" />
+      <item index="3" class="java.lang.String" itemvalue="Application.StreamDemo4" />
+      <item index="4" class="java.lang.String" itemvalue="Application.StreamDemo" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.StreamDemo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.StreamDemo4" />
+        <item index="2" class="java.lang.String" itemvalue="Application.StreamDemo3" />
+        <item index="3" class="java.lang.String" itemvalue="Application.IfSample" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ThreadDemo" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="CURRENT_VAGRANT" />
+    <option name="myConnectionId" value="" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Plamen\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff73a6f8-51b4-4bb4-9da0-446a17500404" name="Default" comment="" />
+      <created>1408893039445</created>
+      <option name="number" value="Default" />
+      <updated>1408893039445</updated>
+      <workItem from="1408893040693" duration="82000" />
+      <workItem from="1408893123323" duration="15037000" />
+      <workItem from="1408913918628" duration="5332000" />
+      <workItem from="1408961195004" duration="7255000" />
+      <workItem from="1408969357326" duration="5327000" />
+      <workItem from="1408977870717" duration="21000" />
+      <workItem from="1408991423470" duration="3834000" />
+      <workItem from="1409043625934" duration="72000" />
+      <workItem from="1409239839122" duration="1108000" />
+      <workItem from="1409245203856" duration="2634000" />
+      <workItem from="1411552515276" duration="6861000" />
+      <workItem from="1416682407312" duration="873000" />
+      <workItem from="1416683297229" duration="199000" />
+      <workItem from="1416683508782" duration="211000" />
+      <workItem from="1417456147027" duration="28000" />
+      <workItem from="1417456253768" duration="692000" />
+      <workItem from="1417659736268" duration="623000" />
+      <workItem from="1417776943262" duration="1177000" />
+      <workItem from="1417784359805" duration="552000" />
+      <workItem from="1418038315172" duration="345000" />
+      <workItem from="1423323597625" duration="910000" />
+      <workItem from="1424346496535" duration="15000" />
+      <workItem from="1424777303457" duration="760000" />
+      <workItem from="1427378539008" duration="117000" />
+      <workItem from="1427379745750" duration="2145000" />
+      <workItem from="1427382429339" duration="33000" />
+      <workItem from="1427382477696" duration="699000" />
+      <workItem from="1427383191597" duration="684000" />
+      <workItem from="1427462887694" duration="2263000" />
+      <workItem from="1427467047805" duration="593000" />
+      <workItem from="1427481534091" duration="17000" />
+      <workItem from="1427599709107" duration="345000" />
+      <workItem from="1427602776638" duration="7000" />
+      <workItem from="1427602951499" duration="276000" />
+      <workItem from="1427603253939" duration="60000" />
+      <workItem from="1427603328217" duration="655000" />
+      <workItem from="1427603997998" duration="599000" />
+      <workItem from="1427604613135" duration="96000" />
+      <workItem from="1427604809471" duration="201000" />
+      <workItem from="1427626428694" duration="197000" />
+      <workItem from="1427627634242" duration="445000" />
+      <workItem from="1427628098265" duration="73000" />
+      <workItem from="1427628186329" duration="29000" />
+      <workItem from="1427628232881" duration="53000" />
+      <workItem from="1427628301325" duration="309000" />
+      <workItem from="1432558119023" duration="296000" />
+      <workItem from="1432661897268" duration="31000" />
+      <workItem from="1434824310410" duration="1217000" />
+      <workItem from="1440062545436" duration="550000" />
+      <workItem from="1445454552823" duration="874000" />
+    </task>
+    <task id="LOCAL-00001" summary="first stage">
+      <created>1427381847272</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1427381847272</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="66812000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="0" width="1924" height="1080" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2760181" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33597285" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3970588" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19096844" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39978448" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8382353" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39978448" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2764141" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32918552" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33597285" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61383927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1918919" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.83928573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="first stage" />
+    <MESSAGE value="refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ch29/StreamDemo.java</url>
+          <line>48</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ch8/Override1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch8/RefDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch8/SimpleInheritance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch8/UseSuper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/AccountBalance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/AnotherClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/AskMe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/Callback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/DefaultMethodDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/Derived.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/IFExtend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/IFTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/IFTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/IFTest3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/MyIFImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/NestedIFDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/Protection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/SamePackage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/TestBalance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/TestIface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch9/TestIface2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setBP.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StopWatch.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunFlower.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analog.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clearBP.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookJDK8.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConeFlowers.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digital.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HourGlass.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lilies.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AboutIcon.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch2/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19526628">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch2/IfSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5597633">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch12/EnumDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch38/PostParametersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16836734">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch38/ColorGetServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1122449">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch29/StreamDemo3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch38/AddCookieServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch29/StreamDemo4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch38/HelloServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch38/DateServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch38/GetCookiesServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch38/ColorPostServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7631579">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch28/AtomicDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.078947365">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch28/PhaserDemo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.039473683">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch29/StreamDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60493827">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>JEE7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>BookJDK8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

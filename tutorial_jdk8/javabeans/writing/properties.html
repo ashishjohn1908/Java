@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Properties (The Java&trade; Tutorials &gt;        
+            JavaBeans(TM) &gt; Writing JavaBeans Components)
+</title>
+
+     <meta name="description" content="This JavaBean Java tutorial describes using the JavaBeans API to develop JavaBean components" />
+     <meta name="keywords" content="java programming, learn java, java sample code, javabean, bean persistence, java introspection, beancontext" />
+        
+<style type="text/css">
+    .FigureCaption   { 
+        margin-left: 1in; 
+        margin-right: 1in; 
+        font-family: sans-serif; 
+        font-size: smaller; 
+        text-align: justify;
+    }
+    #TopBar_bl {
+        background: url(../../images/java_bar_bl.gif) 0 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_br {
+        background: url(../../images/java_bar_br.gif) 100% 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tl {
+        background: url(../../images/java_bar_tl.gif) 0 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tr {
+        background: url(../../images/java_bar_tr.gif) 100% 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar {
+        background: #35556B url(../../images/java_bar.gif);
+        margin: 10px 10px 0 10px;
+        height:60px;
+        min-width:700px;
+        color: white;
+        font-family: sans-serif; 
+        font-weight: bold;
+    }
+    @media print {
+        #BreadCrumbs, #Download {
+            display: none;
+        }
+    }
+    #TopBar_right {
+        line-height: 14px;
+        float: right;
+        padding-top: 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    @media print {
+        #TopBar_right {
+            display: none;
+        }
+    }
+    #TopBar_right a {
+        font-size: 12px;
+        margin: 3px;
+        padding: 0;
+    }
+    #TopBar a:visited, #TopBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    #TopBar a:hover, #TopBar a:active  {
+        background-color: white;
+        color: #35556B;
+    }
+    #BreadCrumbs {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+        float: right;
+    }
+    #BreadCrumbs a {
+        color: blue;
+    }
+    #BreadCrumbs a:visited, #BreadCrumbs a:link {
+        text-decoration: none;
+    }
+    #BreadCrumbs a:hover, #BreadCrumbs a:active {
+        text-decoration: underline;
+    }
+    #PageTitle {
+        margin: 0 5px 0.5em 0;
+        color: #F90000;
+    }    
+    #PageContent{
+        margin: 0 5px 0 20px;
+    }
+    .LeftBar_shown {
+        width: 13em;
+        float: left;
+        margin-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 2em;
+        margin-right: 10px;
+    }
+    @media print {
+        .LeftBar_shown {
+            display: none;
+        }
+    }
+    .LeftBar_hidden {
+        display: none;
+    }
+    #Footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footertext {
+        font-size: 10px;
+        font-family: sans-serif; 
+        margin-top: 1px;
+    }
+    
+    #Footer2 {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .NavBit  {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+    }
+    @media print {
+        .NavBit {
+            display: none;
+        }
+    }
+    #TagNotes {
+        text-align: right;        
+    }
+    
+    @media print {
+        #TagNotes a:visited, #TagNotes a:link {
+            color: #35556B;
+            text-decoration: none;
+        }
+    }
+    #Contents a, .NavBit a, #TagNotes a {
+        color: blue
+    }
+    #TagNotes a:visited, #TagNotes a:link,
+    #Contents a:visited, #Contents a:link,
+    .NavBit a:visited, .NavBit a:link {
+        text-decoration: none;
+    }
+    #TagNotes a:hover, #TagNotes a:active,   
+    #Contents a:hover, #Contents a:active,   
+    .NavBit a:hover, .NavBit a:active {  
+        text-decoration: underline;
+    }
+    #Contents {
+        float: left;
+        font-family: sans-serif; 
+    }
+    @media print {
+        #Contents {
+            display: none;
+        }
+    }
+    @media screen {
+        div.PrintHeaders {
+            display: none;
+        }
+    }
+    .linkLESSON, .nolinkLESSON {
+        margin-left: 0.5em;
+        text-indent: -0.5em
+    }
+    .linkAHEAD, .nolinkAHEAD, .linkQUESTIONS, .nolinkQUESTIONS   {
+        margin-left: 1.5em; 
+        text-indent: -0.5em
+    }
+    .linkBHEAD, .nolinkBHEAD   {
+        margin-left: 2.5em;
+        text-indent: -0.5em
+    }
+    .linkCHEAD, .nolinkCHEAD   {
+        margin-left: 3.5em;
+        text-indent: -0.5em
+    }
+    .nolinkLESSON, .nolinkAHEAD, .nolinkBHEAD, .nolinkCHEAD,
+    .nolinkQUESTIONS {
+        font-weight: bold;
+        color: #F90000;
+    }
+    .MainFlow_indented {
+        margin-right: 10px;
+        margin-left: 15em;
+        margin-bottom: 2em;
+
+    }
+    .MainFlow_wide {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 2em;
+
+    }
+    @media print {
+        .MainFlow_indented, .MainFlow_wide {
+            padding-top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: #F90000;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+
+    #ToggleLeft {
+        display: none;
+    }
+    
+    .note {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .codeblock {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .tocli {
+        list-style-type:none;
+    }
+
+    .betadraft {
+        color: red;
+    }
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+    function leftBar() {
+        var nameq = 'tutorial_showLeftBar='
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookieString = cookies[i];
+            while (cookieString.charAt(0) == ' ') {
+                cookieString = cookieString.substring(1, cookieString.length);
+            }
+            if (cookieString.indexOf(nameq) == 0) {
+                cookieValue =  cookieString.substring(nameq.length,
+                        cookieString.length);
+                return cookieValue == 'yes';
+            }
+        }
+        return true;
+    }
+
+    function showLeft(b) {
+        var contents = document.getElementById("LeftBar");
+        var main = document.getElementById("MainFlow");
+        var toggle = document.getElementById("ToggleLeft");
+        if (b) {
+            contents.className = "LeftBar_shown";
+            main.className = "MainFlow_indented";
+            toggle.innerHTML = "Hide TOC";
+            document.cookie = 'tutorial_showLeftBar=yes; path=/';
+        } else {
+            contents.className = "LeftBar_hidden";
+            main.className = "MainFlow_wide";
+            toggle.innerHTML = "Show the TOC";
+            document.cookie = 'tutorial_showLeftBar=no; path=/';
+        }
+    }
+
+    function toggleLeft() {
+        showLeft(document.getElementById("LeftBar").className ==
+                "LeftBar_hidden");
+        document.getElementById("ToggleLeft").blur();
+    }
+
+    function load() {
+        showLeft(leftBar());
+        document.getElementById("ToggleLeft").style.display="inline";
+    }
+
+    function showCode(displayCodePage, codePath) {
+        var codePathEls = codePath.split("/");
+        var currDocPathEls = location.href.split("/");
+        //alert ("codePathEls = " + codePathEls + "\n" + "currDocPathEls = " + currDocPathEls);
+        currDocPathEls.pop(); // remove file name at the end
+        while (codePathEls.length > 0) {
+            if (codePathEls[0] == "..") {
+                codePathEls.shift();
+                currDocPathEls.pop();
+            } else {
+                break;
+            }
+        }
+        var fullCodePath = currDocPathEls.join("/") + "/" + codePathEls.join("/");
+        //alert ("fullCodePath = " + fullCodePath );
+        if (codePath.indexOf(".java") != -1 || codePath.indexOf(".jnlp") != -1) {
+            window.location.href = displayCodePage + "?code=" + encodeURI(fullCodePath);
+        } else {
+            window.location.href = fullCodePath;
+        }
+    }
+/* ]]> */    
+</script>
+
+
+    </head>
+<body onload="load()">
+    <noscript>
+        A browser with JavaScript enabled is required for this page to operate properly.
+    </noscript>
+
+    <div id="TopBar"> <div id="TopBar_tr"> <div id="TopBar_tl"> <div id="TopBar_br"> <div id="TopBar_bl"> 
+                        <div id="TopBar_right"> 
+                            <a target="_blank"
+				href="http://www.oracle.com/technetwork/java/javase/downloads/java-se-7-tutorial-2012-02-28-1536013.html">Download Ebooks</a><br />
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Download JDK</a>
+                            <br />
+                            <a href="../../search.html" target="_blank">Search Java Tutorials</a>
+                            <br />
+                            <a href="javascript:toggleLeft()"
+                                id="ToggleLeft">Hide TOC</a>
+                        </div>
+                    </div> </div> </div> </div> </div>
+    <div class="PrintHeaders">
+        <b>Trail:</b> JavaBeans(TM)
+        <br /><b>Lesson:</b> Writing JavaBeans Components
+    </div>
+
+    <div id="LeftBar" class="LeftBar_shown">
+        <div id="Contents">
+            <div class="linkLESSON"><a href="index.html">Writing JavaBeans Components</a></div>
+<div class="nolinkAHEAD">Properties</div>
+<div class="linkAHEAD"><a href="methods.html">Methods</a></div>
+<div class="linkAHEAD"><a href="events.html">Events</a></div>
+<div class="linkAHEAD"><a href="beaninfo.html">Using a BeanInfo</a></div>
+</div>
+    </div>
+    <div id="MainFlow" class="MainFlow_indented">
+            <span id="BreadCrumbs">
+                <a href="../../index.html" target="_top">Home Page</a>
+                &gt;
+                <a href="../index.html" target="_top">JavaBeans(TM)</a>
+                &gt;
+                <a href="index.html" target="_top">Writing JavaBeans Components</a>
+            </span>
+            <div class="NavBit">
+                <a target="_top" href="index.html">&laquo;&nbsp;Previous</a>&nbsp;&bull;&nbsp;<a target="_top" href="../TOC.html">Trail</a>&nbsp;&bull;&nbsp;<a target="_top" href="methods.html">Next&nbsp;&raquo;</a>
+            </div>
+            <div id="PageTitle"><h1>Properties</h1></div>
+            <div id="PageContent">
+
+<p>To define a property in a bean class, supply public getter and setter methods. For example, the following methods define an <code>int</code> property called <code>mouthWidth</code>:</p>
+<div class="codeblock"><pre>
+public class FaceBean {
+    private int mMouthWidth = 90;
+
+    public int getMouthWidth() {
+        return mMouthWidth;
+    }
+    
+    public void setMouthWidth(int mw) {
+        mMouthWidth = mw;
+    }
+}
+</pre></div>
+<p>A builder tool like NetBeans recognizes the method names and shows the <code>mouthWidth</code> property in its list of properties. It also recognizes the type, <code>int</code>, and provides an appropriate editor so the property can be manipulated at design time.</p>
+<p>This example shows a property than can be read and written. Other combinations are also possible. A read-only property, for example, has a getter method but no setter. A write-only property has a setter method only.</p>
+<p>A special case for <code>boolean</code> properties allows the accessor method to be defined using <code>is</code> instead of <code>get</code>. For example, the accessor for a <code>boolean</code> property <code>running</code> could be as follows:</p>
+<div class="codeblock"><pre>
+public boolean isRunning() {
+    // ...
+}
+</pre></div>
+<p>Various specializations of basic properties are available and described in the following sections.</p>
+<h2>Indexed Properties</h2>
+<p>An <i>indexed</i> property is an array instead of a single value. In this case, the bean class provides a method for getting and setting the entire array. Here is an example for an <code>int[]</code> property called <code>testGrades</code>:</p>
+<div class="codeblock"><pre>
+public int[] getTestGrades() {
+    return mTestGrades;
+}
+
+public void setTestGrades(int[] tg) {
+    mTestGrades = tg;
+}
+</pre></div>
+<p>For indexed properties, the bean class also provides methods for getting and setting a specific element of the array.</p>
+<div class="codeblock"><pre>
+public int getTestGrades(int index) {
+    return mTestGrades[index];
+}
+
+public void setTestGrades(int index, int grade) {
+    mTestGrades[index] = grade;
+}
+</pre></div>
+<h2><a name="bound">Bound Properties</a></h2>
+<p>A <i>bound</i> property notifies listeners when its value changes. This has two implications:</p>
+<ol>
+<li>The bean class includes <code>addPropertyChangeListener()</code> and <code>removePropertyChangeListener()</code> methods for managing the bean&#39;s listeners.</li>
+<li>When a bound property is changed, the bean sends a <code>PropertyChangeEvent</code> to its registered listeners.</li>
+</ol>
+<p><code>PropertyChangeEvent</code> and <code>PropertyChangeListener</code> live in the <code>java.beans</code> package.</p>
+<p>The <code>java.beans</code> package also includes a class, <code>PropertyChangeSupport</code>, that takes care of most of the work of bound properties. This handy class keeps track of property listeners and includes a convenience method that fires property change events to all registered listeners.</p>
+<p>The following example shows how you could make the <code>mouthWidth</code> property a bound property using <code>PropertyChangeSupport</code>. The necessary additions for the bound property are shown in bold.</p>
+<div class="codeblock"><pre>
+<b>import java.beans.*;</b>
+
+public class FaceBean {
+    private int mMouthWidth = 90;
+    <b>private PropertyChangeSupport mPcs =
+        new PropertyChangeSupport(this);</b>
+
+    public int getMouthWidth() {
+        return mMouthWidth;
+    }
+    
+    public void setMouthWidth(int mw) {
+        <b>int oldMouthWidth = mMouthWidth;</b>
+        mMouthWidth = mw;
+        <b>mPcs.firePropertyChange("mouthWidth",
+                                   oldMouthWidth, mw);</b>
+    }
+
+    <b>public void
+    addPropertyChangeListener(PropertyChangeListener listener) {
+        mPcs.addPropertyChangeListener(listener);
+    }
+    
+    public void
+    removePropertyChangeListener(PropertyChangeListener listener) {
+        mPcs.removePropertyChangeListener(listener);
+    }</b>
+}
+</pre></div>
+<p>Bound properties can be tied directly to other bean properties using a builder tool like NetBeans. You could, for example, take the <code>value</code> property of a slider component and bind it to the <code>mouthWidth</code> property shown in the example. NetBeans allows you to do this without writing any code.</p>
+<h2>Constrained Properties</h2>
+<p>A <i>constrained</i> property is a special kind of bound property. For a constrained property, the bean keeps track of a set of <i>veto</i> listeners. When a constrained property is about to change, the listeners are consulted about the change. Any one of the listeners has a chance to veto the change, in which case the property remains unchanged.</p>
+<p>The veto listeners are separate from the property change listeners. Fortunately, the <code>java.beans</code> package includes a <code>VetoableChangeSupport</code> class that greatly simplifies constrained properties.</p>
+<p>Changes to the <code>mouthWidth</code> example are shown in bold:</p>
+<div class="codeblock"><pre>
+import java.beans.*;
+
+public class FaceBean {
+    private int mMouthWidth = 90;
+    private PropertyChangeSupport mPcs =
+        new PropertyChangeSupport(this);
+    <b>private VetoableChangeSupport mVcs =
+        new VetoableChangeSupport(this);</b>
+
+    public int getMouthWidth() {
+        return mMouthWidth;
+    }
+    
+    public void
+    setMouthWidth(int mw) <b>throws PropertyVetoException</b> {
+        int oldMouthWidth = mMouthWidth;
+        <b>mVcs.fireVetoableChange("mouthWidth",
+                                    oldMouthWidth, mw);</b>
+        mMouthWidth = mw;
+        mPcs.firePropertyChange("mouthWidth",
+                                 oldMouthWidth, mw);
+    }
+
+    public void
+    addPropertyChangeListener(PropertyChangeListener listener) {
+        mPcs.addPropertyChangeListener(listener);
+    }
+    
+    public void
+    removePropertyChangeListener(PropertyChangeListener listener) {
+        mPcs.removePropertyChangeListener(listener);
+    }
+
+    <b>public void
+    addVetoableChangeListener(VetoableChangeListener listener) {
+        mVcs.addVetoableChangeListener(listener);
+    }
+    
+    public void
+    removeVetoableChangeListener(VetoableChangeListener listener) {
+        mVcs.removeVetoableChangeListener(listener);
+    }</b>
+}
+</pre></div>
+<h2>Development Support in NetBeans</h2>
+<p>The coding patterns for creating bean properties are straightforward, but sometimes it&#39;s hard to tell if you are getting everything correct. NetBeans has support for property patterns so you can immediately see results as you are writing code.</p>
+<p>To take advantage of this feature, look at the <b>Navigator</b> pane, which is typically in the lower left corner of the NetBeans window. Normally, this pane is in <b>Members View</b> mode, which shows all the methods and fields defined in the current class.</p>
+<p>Click on the combo box to switch to <b>Bean Patterns</b> view. You will see a list of the properties that NetBeans can infer from your method definitions. NetBeans updates this list as you type, making it a handy way to check your work.</p>
+<p>In the following example, NetBeans has found the read-write <code>mouthWidth</code> property and the read-write indexed <code>testGrades</code> property. In addition, NetBeans has recognized that <code>FaceBean</code> allows registration of both <code>PropertyChangeListener</code>s and <code>VetoableChangeListener</code>s.</p>
+<center><img src="../../figures/javabeans/nb-bean-patterns.png" width="430" height="357" align="bottom" alt="NetBeans bean patterns Navigator" /></center>
+        </div>
+        <div class="NavBit">
+            <a target="_top" href="index.html">&laquo; Previous</a>
+            &bull;
+            <a target="_top" href="../TOC.html">Trail</a>
+            &bull;
+            <a target="_top" href="methods.html">Next &raquo;</a>
+        </div>
+    </div>
+    <div id="Footer2">
+<hr />
+<div id="TagNotes">
+    <p class="footertext">Problems with the examples? Try <a target="_blank"
+        href="../../information/run-examples.html">Compiling and Running
+        the Examples: FAQs</a>.
+    <br />
+    Complaints? Compliments? Suggestions? <a target="_blank"
+        href="http://docs.oracle.com/javase/feedback.html">Give
+    us your feedback</a>.
+    </p>
+</div> 
+
+<div id="Footer">
+<p class="footertext"><a name="license_info">Your use of this</a> page and all the material on pages under &quot;The Java Tutorials&quot; banner 
+ is subject to these <a href="../../information/cpyr.html">legal notices</a>.
+</p>
+<table border="0" cellspacing="0" cellpadding="5" summary="">
+    <tr>
+         <td width="20%">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td headers="h1" align="center"><img id="duke" src="../../images/DukeWave.gif" width="55" height="55" alt="duke image" /></td>
+              <td headers="h2" align="left" valign="middle"><img id="oracle" src="../../images/logo_oracle_footer.gif" width="100" height="29" alt="Oracle logo" /></td>
+           </tr>
+          </table>
+          </td>
+
+          <td width="55%" valign="middle" align="center">
+		<p class="footertext"><a href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> | <a href="http://www.oracle.com/technology/index.html">Oracle Technology Network</a> | <a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></p> 
+	 </td>
+          <td width="25%" valign="middle" align="right">
+      		<p class="footertext">Copyright &copy; 1995, 2014 Oracle and/or its affiliates. All rights reserved.</p>
+	 </td>
+     </tr>     
+</table>
+</div>
+    </div>
+    <div class="PrintHeaders">
+        <b>Previous page:</b> Writing JavaBeans Components
+        <br /><b>Next page:</b> Methods
+    </div>
+</body>
+</html> 

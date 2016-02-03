@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Time Zone and Offset Classes (The Java&trade; Tutorials &gt;        
+            Date Time &gt; Standard Calendar)
+</title>
+
+     <meta name="description" content="This date-time Java tutorial describes how to use the java.time APIs introduced in JDK 8 to write date and time code. The core package uses the standard calendar as defined in the ISO calendar system." />
+     <meta name="keywords" content="java programming, learn java, java sample code, datetime, date time, JSR 310, date-time, date, time, java.time, jdk8, ISO" />
+        
+<style type="text/css">
+    .FigureCaption   { 
+        margin-left: 1in; 
+        margin-right: 1in; 
+        font-family: sans-serif; 
+        font-size: smaller; 
+        text-align: justify;
+    }
+    #TopBar_bl {
+        background: url(../../images/java_bar_bl.gif) 0 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_br {
+        background: url(../../images/java_bar_br.gif) 100% 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tl {
+        background: url(../../images/java_bar_tl.gif) 0 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tr {
+        background: url(../../images/java_bar_tr.gif) 100% 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar {
+        background: #35556B url(../../images/java_bar.gif);
+        margin: 10px 10px 0 10px;
+        height:60px;
+        min-width:700px;
+        color: white;
+        font-family: sans-serif; 
+        font-weight: bold;
+    }
+    @media print {
+        #BreadCrumbs, #Download {
+            display: none;
+        }
+    }
+    #TopBar_right {
+        line-height: 14px;
+        float: right;
+        padding-top: 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    @media print {
+        #TopBar_right {
+            display: none;
+        }
+    }
+    #TopBar_right a {
+        font-size: 12px;
+        margin: 3px;
+        padding: 0;
+    }
+    #TopBar a:visited, #TopBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    #TopBar a:hover, #TopBar a:active  {
+        background-color: white;
+        color: #35556B;
+    }
+    #BreadCrumbs {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+        float: right;
+    }
+    #BreadCrumbs a {
+        color: blue;
+    }
+    #BreadCrumbs a:visited, #BreadCrumbs a:link {
+        text-decoration: none;
+    }
+    #BreadCrumbs a:hover, #BreadCrumbs a:active {
+        text-decoration: underline;
+    }
+    #PageTitle {
+        margin: 0 5px 0.5em 0;
+        color: #F90000;
+    }    
+    #PageContent{
+        margin: 0 5px 0 20px;
+    }
+    .LeftBar_shown {
+        width: 13em;
+        float: left;
+        margin-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 2em;
+        margin-right: 10px;
+    }
+    @media print {
+        .LeftBar_shown {
+            display: none;
+        }
+    }
+    .LeftBar_hidden {
+        display: none;
+    }
+    #Footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footertext {
+        font-size: 10px;
+        font-family: sans-serif; 
+        margin-top: 1px;
+    }
+    
+    #Footer2 {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .NavBit  {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+    }
+    @media print {
+        .NavBit {
+            display: none;
+        }
+    }
+    #TagNotes {
+        text-align: right;        
+    }
+    
+    @media print {
+        #TagNotes a:visited, #TagNotes a:link {
+            color: #35556B;
+            text-decoration: none;
+        }
+    }
+    #Contents a, .NavBit a, #TagNotes a {
+        color: blue
+    }
+    #TagNotes a:visited, #TagNotes a:link,
+    #Contents a:visited, #Contents a:link,
+    .NavBit a:visited, .NavBit a:link {
+        text-decoration: none;
+    }
+    #TagNotes a:hover, #TagNotes a:active,   
+    #Contents a:hover, #Contents a:active,   
+    .NavBit a:hover, .NavBit a:active {  
+        text-decoration: underline;
+    }
+    #Contents {
+        float: left;
+        font-family: sans-serif; 
+    }
+    @media print {
+        #Contents {
+            display: none;
+        }
+    }
+    @media screen {
+        div.PrintHeaders {
+            display: none;
+        }
+    }
+    .linkLESSON, .nolinkLESSON {
+        margin-left: 0.5em;
+        text-indent: -0.5em
+    }
+    .linkAHEAD, .nolinkAHEAD, .linkQUESTIONS, .nolinkQUESTIONS   {
+        margin-left: 1.5em; 
+        text-indent: -0.5em
+    }
+    .linkBHEAD, .nolinkBHEAD   {
+        margin-left: 2.5em;
+        text-indent: -0.5em
+    }
+    .linkCHEAD, .nolinkCHEAD   {
+        margin-left: 3.5em;
+        text-indent: -0.5em
+    }
+    .nolinkLESSON, .nolinkAHEAD, .nolinkBHEAD, .nolinkCHEAD,
+    .nolinkQUESTIONS {
+        font-weight: bold;
+        color: #F90000;
+    }
+    .MainFlow_indented {
+        margin-right: 10px;
+        margin-left: 15em;
+        margin-bottom: 2em;
+
+    }
+    .MainFlow_wide {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 2em;
+
+    }
+    @media print {
+        .MainFlow_indented, .MainFlow_wide {
+            padding-top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: #F90000;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+
+    #ToggleLeft {
+        display: none;
+    }
+    
+    .note {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .codeblock {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .tocli {
+        list-style-type:none;
+    }
+
+    .betadraft {
+        color: red;
+    }
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+    function leftBar() {
+        var nameq = 'tutorial_showLeftBar='
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookieString = cookies[i];
+            while (cookieString.charAt(0) == ' ') {
+                cookieString = cookieString.substring(1, cookieString.length);
+            }
+            if (cookieString.indexOf(nameq) == 0) {
+                cookieValue =  cookieString.substring(nameq.length,
+                        cookieString.length);
+                return cookieValue == 'yes';
+            }
+        }
+        return true;
+    }
+
+    function showLeft(b) {
+        var contents = document.getElementById("LeftBar");
+        var main = document.getElementById("MainFlow");
+        var toggle = document.getElementById("ToggleLeft");
+        if (b) {
+            contents.className = "LeftBar_shown";
+            main.className = "MainFlow_indented";
+            toggle.innerHTML = "Hide TOC";
+            document.cookie = 'tutorial_showLeftBar=yes; path=/';
+        } else {
+            contents.className = "LeftBar_hidden";
+            main.className = "MainFlow_wide";
+            toggle.innerHTML = "Show the TOC";
+            document.cookie = 'tutorial_showLeftBar=no; path=/';
+        }
+    }
+
+    function toggleLeft() {
+        showLeft(document.getElementById("LeftBar").className ==
+                "LeftBar_hidden");
+        document.getElementById("ToggleLeft").blur();
+    }
+
+    function load() {
+        showLeft(leftBar());
+        document.getElementById("ToggleLeft").style.display="inline";
+    }
+
+    function showCode(displayCodePage, codePath) {
+        var codePathEls = codePath.split("/");
+        var currDocPathEls = location.href.split("/");
+        //alert ("codePathEls = " + codePathEls + "\n" + "currDocPathEls = " + currDocPathEls);
+        currDocPathEls.pop(); // remove file name at the end
+        while (codePathEls.length > 0) {
+            if (codePathEls[0] == "..") {
+                codePathEls.shift();
+                currDocPathEls.pop();
+            } else {
+                break;
+            }
+        }
+        var fullCodePath = currDocPathEls.join("/") + "/" + codePathEls.join("/");
+        //alert ("fullCodePath = " + fullCodePath );
+        if (codePath.indexOf(".java") != -1 || codePath.indexOf(".jnlp") != -1) {
+            window.location.href = displayCodePage + "?code=" + encodeURI(fullCodePath);
+        } else {
+            window.location.href = fullCodePath;
+        }
+    }
+/* ]]> */    
+</script>
+
+
+    </head>
+<body onload="load()">
+    <noscript>
+        A browser with JavaScript enabled is required for this page to operate properly.
+    </noscript>
+
+    <div id="TopBar"> <div id="TopBar_tr"> <div id="TopBar_tl"> <div id="TopBar_br"> <div id="TopBar_bl"> 
+                        <div id="TopBar_right"> 
+                            <a target="_blank"
+				href="http://www.oracle.com/technetwork/java/javase/downloads/java-se-7-tutorial-2012-02-28-1536013.html">Download Ebooks</a><br />
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Download JDK</a>
+                            <br />
+                            <a href="../../search.html" target="_blank">Search Java Tutorials</a>
+                            <br />
+                            <a href="javascript:toggleLeft()"
+                                id="ToggleLeft">Hide TOC</a>
+                        </div>
+                    </div> </div> </div> </div> </div>
+    <div class="PrintHeaders">
+        <b>Trail:</b> Date Time
+        <br /><b>Lesson:</b> Standard Calendar
+    </div>
+
+    <div id="LeftBar" class="LeftBar_shown">
+        <div id="Contents">
+            <div class="linkLESSON"><a href="index.html">Standard Calendar</a></div>
+<div class="linkAHEAD"><a href="overview.html">Overview</a></div>
+<div class="linkAHEAD"><a href="enum.html">DayOfWeek and Month Enums</a></div>
+<div class="linkAHEAD"><a href="date.html">Date Classes</a></div>
+<div class="linkAHEAD"><a href="datetime.html">Date and Time Classes</a></div>
+<div class="nolinkAHEAD">Time Zone and Offset Classes</div>
+<div class="linkAHEAD"><a href="instant.html">Instant Class</a></div>
+<div class="linkAHEAD"><a href="format.html">Parsing and Formatting</a></div>
+<div class="linkAHEAD"><a href="temporal.html">The Temporal Package</a></div>
+<div class="linkBHEAD"><a href="adjusters.html">Temporal Adjuster</a></div>
+<div class="linkBHEAD"><a href="queries.html">Temporal Query</a></div>
+<div class="linkAHEAD"><a href="period.html">Period and Duration</a></div>
+<div class="linkAHEAD"><a href="clock.html">Clock</a></div>
+<div class="linkAHEAD"><a href="nonIso.html">Non-ISO Date Conversion</a></div>
+<div class="linkAHEAD"><a href="legacy.html">Legacy Date-Time Code</a></div>
+<div class="linkAHEAD"><a href="summary.html">Summary</a></div>
+<div class="linkQUESTIONS"><a href="QandE/questions.html">Questions and Exercises</a></div>
+</div>
+    </div>
+    <div id="MainFlow" class="MainFlow_indented">
+            <span id="BreadCrumbs">
+                <a href="../../index.html" target="_top">Home Page</a>
+                &gt;
+                <a href="../index.html" target="_top">Date Time</a>
+                &gt;
+                <a href="index.html" target="_top">Standard Calendar</a>
+            </span>
+            <div class="NavBit">
+                <a target="_top" href="datetime.html">&laquo;&nbsp;Previous</a>&nbsp;&bull;&nbsp;<a target="_top" href="../TOC.html">Trail</a>&nbsp;&bull;&nbsp;<a target="_top" href="instant.html">Next&nbsp;&raquo;</a>
+            </div>
+            <div id="PageTitle"><h1>Time Zone and Offset Classes</h1></div>
+            <div id="PageContent">
+
+
+<p>
+A <em>time zone</em> is a region of the earth where the same standard time is used. Each time zone is described by an identifier and usually has the format <em>region/city</em> (<tt>Asia/Tokyo</tt>) and an offset from Greenwich/UTC time. For example, the offset for Tokyo is <tt>+09:00</tt>.</p>
+
+<h2>ZoneId and ZoneOffset</h2>
+<p>
+The Date-Time API provides two classes for specifying a time zone or an offset:</p>
+<ul>
+<li><tt>ZoneId</tt> specifies a time zone identifier and provides rules for converting between an <tt>Instant</tt> and a <tt>LocalDateTime</tt>.</li>
+<li><tt>ZoneOffset</tt> specifies a time zone offset from Greenwich/UTC time.</li>
+</ul>
+<p>
+Offsets from Greenwich/UTC time are usually defined in whole hours, but there are exceptions. The following code, from the
+<a class="SourceLink" target="_blank" href="examples/TimeZoneId.java" onclick="showCode('../../displayCode.html', 'examples/TimeZoneId.java'); return false;"><code><tt>TimeZoneId</tt></code></a> example, prints a list of all time zones that use offsets from Greenwich/UTC that are not defined in whole hours.</p>
+<div class="codeblock"><pre>
+Set&lt;String&gt; allZones = ZoneId.getAvailableZoneIds();
+LocalDateTime dt = LocalDateTime.now();
+
+// Create a List using the set of zones and sort it.
+List&lt;String&gt; zoneList = new ArrayList&lt;String&gt;(allZones);
+Collections.sort(zoneList);
+
+...
+
+for (String s : zoneList) {
+    ZoneId zone = ZoneId.of(s);
+    ZonedDateTime zdt = dt.atZone(zone);
+    ZoneOffset offset = zdt.getOffset();
+    int secondsOfHour = offset.getTotalSeconds() % (60 * 60);
+    String out = String.format("%35s %10s%n", zone, offset);
+
+    // Write only time zones that do not have a whole hour offset
+    // to standard out.
+    if (secondsOfHour != 0) {
+        System.out.printf(out);
+    }
+    ...
+}
+</pre></div>
+
+<p>
+This example prints the following list to standard out:</p>
+<div class="codeblock"><pre>
+      America/Caracas     -04:30
+     America/St_Johns     -02:30
+        Asia/Calcutta     +05:30
+         Asia/Colombo     +05:30
+           Asia/Kabul     +04:30
+       Asia/Kathmandu     +05:45
+        Asia/Katmandu     +05:45
+         Asia/Kolkata     +05:30
+         Asia/Rangoon     +06:30
+          Asia/Tehran     +04:30
+   Australia/Adelaide     +09:30
+Australia/Broken_Hill     +09:30
+     Australia/Darwin     +09:30
+      Australia/Eucla     +08:45
+        Australia/LHI     +10:30
+  Australia/Lord_Howe     +10:30
+      Australia/North     +09:30
+      Australia/South     +09:30
+ Australia/Yancowinna     +09:30
+  Canada/Newfoundland     -02:30
+         Indian/Cocos     +06:30
+                 Iran     +04:30
+              NZ-CHAT     +12:45
+      Pacific/Chatham     +12:45
+    Pacific/Marquesas     -09:30
+      Pacific/Norfolk     +11:30
+</pre></div>
+
+<p>
+The <tt>TimeZoneId</tt> example also prints a list of all time zone IDs to a file called 
+<a class="SourceLink" target="_blank" href="examples/timeZones" onclick="showCode('../../displayCode.html', 'examples/timeZones'); return false;"><code><tt>timeZones</tt></code></a>.</p>
+
+<h2>The Date-Time Classes</h2>
+<p>
+The Date-Time API provides three temporal-based classes that work with time zones:</p>
+<ul>
+<li><tt>ZonedDateTime</tt> handles a date and time with a corresponding time zone with a time zone offset from Greenwich/UTC.</li>
+<li><tt>OffsetDateTime</tt> handles a date and time with a corresponding time zone offset from Greenwich/UTC, without a time zone ID.</li>
+<li><tt>OffsetTime</tt> handles time with a corresponding time zone offset from Greenwich/UTC, without a time zone ID.</li>
+</ul>
+<p>
+When would you use <tt>OffsetDateTime</tt> instead of <tt>ZonedDateTime</tt>? If you are writing complex software that models its own rules for date and time calculations based on geographic locations, or if you are storing time-stamps in a database that track only absolute offsets from Greenwich/UTC time, then you might want to use <tt>OffsetDateTime</tt>. Also, XML and other network formats define date-time transfer as <tt>OffsetDateTime</tt> or <tt>OffsetTime</tt>.</p>
+<p>
+Although all three classes maintain an offset from Greenwich/UTC time, only <tt>ZonedDateTime</tt> uses the
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/zone/ZoneRules.html"><tt>ZoneRules</tt></a>, part of the <tt>java.time.zone</tt> package, to determine how an offset varies for a particular time zone. For example, most time zones experience a gap (typically of 1 hour) when moving the clock forward to daylight saving time, and a time overlap when moving the clock back to standard time and the last hour before the transition is repeated. The <tt>ZonedDateTime</tt> class accommodates this scenario, whereas the <tt>OffsetDateTime</tt> and <tt>OffsetTime</tt> classes, which do not have access to the <tt>ZoneRules</tt>, do not.</p>
+
+<h3>ZonedDateTime</h3>
+<p>
+The 
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html">ZonedDateTime</a> class, in effect, combines the
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html"><tt>LocalDateTime</tt></a> class with the
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html"><tt>ZoneId</tt></a> class. It is used to represent a full date (year, month, day) and time (hour, minute, second, nanosecond) with a time zone (region/city, such as <tt>Europe/Paris</tt>).</p>
+
+<p>
+The following code, from the
+<a class="SourceLink" target="_blank" href="examples/Flight.java" onclick="showCode('../../displayCode.html', 'examples/Flight.java'); return false;"><code><tt>Flight</tt></code></a> example, defines the departure time for a flight from San Francisco to Tokyo as a <tt>ZonedDateTime</tt> in the America/Los Angeles time zone.  The <tt>withZoneSameInstant</tt> and <tt>plusMinutes</tt> methods are used to create an instance of <tt>ZonedDateTime</tt> that represents the projected arrival time in Tokyo, after the 650 minute flight. The <tt>ZoneRules.isDaylightSavings</tt> method determines whether it is daylight saving time when the flight arrives in Tokyo.</p>
+<p>
+A <tt>DateTimeFormatter</tt> object is used to format the <tt>ZonedDateTime</tt> instances for printing:</p>
+<div class="codeblock"><pre>
+DateTimeFormatter format = DateTimeFormatter.ofPattern("MMM d yyyy  hh:mm a");
+
+// Leaving from San Francisco on July 20, 2013, at 7:30 p.m.
+LocalDateTime leaving = LocalDateTime.of(2013, Month.JULY, 20, 19, 30);
+ZoneId leavingZone = ZoneId.of("America/Los_Angeles"); 
+ZonedDateTime departure = ZonedDateTime.of(leaving, leavingZone);
+
+try {
+    String out1 = departure.format(format);
+    System.out.printf("LEAVING:  %s (%s)%n", out1, leavingZone);
+} catch (DateTimeException exc) {
+    System.out.printf("%s can't be formatted!%n", departure);
+    throw exc;
+}
+
+// Flight is 10 hours and 50 minutes, or 650 minutes
+ZoneId arrivingZone = ZoneId.of("Asia/Tokyo"); 
+<strong>ZonedDateTime arrival = departure.withZoneSameInstant(arrivingZone)
+                                 .plusMinutes(650);</strong>
+
+try {
+    String out2 = arrival.format(format);
+    System.out.printf("ARRIVING: %s (%s)%n", out2, arrivingZone);
+} catch (DateTimeException exc) {
+    System.out.printf("%s can't be formatted!%n", arrival);
+    throw exc;
+}
+
+if (arrivingZone.getRules().isDaylightSavings(arrival.toInstant())) 
+    System.out.printf("  (%s daylight saving time will be in effect.)%n",
+                      arrivingZone);
+else
+    System.out.printf("  (%s standard time will be in effect.)%n",
+                      arrivingZone);
+</pre></div>
+<p>
+This produces the following output:</p>
+<div class="codeblock"><pre>
+LEAVING:  Jul 20 2013  07:30 PM (America/Los_Angeles)
+ARRIVING: Jul 21 2013  10:20 PM (Asia/Tokyo)
+  (Asia/Tokyo standard time will be in effect.)
+</pre></div>
+
+<h3>OffsetDateTime</h3>
+<p>
+The 
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/OffsetDateTime.html">OffsetDateTime</a> class, in effect, combines the 
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html"><tt>LocalDateTime</tt></a> class with the
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/ZoneOffset.html"><tt>ZoneOffset</tt></a> class. It is used to represent a full date (year, month, day) and time (hour, minute, second, nanosecond) with an offset from Greenwich/UTC time (+/-hours:minutes, such as <tt>+06:00</tt> or <tt>-08:00</tt>).</p>
+
+<p>
+The following example uses <tt>OffsetDateTime</tt> with the <tt>TemporalAdjuster.lastDay</tt> method to find the last Thursday in July 2013.</p>
+
+<div class="codeblock"><pre>
+// Find the last Thursday in July 2013.
+LocalDateTime date = LocalDateTime.of(2013, Month.JULY, 20, 19, 30);
+ZoneOffset offset = ZoneOffset.of("-08:00");
+OffsetDateTime date = OffsetDateTime.of(date, offset);
+OffsetDateTime lastThursday =
+        date.with(TemporalAdjuster.lastInMonth(DayOfWeek.THURSDAY));
+System.out.printf("The last Thursday in July 2013 is the %sth.%n",
+                   lastThursday.getDayOfMonth());
+</pre></div>
+<p>
+The output from running this code is:</p>
+<div class="codeblock"><pre>
+The last Thursday in July 2013 is the 25th.
+</pre></div>
+
+<h3>OffsetTime</h3>
+<p>
+The 
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/OffsetTime.html">OffsetTime</a> class, in effect, combines the
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/LocalTime.html"><tt>LocalTime</tt></a> class with the
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/java/time/ZoneOffset.html"><tt>ZoneOffset</tt></a> class. It is used to represent time (hour, minute, second, nanosecond) with an offset from Greenwich/UTC time (+/-hours:minutes, such as <tt>+06:00</tt> or <tt>-08:00</tt>).</p>
+<p>
+The <tt>OffsetTime</tt> class is used in the same situations as the <tt>OffsetDateTime</tt> class, but when tracking the date is not needed.</p>
+
+        </div>
+        <div class="NavBit">
+            <a target="_top" href="datetime.html">&laquo; Previous</a>
+            &bull;
+            <a target="_top" href="../TOC.html">Trail</a>
+            &bull;
+            <a target="_top" href="instant.html">Next &raquo;</a>
+        </div>
+    </div>
+    <div id="Footer2">
+<hr />
+<div id="TagNotes">
+    <p class="footertext">Problems with the examples? Try <a target="_blank"
+        href="../../information/run-examples.html">Compiling and Running
+        the Examples: FAQs</a>.
+    <br />
+    Complaints? Compliments? Suggestions? <a target="_blank"
+        href="http://docs.oracle.com/javase/feedback.html">Give
+    us your feedback</a>.
+    </p>
+</div> 
+
+<div id="Footer">
+<p class="footertext"><a name="license_info">Your use of this</a> page and all the material on pages under &quot;The Java Tutorials&quot; banner 
+ is subject to these <a href="../../information/cpyr.html">legal notices</a>.
+</p>
+<table border="0" cellspacing="0" cellpadding="5" summary="">
+    <tr>
+         <td width="20%">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td headers="h1" align="center"><img id="duke" src="../../images/DukeWave.gif" width="55" height="55" alt="duke image" /></td>
+              <td headers="h2" align="left" valign="middle"><img id="oracle" src="../../images/logo_oracle_footer.gif" width="100" height="29" alt="Oracle logo" /></td>
+           </tr>
+          </table>
+          </td>
+
+          <td width="55%" valign="middle" align="center">
+		<p class="footertext"><a href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> | <a href="http://www.oracle.com/technology/index.html">Oracle Technology Network</a> | <a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></p> 
+	 </td>
+          <td width="25%" valign="middle" align="right">
+      		<p class="footertext">Copyright &copy; 1995, 2014 Oracle and/or its affiliates. All rights reserved.</p>
+	 </td>
+     </tr>     
+</table>
+</div>
+    </div>
+    <div class="PrintHeaders">
+        <b>Previous page:</b> Date and Time Classes
+        <br /><b>Next page:</b> Instant Class
+    </div>
+</body>
+</html> 

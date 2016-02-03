@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Lesson: Aggregate Operations (The Java&trade; Tutorials &gt; Collections)</title>
+     <meta name="description" content="This collections Java tutorial describes interfaces, implementations, and algorithms in the Java Collections framework" />
+     <meta name="keywords" content="java programming, learn java, java sample code, java collections, set, list, queue, map, array, arraylist" />
+        
+<style type="text/css">
+    .FigureCaption   { 
+        margin-left: 1in; 
+        margin-right: 1in; 
+        font-family: sans-serif; 
+        font-size: smaller; 
+        text-align: justify;
+    }
+    #TopBar_bl {
+        background: url(../../images/java_bar_bl.gif) 0 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_br {
+        background: url(../../images/java_bar_br.gif) 100% 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tl {
+        background: url(../../images/java_bar_tl.gif) 0 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tr {
+        background: url(../../images/java_bar_tr.gif) 100% 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar {
+        background: #35556B url(../../images/java_bar.gif);
+        margin: 10px 10px 0 10px;
+        height:60px;
+        min-width:700px;
+        color: white;
+        font-family: sans-serif; 
+        font-weight: bold;
+    }
+    @media print {
+        #BreadCrumbs, #Download {
+            display: none;
+        }
+    }
+    #TopBar_right {
+        line-height: 14px;
+        float: right;
+        padding-top: 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    @media print {
+        #TopBar_right {
+            display: none;
+        }
+    }
+    #TopBar_right a {
+        font-size: 12px;
+        margin: 3px;
+        padding: 0;
+    }
+    #TopBar a:visited, #TopBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    #TopBar a:hover, #TopBar a:active  {
+        background-color: white;
+        color: #35556B;
+    }
+    #BreadCrumbs {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+        float: right;
+    }
+    #BreadCrumbs a {
+        color: blue;
+    }
+    #BreadCrumbs a:visited, #BreadCrumbs a:link {
+        text-decoration: none;
+    }
+    #BreadCrumbs a:hover, #BreadCrumbs a:active {
+        text-decoration: underline;
+    }
+    #PageTitle {
+        margin: 0 5px 0.5em 0;
+        color: #F90000;
+    }    
+    #PageContent{
+        margin: 0 5px 0 20px;
+    }
+    .LeftBar_shown {
+        width: 13em;
+        float: left;
+        margin-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 2em;
+        margin-right: 10px;
+    }
+    @media print {
+        .LeftBar_shown {
+            display: none;
+        }
+    }
+    .LeftBar_hidden {
+        display: none;
+    }
+    #Footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footertext {
+        font-size: 10px;
+        font-family: sans-serif; 
+        margin-top: 1px;
+    }
+    
+    #Footer2 {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .NavBit  {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+    }
+    @media print {
+        .NavBit {
+            display: none;
+        }
+    }
+    #TagNotes {
+        text-align: right;        
+    }
+    
+    @media print {
+        #TagNotes a:visited, #TagNotes a:link {
+            color: #35556B;
+            text-decoration: none;
+        }
+    }
+    #Contents a, .NavBit a, #TagNotes a {
+        color: blue
+    }
+    #TagNotes a:visited, #TagNotes a:link,
+    #Contents a:visited, #Contents a:link,
+    .NavBit a:visited, .NavBit a:link {
+        text-decoration: none;
+    }
+    #TagNotes a:hover, #TagNotes a:active,   
+    #Contents a:hover, #Contents a:active,   
+    .NavBit a:hover, .NavBit a:active {  
+        text-decoration: underline;
+    }
+    #Contents {
+        float: left;
+        font-family: sans-serif; 
+    }
+    @media print {
+        #Contents {
+            display: none;
+        }
+    }
+    @media screen {
+        div.PrintHeaders {
+            display: none;
+        }
+    }
+    .linkLESSON, .nolinkLESSON {
+        margin-left: 0.5em;
+        text-indent: -0.5em
+    }
+    .linkAHEAD, .nolinkAHEAD, .linkQUESTIONS, .nolinkQUESTIONS   {
+        margin-left: 1.5em; 
+        text-indent: -0.5em
+    }
+    .linkBHEAD, .nolinkBHEAD   {
+        margin-left: 2.5em;
+        text-indent: -0.5em
+    }
+    .linkCHEAD, .nolinkCHEAD   {
+        margin-left: 3.5em;
+        text-indent: -0.5em
+    }
+    .nolinkLESSON, .nolinkAHEAD, .nolinkBHEAD, .nolinkCHEAD,
+    .nolinkQUESTIONS {
+        font-weight: bold;
+        color: #F90000;
+    }
+    .MainFlow_indented {
+        margin-right: 10px;
+        margin-left: 15em;
+        margin-bottom: 2em;
+
+    }
+    .MainFlow_wide {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 2em;
+
+    }
+    @media print {
+        .MainFlow_indented, .MainFlow_wide {
+            padding-top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: #F90000;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+
+    #ToggleLeft {
+        display: none;
+    }
+    
+    .note {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .codeblock {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .tocli {
+        list-style-type:none;
+    }
+
+    .betadraft {
+        color: red;
+    }
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+    function leftBar() {
+        var nameq = 'tutorial_showLeftBar='
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookieString = cookies[i];
+            while (cookieString.charAt(0) == ' ') {
+                cookieString = cookieString.substring(1, cookieString.length);
+            }
+            if (cookieString.indexOf(nameq) == 0) {
+                cookieValue =  cookieString.substring(nameq.length,
+                        cookieString.length);
+                return cookieValue == 'yes';
+            }
+        }
+        return true;
+    }
+
+    function showLeft(b) {
+        var contents = document.getElementById("LeftBar");
+        var main = document.getElementById("MainFlow");
+        var toggle = document.getElementById("ToggleLeft");
+        if (b) {
+            contents.className = "LeftBar_shown";
+            main.className = "MainFlow_indented";
+            toggle.innerHTML = "Hide TOC";
+            document.cookie = 'tutorial_showLeftBar=yes; path=/';
+        } else {
+            contents.className = "LeftBar_hidden";
+            main.className = "MainFlow_wide";
+            toggle.innerHTML = "Show the TOC";
+            document.cookie = 'tutorial_showLeftBar=no; path=/';
+        }
+    }
+
+    function toggleLeft() {
+        showLeft(document.getElementById("LeftBar").className ==
+                "LeftBar_hidden");
+        document.getElementById("ToggleLeft").blur();
+    }
+
+    function load() {
+        showLeft(leftBar());
+        document.getElementById("ToggleLeft").style.display="inline";
+    }
+
+    function showCode(displayCodePage, codePath) {
+        var codePathEls = codePath.split("/");
+        var currDocPathEls = location.href.split("/");
+        //alert ("codePathEls = " + codePathEls + "\n" + "currDocPathEls = " + currDocPathEls);
+        currDocPathEls.pop(); // remove file name at the end
+        while (codePathEls.length > 0) {
+            if (codePathEls[0] == "..") {
+                codePathEls.shift();
+                currDocPathEls.pop();
+            } else {
+                break;
+            }
+        }
+        var fullCodePath = currDocPathEls.join("/") + "/" + codePathEls.join("/");
+        //alert ("fullCodePath = " + fullCodePath );
+        if (codePath.indexOf(".java") != -1 || codePath.indexOf(".jnlp") != -1) {
+            window.location.href = displayCodePage + "?code=" + encodeURI(fullCodePath);
+        } else {
+            window.location.href = fullCodePath;
+        }
+    }
+/* ]]> */    
+</script>
+
+
+    </head>
+<body onload="load()">
+    <noscript>
+        A browser with JavaScript enabled is required for this page to operate properly.
+    </noscript>
+
+    <div id="TopBar"> <div id="TopBar_tr"> <div id="TopBar_tl"> <div id="TopBar_br"> <div id="TopBar_bl"> 
+                    <div id="TopBar_right"> 
+                            <a target="_blank"
+				href="http://www.oracle.com/technetwork/java/javase/downloads/java-se-7-tutorial-2012-02-28-1536013.html">Download Ebooks</a><br />
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Download JDK</a>
+                            <br />
+                            <a href="../../search.html" target="_blank">Search Java
+                                Tutorials</a>
+                        <br />
+                        <a href="javascript:toggleLeft()"
+                            id="ToggleLeft">Hide TOC</a>
+                    </div> 
+                </div> </div> </div> </div> </div>
+
+    <div id="LeftBar">
+        <div id="Contents">
+            <div class="nolinkLESSON">Aggregate Operations</div>
+<div class="linkAHEAD"><a href="reduction.html">Reduction</a></div>
+<div class="linkAHEAD"><a href="parallelism.html">Parallelism</a></div>
+<div class="linkQUESTIONS"><a href="QandE/questions.html">Questions and Exercises</a></div>
+</div>
+    </div>
+    <div id="MainFlow" class="MainFlow_indented">
+        <div class="PrintHeaders">
+            <b>Trail:</b> Collections
+        </div>
+        <div id="BreadCrumbs">
+            <a href="../../index.html" target="_top">Home Page</a>
+        &gt;
+            <a href="../index.html" target="_top">Collections</a>
+        </div>
+        <div class="NavBit">
+                <a target="_top" href="../interfaces/index.html">&laquo;&nbsp;Previous</a>&nbsp;&bull;&nbsp;<a target="_top" href="../TOC.html">Trail</a>&nbsp;&bull;&nbsp;<a target="_top" href="reduction.html">Next&nbsp;&raquo;</a>
+        </div>
+        <div id="PageTitle"><h1>Lesson: Aggregate Operations</h1></div>
+        <div id="PageContent">
+ 
+<p><strong>Note</strong>: To better understand the concepts in this section, review the sections
+<a class="TutorialLink" target="_top" href="../../java/javaOO/lambdaexpressions.html">Lambda Expressions</a> and
+<a class="TutorialLink" target="_top" href="../../java/javaOO/methodreferences.html">Method References</a>.</p>
+
+<p>For what do you use collections? You don't simply store objects in a collection and leave them there. In most cases, you use collections to retrieve items stored in them.</p>
+
+<p>Consider again the scenario described in the section
+<a class="TutorialLink" target="_top" href="../../java/javaOO/lambdaexpressions.html">Lambda Expressions</a>. Suppose that you are creating a social networking application. You want to create a feature that enables an administrator to perform any kind of action, such as sending a message, on members of the social networking application that satisfy certain criteria.</p>
+
+<p>As before, suppose that members of this social networking application are represented by the following
+<a class="SourceLink" target="_blank" href="examples/Person.java" onclick="showCode('../../displayCode.html', 'examples/Person.java'); return false;"><code>Person</code></a> class:</p>
+
+<pre class="codeblock">public class Person {
+
+    public enum Sex {
+        MALE, FEMALE
+    }
+
+    String name;
+    LocalDate birthday;
+    Sex gender;
+    String emailAddress;
+    
+    // ...
+
+    public int getAge() {
+        // ...
+    }
+
+    public String getName() {
+        // ...
+    }
+}</pre>
+
+<p>The following example prints the name of all members contained in the collection <code>roster</code> with a for-each loop:</p>
+
+<pre class="codeblock">for (Person p : roster) {
+    System.out.println(p.getName());
+}</pre>
+
+<p>The following example prints all members contained in the collection <code>roster</code> but with the aggregate operation <code>forEach</code>:</p>
+
+<pre class="codeblock">roster
+    .stream()
+    .forEach(e -> System.out.println(e.getName());</pre>
+
+<p>Although, in this example, the version that uses aggregate operations is longer than the one that uses a for-each loop, you will see that versions that use bulk-data operations will be more concise for more complex tasks.</p>
+
+<p>The following topics are covered:</p>
+
+<ul>
+  <li><a href="#pipelines">Pipelines and Streams</a></li>
+  <li><a href="#differences">Differences Between Aggregate Operations and Iterators</a></li>
+</ul>
+
+<p>Find the code excerpts described in this section in the example
+<a class="SourceLink" target="_blank" href="examples/BulkDataOperationsExamples.java" onclick="showCode('../../displayCode.html', 'examples/BulkDataOperationsExamples.java'); return false;"><code>BulkDataOperationsExamples</code></a>.</p>
+
+<h3><a name="pipelines">Pipelines and Streams</a></h3>
+
+<p>A <em>pipeline</em> is a sequence of aggregate operations. The following example prints the male members contained in the collection <code>roster</code> with a pipeline that consists of the aggregate operations <code>filter</code> and <code>forEach</code>:</p>
+
+<pre class="codeblock">roster
+    .stream()
+    .filter(e -&gt; e.getGender() == Person.Sex.MALE)
+    .forEach(e -> System.out.println(e.getName());</pre>
+    
+<p>Compare this example to the following that prints the male members contained in the collection <code>roster</code> with a for-each loop:</p>
+
+<pre class="codeblock">for (Person p : roster) {
+    if (p.getGender() == Person.Sex.MALE) {
+        System.out.println(p.getName());
+    }
+}</pre>
+    
+<p>A pipeline contains the following components:</p>
+
+  <ul>
+  
+    <li><p>A source: This could be a collection, an array, a generator function, or an I/O channel. In this example, the source is the collection <code>roster</code>.</p></li>
+    
+    <li><p>Zero or more <em>intermediate operations</em>. An intermediate operation, such as <code>filter</code>, produces a new stream.</p>
+    
+    <p>A <em>stream</em> is a sequence of elements. Unlike a collection, it is not a data structure that stores elements. Instead, a stream carries values from a source through a pipeline. This example creates a stream from the collection <code>roster</code> by invoking the method <code>stream</code>.</p>    
+    
+    <p>The <code>filter</code> operation returns a new stream that contains elements that match its predicate (this operation's parameter). In this example, the predicate is the lambda expression <code>e -&gt; e.getGender() == Person.Sex.MALE</code>. It returns the boolean value <code>true</code> if the <code>gender</code> field of object <code>e</code> has the value <code>Person.Sex.MALE</code>. Consequently, the <code>filter</code> operation in this example returns a stream that contains all male members in the collection <code>roster</code>.</p></li>
+    
+    <li><p>A <em>terminal operation</em>. A terminal operation, such as <code>forEach</code>,  produces a non-stream result, such as a primitive value (like a double value), a collection, or in the case of <code>forEach</code>, no value at all. In this example, the parameter of the <code>forEach</code> operation is the lambda expression <code>e -> System.out.println(e.getName())</code>, which invokes the method <code>getName</code> on the object <code>e</code>. (The Java runtime and compiler infer that the type of the object <code>e</code> is <code>Person</code>.)</p></li>
+</ul>
+  
+<p>The following example calculates the average age of all male members contained in the collection <code>roster</code> with a pipeline that consists of the aggregate operations <code>filter</code>, <code>mapToInt</code>, and <code>average</code>:</p>
+
+<pre class="codeblock">double average = roster
+    .stream()
+    .filter(p -> p.getGender() == Person.Sex.MALE)
+    .mapToInt(Person::getAge)
+    .average()
+    .getAsDouble();</pre>
+    
+<p>The <code>mapToInt</code> operation returns a new stream of type <code>IntStream</code> (which is a stream that contains only integer values). The operation applies the function specified in its parameter to each element in a particular stream. In this example, the function is <code>Person::getAge</code>, which is a method reference that returns the age of the member. (Alternatively, you could use the lambda expression <code>e -&gt; e.getAge()</code>.) Consequently, the <code>mapToInt</code> operation in this example returns a stream that contains the ages of all male members in the collection <code>roster</code>.</p>
+
+<p>The <code>average</code> operation calculates the average value of the elements contained in a stream of type <code>IntStream</code>. It returns an object of type <code>OptionalDouble</code>. If the stream contains no elements, then the <code>average</code> operation returns an empty instance of <code>OptionalDouble</code>, and invoking the method <code>getAsDouble</code> throws a <code>NoSuchElementException</code>. The JDK contains many terminal operations such as <code>average</code> that return one value by combining the contents of a stream. These operations are called <em>reduction operations</em>; see the section
+<a class="TutorialLink" target="_top" href="../../collections/streams/reduction.html">Reduction</a> for more information.</p>
+
+<h3><a name="differences">Differences Between Aggregate Operations and Iterators</a></h3>
+
+<p>Aggregate operations, like <code>forEach</code>, appear to be like iterators. However, they have several fundamental differences:</p>
+
+<ul>
+
+  <!-- ********************* -->
+  
+  <li><p><strong>They use internal iteration</strong>: Aggregate operations do not contain a method like <code>next</code> to instruct them to process the next element of the collection. With <em>internal delegation</em>, your application determines <em>what</em> collection it iterates, but the JDK determines <em>how</em> to iterate the collection. With <em>external iteration</em>, your application determines both what collection it iterates and how it iterates it. However, external iteration can only iterate over the  elements of a collection sequentially. Internal iteration does not have this limitation. It can more easily take advantage of parallel computing, which involves dividing a problem into subproblems, solving those problems simultaneously, and then combining the results of the solutions to the subproblems. See the section
+<a class="TutorialLink" target="_top" href="../../collections/streams/parallelism.html">Parallelism</a> for more information.</p></li>
+ 
+  <!-- ********************* -->
+  
+  <li><p><strong>They process elements from a stream</strong>: Aggregate operations process elements from a stream, not directly from a collection. Consequently, they are also called <em>stream operations</em>.</p></li>
+  
+  <!-- ********************* -->
+  
+  <li><p><strong>They support behavior as parameters</strong>: You can specify
+<a class="TutorialLink" target="_top" href="../../java/javaOO/lambdaexpressions.html">lambda expressions</a> as parameters for most aggregate operations. This enables you to customize the behavior of a particular aggregate operation.</p></li>      
+ 
+</ul>
+
+
+        </div>
+    <div class="NavBit">
+        <a href="../interfaces/index.html">&laquo; Previous</a>
+        &bull;
+        <a href="../TOC.html">Trail</a>
+        &bull;
+        <a href="reduction.html">Next &raquo;</a>
+    </div>
+    </div>
+    <div id="Footer2">
+<hr />
+<div id="TagNotes">
+    <p class="footertext">Problems with the examples? Try <a target="_blank"
+        href="../../information/run-examples.html">Compiling and Running
+        the Examples: FAQs</a>.
+    <br />
+    Complaints? Compliments? Suggestions? <a target="_blank"
+        href="http://docs.oracle.com/javase/feedback.html">Give
+    us your feedback</a>.
+    </p>
+</div> 
+
+<div id="Footer">
+<p class="footertext"><a name="license_info">Your use of this</a> page and all the material on pages under &quot;The Java Tutorials&quot; banner 
+ is subject to these <a href="../../information/cpyr.html">legal notices</a>.
+</p>
+<table border="0" cellspacing="0" cellpadding="5" summary="">
+    <tr>
+         <td width="20%">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td headers="h1" align="center"><img id="duke" src="../../images/DukeWave.gif" width="55" height="55" alt="duke image" /></td>
+              <td headers="h2" align="left" valign="middle"><img id="oracle" src="../../images/logo_oracle_footer.gif" width="100" height="29" alt="Oracle logo" /></td>
+           </tr>
+          </table>
+          </td>
+
+          <td width="55%" valign="middle" align="center">
+		<p class="footertext"><a href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> | <a href="http://www.oracle.com/technology/index.html">Oracle Technology Network</a> | <a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></p> 
+	 </td>
+          <td width="25%" valign="middle" align="right">
+      		<p class="footertext">Copyright &copy; 1995, 2014 Oracle and/or its affiliates. All rights reserved.</p>
+	 </td>
+     </tr>     
+</table>
+</div>
+    </div>
+    <div class="PrintHeaders">
+        <b>Previous page:</b> Previous Lesson
+        <br /><b>Next page:</b> Reduction
+    </div>
+</body>
+</html> 

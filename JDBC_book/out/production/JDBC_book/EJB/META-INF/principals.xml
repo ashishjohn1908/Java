@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE principals PUBLIC "//Evermind - Orion Principals//"
+        "http://xmlns.oracle.com/ias/dtds/principals.dtd">
+
+<principals>
+    <groups>
+        <group name="users">
+            <description>users</description>
+            <permission name="rmi:login"/>
+            <permission name="com.evermind.server.rmi.RMIPermission"/>
+        </group>
+    </groups>
+    <users>
+        <user username="store_user" password="store_password">
+            <description>store_user</description>
+            <group-membership group="users"/>
+        </user>
+    </users>
+</principals>

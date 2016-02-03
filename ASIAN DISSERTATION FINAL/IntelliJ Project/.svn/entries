@@ -1,0 +1,82 @@
+10
+
+dir
+95
+http://192.168.137.4/svn/sunrep/IntelliJ%20Project
+http://192.168.137.4/svn/sunrep
+
+
+
+2010-08-19T00:52:39.658325Z
+95
+plamen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2191df9a-5630-cf56-a167-a80759e40f25
+
+.idea
+dir
+
+IntelliJ Project.iml
+file
+96
+
+
+
+2010-08-17T19:17:24.835000Z
+0b60705c8da22f36f9ed6f38eff350bc
+2010-08-19T00:54:43.685174Z
+96
+plamen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+437
+
+META-INF
+dir
+
+
+
+add
+
+archive_projects
+dir
+
+
+
+add
+
+src
+dir
+

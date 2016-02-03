@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.java.j2seproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+            <name>JavaProject1</name>
+            <source-roots>
+                <root id="src.dir"/>
+                <root id="src2.dir"/>
+                <root id="src3.dir"/>
+                <root id="src4.dir"/>
+                <root id="src5.dir"/>
+                <root id="src6.dir"/>
+                <root id="src7.dir"/>
+                <root id="src8.dir"/>
+                <root id="src9.dir"/>
+                <root id="src10.dir"/>
+                <root id="src11.dir"/>
+                <root id="src12.dir"/>
+                <root id="src13.dir"/>
+                <root id="src14.dir"/>
+                <root id="src15.dir"/>
+                <root id="src16.dir"/>
+                <root id="src17.dir"/>
+                <root id="src18.dir"/>
+                <root id="src19.dir"/>
+                <root id="src20.dir"/>
+                <root id="src21.dir"/>
+                <root id="src22.dir"/>
+                <root id="src23.dir"/>
+                <root id="src24.dir"/>
+                <root id="src25.dir"/>
+                <root id="src26.dir"/>
+                <root id="src27.dir"/>
+                <root id="src28.dir"/>
+                <root id="src29.dir"/>
+                <root id="src30.dir"/>
+                <root id="src31.dir"/>
+                <root id="src32.dir"/>
+                <root id="src33.dir"/>
+                <root id="src34.dir"/>
+                <root id="src35.dir"/>
+                <root id="src36.dir"/>
+                <root id="src37.dir"/>
+                <root id="src38.dir"/>
+                <root id="src39.dir"/>
+                <root id="src40.dir"/>
+                <root id="src41.dir"/>
+                <root id="src42.dir"/>
+                <root id="src43.dir"/>
+                <root id="src44.dir"/>
+                <root id="src45.dir"/>
+                <root id="src46.dir"/>
+                <root id="src47.dir"/>
+                <root id="src48.dir"/>
+                <root id="src49.dir"/>
+                <root id="src50.dir"/>
+                <root id="src51.dir"/>
+                <root id="src52.dir"/>
+                <root id="src53.dir"/>
+                <root id="src54.dir"/>
+                <root id="src55.dir"/>
+                <root id="src56.dir"/>
+                <root id="src57.dir"/>
+                <root id="src58.dir"/>
+                <root id="src59.dir"/>
+                <root id="src60.dir"/>
+                <root id="src61.dir"/>
+                <root id="src62.dir"/>
+                <root id="src63.dir"/>
+                <root id="src64.dir"/>
+                <root id="src65.dir"/>
+                <root id="src66.dir"/>
+                <root id="src67.dir"/>
+                <root id="src68.dir"/>
+                <root id="src69.dir"/>
+                <root id="src70.dir"/>
+                <root id="src71.dir"/>
+                <root id="src72.dir"/>
+                <root id="src73.dir"/>
+                <root id="src74.dir"/>
+                <root id="src75.dir"/>
+                <root id="src76.dir"/>
+                <root id="src77.dir"/>
+                <root id="src78.dir"/>
+                <root id="src79.dir"/>
+                <root id="src80.dir"/>
+                <root id="src81.dir"/>
+                <root id="src82.dir"/>
+                <root id="src83.dir"/>
+                <root id="src84.dir"/>
+                <root id="src85.dir"/>
+                <root id="src86.dir"/>
+                <root id="src87.dir"/>
+                <root id="src88.dir"/>
+                <root id="src89.dir"/>
+                <root id="src90.dir"/>
+                <root id="src91.dir"/>
+                <root id="src92.dir"/>
+                <root id="src93.dir"/>
+                <root id="rafaelnadal.dir"/>
+            </source-roots>
+            <test-roots>
+                <root id="test.src.dir"/>
+            </test-roots>
+        </data>
+    </configuration>
+</project>

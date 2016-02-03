@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 10.0-b22 (Sun Microsystems Inc.)
+Main-Class: aperiodicthread1.Main
+Class-Path: lib/rt.jar lib/rt2.jar
+X-COMMENT: Main-Class will be added automatically by build
+

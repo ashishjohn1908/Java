@@ -1,0 +1,21 @@
+#!/bin/sh
+
+#
+# These shell variables will be set from the demo environment.  If running this
+# component in a standalone fashion, they'll need to be set manually.
+# The following are reasonable guesses; they may need to be modified
+#
+if [ -z "${AS_HOME}" ] ; then
+    AS_HOME=/opt/SDK
+fi
+if [ -z "${JAVA_RTS_HOME}" ] ; then
+    JAVA_RTS_HOME=/opt/SUNWrtjv
+fi
+
+JAVA_ARGS="-Xmx32m -Dcom.sun.management.jmxremote.port=9999 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
+
+CP=./dist/DataFeed.jar:${AS_HOME}/lib/appserv-admin.jar:${AS_HOME}/lib/appserv-rt.jar:${AS_HOME}/imq/lib/imq.jar:${AS_HOME}/lib/install/applications/jmsra/imqjmsra.jar:${AS_HOME}/lib/javaee.jar:${AS_HOME}/imq/lib/jms.jar
+
+${JAVA_RTS_HOME}/bin/java ${JAVA_ARGS} -classpath ${CP} com/sun/oss/trader/datafeed/DataFeed
+
+java -Xmx32m -Dcom.sun.management.jmxremote.port=9999 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -cp ./dist/TradingSystem.jar:/opt/SDK/lib/appserv-admin.jar:/opt/SDK/lib/appserv-rt.jar:/opt/SDK/lib/javaee.jar:/opt/SDK/lib/install/applications/jmsra/imqjmsra.jar:/opt/SDK/imq/lib/imq.jar:/opt/SDK/imq/lib/jms.jar: Main

@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://192.168.137.4/svn/sunrep/IntelliJ%20Project/archive_projects
+http://192.168.137.4/svn/sunrep
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2191df9a-5630-cf56-a167-a80759e40f25
+
+Plamen.jarprj
+file
+
+
+
+add
+
+Plamen1.jarprj
+file
+
+
+
+add
+
+Plamen2.jarprj
+file
+
+
+
+add
+
+Plamen3.jarprj
+file
+
+
+
+add
+
+Plamen4.jarprj
+file
+
+
+
+add
+
+Plamen5.jarprj
+file
+
+
+
+add
+
+Plamen6.jarprj
+file
+
+
+
+add
+

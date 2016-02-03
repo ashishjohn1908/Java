@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Answers to Questions and Exercises: Nested Classes (The Java&trade; Tutorials &gt; Learning the Java Language &gt;
+            Classes and Objects)</title>
+<style type="text/css">
+    .FigureCaption   { 
+        margin-left: 1in; 
+        margin-right: 1in; 
+        font-family: sans-serif; 
+        font-size: smaller; 
+        text-align: justify;
+    }
+    #TopBar_bl {
+        background: url(../../../images/java_bar_bl.gif) 0 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_br {
+        background: url(../../../images/java_bar_br.gif) 100% 100% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tl {
+        background: url(../../../images/java_bar_tl.gif) 0 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar_tr {
+        background: url(../../../images/java_bar_tr.gif) 100% 0 no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+    #TopBar {
+        background: #35556B url(../../../images/java_bar.gif);
+        margin: 10px 10px 0 10px;
+        height:60px;
+        min-width:700px;
+        color: white;
+        font-family: sans-serif; 
+        font-weight: bold;
+    }
+    @media print {
+        #BreadCrumbs, #Download {
+            display: none;
+        }
+    }
+    #TopBar_right {
+        line-height: 14px;
+        float: right;
+        padding-top: 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    @media print {
+        #TopBar_right {
+            display: none;
+        }
+    }
+    #TopBar_right a {
+        font-size: 12px;
+        margin: 3px;
+        padding: 0;
+    }
+    #TopBar a:visited, #TopBar a:link {
+        color: white;
+        text-decoration: none;
+    }
+    #TopBar a:hover, #TopBar a:active  {
+        background-color: white;
+        color: #35556B;
+    }
+    #BreadCrumbs {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+        float: right;
+    }
+    #BreadCrumbs a {
+        color: blue;
+    }
+    #BreadCrumbs a:visited, #BreadCrumbs a:link {
+        text-decoration: none;
+    }
+    #BreadCrumbs a:hover, #BreadCrumbs a:active {
+        text-decoration: underline;
+    }
+    #PageTitle {
+        margin: 0 5px 0.5em 0;
+        color: #F90000;
+    }    
+    #PageContent{
+        margin: 0 5px 0 20px;
+    }
+    .LeftBar_shown {
+        width: 13em;
+        float: left;
+        margin-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 2em;
+        margin-right: 10px;
+    }
+    @media print {
+        .LeftBar_shown {
+            display: none;
+        }
+    }
+    .LeftBar_hidden {
+        display: none;
+    }
+    #Footer {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footertext {
+        font-size: 10px;
+        font-family: sans-serif; 
+        margin-top: 1px;
+    }
+    
+    #Footer2 {
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    .NavBit  {
+        padding: 4px 5px 0.5em 0;
+        font-family: sans-serif; 
+    }
+    @media print {
+        .NavBit {
+            display: none;
+        }
+    }
+    #TagNotes {
+        text-align: right;        
+    }
+    
+    @media print {
+        #TagNotes a:visited, #TagNotes a:link {
+            color: #35556B;
+            text-decoration: none;
+        }
+    }
+    #Contents a, .NavBit a, #TagNotes a {
+        color: blue
+    }
+    #TagNotes a:visited, #TagNotes a:link,
+    #Contents a:visited, #Contents a:link,
+    .NavBit a:visited, .NavBit a:link {
+        text-decoration: none;
+    }
+    #TagNotes a:hover, #TagNotes a:active,   
+    #Contents a:hover, #Contents a:active,   
+    .NavBit a:hover, .NavBit a:active {  
+        text-decoration: underline;
+    }
+    #Contents {
+        float: left;
+        font-family: sans-serif; 
+    }
+    @media print {
+        #Contents {
+            display: none;
+        }
+    }
+    @media screen {
+        div.PrintHeaders {
+            display: none;
+        }
+    }
+    .linkLESSON, .nolinkLESSON {
+        margin-left: 0.5em;
+        text-indent: -0.5em
+    }
+    .linkAHEAD, .nolinkAHEAD, .linkQUESTIONS, .nolinkQUESTIONS   {
+        margin-left: 1.5em; 
+        text-indent: -0.5em
+    }
+    .linkBHEAD, .nolinkBHEAD   {
+        margin-left: 2.5em;
+        text-indent: -0.5em
+    }
+    .linkCHEAD, .nolinkCHEAD   {
+        margin-left: 3.5em;
+        text-indent: -0.5em
+    }
+    .nolinkLESSON, .nolinkAHEAD, .nolinkBHEAD, .nolinkCHEAD,
+    .nolinkQUESTIONS {
+        font-weight: bold;
+        color: #F90000;
+    }
+    .MainFlow_indented {
+        margin-right: 10px;
+        margin-left: 15em;
+        margin-bottom: 2em;
+
+    }
+    .MainFlow_wide {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 2em;
+
+    }
+    @media print {
+        .MainFlow_indented, .MainFlow_wide {
+            padding-top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: #F90000;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+
+    #ToggleLeft {
+        display: none;
+    }
+    
+    .note {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .codeblock {
+        margin: 0 30px 0px 30px;
+    }
+    
+    .tocli {
+        list-style-type:none;
+    }
+
+    .betadraft {
+        color: red;
+    }
+</style>
+    </head>
+<body>
+    <noscript> 
+        A browser with JavaScript enabled is required for this page to operate properly.
+    </noscript>
+    <div id="TopBar"> <div id="TopBar_tr"> <div id="TopBar_tl"> <div id="TopBar_br"> <div id="TopBar_bl"> 
+                        <div id="TopBar_right"> 
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/java-se-7-tutorial-2012-02-28-1536013.html">Download Ebooks</a><br />
+                            <a target="_blank"
+                                href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Download JDK</a>
+                            <br />
+                            <a href="../../../search.html" target="_blank">Search Java Tutorials</a>
+                        </div>
+                            <div class="PrintHeaders">
+                                <b>Trail:</b> Learning the Java Language
+                                <br /><b>Lesson:</b> Classes and Objects
+                            </div>
+                    </div> </div> </div> </div> </div>
+
+    <div class="MainFlow_wide">
+        <span id="BreadCrumbs">
+            <a href="../../../index.html" target="_top">Home Page</a>
+            &gt;
+            <a href="../../index.html" target="_top">Learning the Java Language</a>
+            &gt;
+            <a href="../index.html" target="_top">Classes and Objects</a>
+        </span>
+        <div class="NavBit">
+            <a href="../QandE/nested-questions.html">&laquo; Previous</a>&nbsp;&bull;&nbsp;<a href="../../TOC.html">TOC</a>
+        </div>
+        <div id="PageTitle"><h1>Answers to Questions and Exercises: Nested Classes</h1></div>
+        <div id="PageContent">
+
+<h2>Questions</h2>
+<ol>
+<li>
+<p><strong>Question</strong>: The program 
+<a class="SourceLink" target="_blank" href="Problem.java" onclick="showCode('../../../displayCode.html', 'Problem.java'); return false;"><code>Problem.java</code></a> doesn&#39;t compile. What do you need to do to make it compile? Why?</p>
+<p><strong>Answer</strong>: Delete <code>static</code> in front of the declaration of the <code>Inner</code> class. An static inner class does not have access to the instance fields of the outer class. See 
+<a class="SourceLink" target="_blank" href="ProblemSolved.java" onclick="showCode('../../../displayCode.html', 'ProblemSolved.java'); return false;"><code>ProblemSolved.java</code></a>.</p>
+</li>
+<li>
+<p>Use the Java API documentation for the 
+<a class="APILink" target="_blank" href="http://docs.oracle.com/javase/8/docs/api/javax/swing/Box.html"><code>Box</code></a> class (in the <code>javax.swing</code> package) to help you answer the following questions.</p>
+<ol type="a">
+<li>
+<p><strong>Question</strong>: What static nested class does <code>Box</code> define?</p>
+<p><strong>Answer</strong>: <code>Box.Filler</code></p>
+</li>
+<li>
+<p><strong>Question</strong>: What inner class does <code>Box</code> define?</p>
+<p><strong>Answer</strong>: <code>Box.AccessibleBox</code></p>
+</li>
+<li>
+<p><strong>Question</strong>: What is the superclass of <code>Box</code>&#39;s inner class?</p>
+<p><strong>Answer</strong>: <code>[java.awt.]Container.AccessibleAWTContainer</code></p>
+</li>
+<li>
+<p><strong>Question</strong>: Which of <code>Box</code>&#39;s nested classes can you use from any class?</p>
+<p><strong>Answer</strong>: <code>Box.Filler</code></p>
+</li>
+<li>
+<p><strong>Question</strong>: How do you create an instance of <code>Box</code>&#39;s <code>Filler</code> class?</p>
+<p><strong>Answer</strong>: <code>new Box.Filler(minDimension, prefDimension, maxDimension)</code></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>Exercises</h2>
+<ol>
+<li>
+<p><strong>Exercise</strong>: Get the file 
+<a class="SourceLink" target="_blank" href="Class1.java" onclick="showCode('../../../displayCode.html', 'Class1.java'); return false;"><code>Class1.java</code></a>. Compile and run <code>Class1</code>. What is the output?</p>
+<p><strong>Answer</strong>: <code>InnerClass1: getString invoked.<br />
+InnerClass1: getAnotherString invoked.</code></p>
+</li>
+<li><p><strong>Exercise</strong>: The following exercises involve modifying the class
+<a class="SourceLink" target="_blank" href="../examples/DataStructure.java" onclick="showCode('../../../displayCode.html', '../examples/DataStructure.java'); return false;"><code>DataStructure.java</code></a>, which the section
+<a class="TutorialLink" target="_top" href="../../../java/javaOO/innerclasses.html">Inner Class Example</a> discusses.</p>
+    <ol type="a">
+    
+      <li><p>Define a method named <code>print(DataStructureIterator iterator)</code>. Invoke this method with an instance of the class <code>EvenIterator</code> so that it performs the same function as the method <code>printEven</code>.</p>
+      
+      <p><strong>Hint</strong>: These statements do not compile if you specify them in the <code>main</code> method:</p>
+      
+      <pre class="codeblock">DataStructure ds = new DataStructure();
+ds.print(new EvenIterator());</pre>
+
+      <p>The compiler generates the error message, "non-static variable this cannot be referenced from a static context" when it encounters the expression <code>new EvenIterator()</code>. The class <code>EvenIterator</code> is an inner, non-static class. This means that you can create an instance of <code>EvenIterator</code> only inside an instance of the outer class, <code>DataStructure</code>.</p>
+      
+      <p>You can define a method in <code>DataStructure</code> that creates and returns a new instance of <code>EvenIterator</code>.</p> 
+
+      </li>
+      
+      <li><p>Invoke the method <code>print(DataStructureIterator iterator)</code> so that it prints elements that have an odd index value. Use an anonymous class as the method's argument instead of an instance of the interface <code>DataStructureIterator</code>.</p>
+      
+      <p><strong>Hint</strong>: You cannot access the private members <code>SIZE</code> and <code>arrayOfInts</code> outside the class <code>DataStructure</code>, which means that you cannot access these private members from an anonymous class defined outside <code>DataStructure</code>.</p>
+      
+      <p>You can define methods that access the private members <code>SIZE</code> and <code>arrayOfInts</code> and then use them in your anonymous class.</p>
+      
+      </li>
+      
+      <li><p>Define a method named <code>print(java.util.Function&lt;Integer, Boolean&gt; iterator)</code> that performs the same function as <code>print(DataStructureIterator iterator)</code>. Invoke this method with a lambda expression to print elements that have an even index value. Invoke this method again with a lambda expression to print elements that have an odd index value.</p>
+      
+      <p><strong>Hint</strong>: In this <code>print</code> method, you can step though the elements contained in the array <code>arrayOfInts</code> with a <code>for</code> expression. For each index value, invoke the method <code>function.apply</code>. If this method returns a true value for a particular index value, print the element contained in that index value.</p>
+      
+      <p>To invoke this <code>print</code> method to print elements that have an even index value, you can specify a lambda expression that implements the method <code>Boolean Function.apply(Integer t)</code>. This lambda expression takes one <code>Integer</code> argument (the index) and returns a <code>Boolean</code> value (<code>Boolean.TRUE</code> if the index value is even, <code>Boolean.FALSE</code> otherwise).</p>
+      
+      </li>
+      
+      <li><p>Define two methods so that these statements print elements that have an even index value and then elements that have an odd index value:</p>
+<pre class="codeblock">DataStructure ds = new DataStructure()
+// ...
+ds.print(DataStructure::isEvenIndex);
+ds.print(DataStructure::isOddIndex);</pre>
+
+      <p><strong>Hint</strong>: Create two methods in the class <code>DataStructure</code> named <code>isEvenIndex</code> and <code>isOddIndex</code> that have the same parameter list and return type as the abstract method <code>Boolean Function&lt;Integer, Boolean&gt;.apply(Integer t)</code>. This means that the methods take one <code>Integer</code> argument (the index) and return a <code>Boolean</code> value.</p>  
+      
+      </li>
+    </ol>
+    <p><strong>Answer</strong>: See the file
+<a class="SourceLink" target="_blank" href="DataStructure.java" onclick="showCode('../../../displayCode.html', 'DataStructure.java'); return false;"><code>DataStructure.java</code></a>.</p>
+  </li>
+</ol>
+
+
+        </div>
+    </div>
+    <div id="Footer2">
+        <span class="NavBit">
+            <a href="../QandE/nested-questions.html">&laquo; Previous</a>
+            &bull;
+            <a href="../../TOC.html">TOC</a>
+        </span>
+<hr />
+<div id="TagNotes">
+    <p class="footertext">Problems with the examples? Try <a target="_blank"
+        href="../../../information/run-examples.html">Compiling and Running
+        the Examples: FAQs</a>.
+    <br />
+    Complaints? Compliments? Suggestions? <a target="_blank"
+        href="http://docs.oracle.com/javase/feedback.html">Give
+    us your feedback</a>.
+    </p>
+</div> 
+
+<div id="Footer">
+<p class="footertext"><a name="license_info">Your use of this</a> page and all the material on pages under &quot;The Java Tutorials&quot; banner 
+ is subject to these <a href="../../../information/cpyr.html">legal notices</a>.
+</p>
+<table border="0" cellspacing="0" cellpadding="5" summary="">
+    <tr>
+         <td width="20%">
+	 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td headers="h1" align="center"><img id="duke" src="../../../images/DukeWave.gif" width="55" height="55" alt="duke image" /></td>
+              <td headers="h2" align="left" valign="middle"><img id="oracle" src="../../../images/logo_oracle_footer.gif" width="100" height="29" alt="Oracle logo" /></td>
+           </tr>
+          </table>
+          </td>
+
+          <td width="55%" valign="middle" align="center">
+		<p class="footertext"><a href="http://www.oracle.com/us/corporate/index.html">About Oracle</a> | <a href="http://www.oracle.com/technology/index.html">Oracle Technology Network</a> | <a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></p> 
+	 </td>
+          <td width="25%" valign="middle" align="right">
+      		<p class="footertext">Copyright &copy; 1995, 2014 Oracle and/or its affiliates. All rights reserved.</p>
+	 </td>
+     </tr>     
+</table>
+</div>
+    </div>
+    <div class="PrintHeaders">
+        <b>Previous page:</b> Questions and Exercises: Nested Classes
+    </div>
+</body>
+</html> 

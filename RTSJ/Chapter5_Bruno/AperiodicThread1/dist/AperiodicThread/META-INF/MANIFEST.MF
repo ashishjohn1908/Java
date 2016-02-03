@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Main-Class: aperiodicthread1.Main
+Class-Path: lib/rt.jar lib/rt2.jar
+

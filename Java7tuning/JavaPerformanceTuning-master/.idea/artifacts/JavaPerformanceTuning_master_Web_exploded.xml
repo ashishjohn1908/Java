@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaPerformanceTuning-master:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaPerformanceTuning_master_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JavaPerformanceTuning-master/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-classes" facet="JavaPerformanceTuning-master/web/Web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="EclipseLink" />
+          <element id="library" level="application" name="Json" />
+          <element id="library" level="application" name="SizeOf" />
+          <element id="library" level="application" name="faban" />
+          <element id="library" level="application" name="Oracle11g" />
+          <element id="library" level="application" name="jackson" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
