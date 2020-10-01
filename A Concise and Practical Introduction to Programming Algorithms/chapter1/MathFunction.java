@@ -13,7 +13,7 @@ class MathFunction {
 
         double x = Math.E;
         double fx = Math.log(x);
-        System.out.print("Is this precisely 1 or is there numerical errors? ");
+        System.out.print("Is this precisely 1 or are there numerical errors? ");
         System.out.println(fx);
 
 
